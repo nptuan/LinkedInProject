@@ -1,63 +1,48 @@
 <html>
 	<head>
 		<meta charset='utf-8'/>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>		
-		<title> Bé Tập Tính </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<title>LinkedIn</title>
+		<link rel="icon" href="https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico">
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>	
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/materialize.min.css">
+		<link rel="stylesheet" href="css/materialize-extension.min.css">
 	</head>
-	<body ng-app="my_app">
-		<h1> 
-			Bé Tập Tính 
-		</h1>
-		<form name='my_form'>
-			<table ng-controller="my_controller">
-				<tr>
-					<td>
-						Số thứ nhất
-					</td>
-					<td>
-						<input type='text' name='soThuNhat' ng-model='txtSo1' ng-pattern='/^[+-]?\d+(\.\d+)?$/' 
-						ng-blur="kiem_tra_so_thuc(my_form.soThuNhat)"/>
-					</td>
-					<td>
-						<input type='radio' ng-model='pheptinh' value='cong'/> Cộng
-					</td>
-					<td>
-						<input type='radio' ng-model='pheptinh' value='tru'/> Trừ
-					</td>
-				</tr>
-				<tr>
-					<td>
-						Số thứ hai
-					</td>
-					<td>
-						<input type='text' name='soThuHai' ng-model='txtSo2' ng-pattern='/^[+-]?\d+(\.\d+)?$/'
-						ng-blur="kiem_tra_so_thuc(my_form.soThuHai)"/>
-					</td>
-					<td>
-						<input type='radio' ng-model='pheptinh' value='nhan'/> Nhân
-					</td>
-					<td>
-						<input type='radio' ng-model='pheptinh' value='chia'/> Chia
-					</td>
-				</tr>
-				<tr>
-					<td>
-						Kết quả
-					</td>
-					<td>
-						<input type='text' value='{{txtKetQua}}'/>
-					</td>
-					<td>
-						<input type='button' value='Tính' ng-click='tinh()'/>
-					</td>
-				</tr>
-				<tr>
-					<td id='lblThongBao' ng-bind='txtThongBao'></td>
-					<td id='lblThongBaoLoi' colspan='3' ng-bind='txtNoiDung'></td>
-				</tr>
-			</table>
-		</form>
-		<script type="text/javascript" src="js/angularjs_1_4.js"></script>
-		<script type="text/javascript" src='js/main.js'></script>
+	<body ng-controller="content-controller">
+		<div id="timeline">
+			<img id="cover" src="images/cover.jpg" ng-src="{{cover}}" alt="cover" />
+			<div id="profile-content">
+				<div id="profile-topcard">
+					<div class="row profile-main">
+						<img class="avatar col" src="images/avatar.jpg" ng-src="{{avatar}}" alt="avatar" />
+						<div class="profile-overview col">
+							<div class="overview-info row">
+								<div style="display: inline-block; float: left;">
+                                <h1 class="overview-name">{{name[0] + ' ' + name[1]}}</h1>
+                                <p class="overview-headline">{{headline}}</p>
+                                <p class="overview-demographics">
+                                    <a href="https://www.linkedin.com/vsearch/p?f_G={{workInfo.area}}&trk=prof-0-ovw-location">{{workInfo.area}}</a> |
+                                    <a href="https://www.linkedin.com/vsearch/p?f_I={{workInfo.industry}}&trk=prof-0-ovw-industry">{{workInfo.industry}}</a>
+                                </p>
+                                <table class="overview-summary">
+							</div>
+						</div>										
+					</div>
+				</div>
+			<div id="profile-content">
+		</div>
+		
+		
+		<!-- JQuery -->
+		<script src="js/jquery-2.2.3.min.js"></script>
+		<!-- Angular Js -->
+		<script src="js/angular.min.js"></script>
+		<!-- Materialize Js -->
+		<script src="js/materialize.min.js"></script>
+		<!-- App Js -->
+		<script src="js/app.js"></script>
 	</body>
 </html>

@@ -1,40 +1,40 @@
 {
-  "cover": "images/cover.jpg",
-  "avatar": "images/avatar.jpg",
-  "name": [
-    "Jeff",
-    "Weiner"
-  ],
-  "possition": "CEO at LinkedIn",
-  "work": {
-    "location": "San Francisco Bay Area",
-    "industry": "Internet"
-  },
-  "Influencer": true,
-  "followers": 4006636,
-  "profileURL": "https://www.linkedin.com/in/jeffweiner08",
+	"cover": "images/cover.jpg",
+	"avatar": "images/avatar.jpg",
+	"name": [
+		"Jeff",
+		"Weiner"
+	],
+	"possition": "CEO at LinkedIn",
+	"work": {
+		"location": "San Francisco Bay Area",
+		"industry": "Internet"
+	},
+	"Influencer": true,
+	"followers": 4006636,
+	"profileURL": "https://www.linkedin.com/in/jeffweiner08",
 
 
-  "postsUrl": "https://www.linkedin.com/today/author/0_1HzVUN_pW553HoPu1F7I0Q?trk=prof-sm",
-  "posts": [
-    {
-      "image": "images/posts/post1.jpg",
-      "title": "My Interview with Oprah",
-      "date": "October 15, 2015",
-      "url": "https://www.linkedin.com/pulse/my-interview-oprah-jeff-weiner?trk=prof-post"
-    },
-    {
-      "image": "images/posts/post2.jpg",
-      "title": "Always Be Learning: LinkedIn to Acquire lynda.com",
-      "date": "April 9, 2015",
-      "url": "https://www.linkedin.com/pulse/always-learning-linkedin-acquire-lyndacom-jeff-weiner?trk=prof-post"
-    },
-    {
-      "image": "images/posts/post3.jpg",
-      "title": "How LinkedIn is Helping Power the President's Tech Jobs Initiative",
-      "date": "March 10, 2015",
-      "url": "https://www.linkedin.com/pulse/how-linkedin-helping-power-presidents-tech-jobs-jeff-weiner?trk=prof-post"
-    }
+	"postsUrl": "https://www.linkedin.com/today/author/0_1HzVUN_pW553HoPu1F7I0Q?trk=prof-sm",
+	"posts": [
+		{
+		  "image": "images/posts/post1.jpg",
+		  "title": "My Interview with Oprah",
+		  "date": "October 15, 2015",
+		  "url": "https://www.linkedin.com/pulse/my-interview-oprah-jeff-weiner?trk=prof-post"
+		},
+		{
+		  "image": "images/posts/post2.jpg",
+		  "title": "Always Be Learning: LinkedIn to Acquire lynda.com",
+		  "date": "April 9, 2015",
+		  "url": "https://www.linkedin.com/pulse/always-learning-linkedin-acquire-lyndacom-jeff-weiner?trk=prof-post"
+		},
+		{
+		  "image": "images/posts/post3.jpg",
+		  "title": "How LinkedIn is Helping Power the President's Tech Jobs Initiative",
+		  "date": "March 10, 2015",
+		  "url": "https://www.linkedin.com/pulse/how-linkedin-helping-power-presidents-tech-jobs-jeff-weiner?trk=prof-post"
+		}
   ],
 
 
