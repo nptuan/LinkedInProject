@@ -7,16 +7,16 @@ linkedInApp.controller('content-controller', ['$scope','$http',
         window.sc = $scope;
         $scope.dummyUrl = "https://google.com";
     
-        $http.get('https://api.myjson.com/bins/4g62s').success(function (data) {
+        $http.get('https://api.myjson.com/bins/40p2a').success(function (data) {
             //Read model from json data
             $scope.cover = data.cover;
             $scope.avatar = data.avatar;
             $scope.name = data.name;
-            $scope.headline = data.headline;
-            $scope.workInfo = data.workInfo;
+            $scope.possition = data.possition;
+            $scope.work = data.work;
             $scope.isInfluencer = data.isInfluencer;
             $scope.followers = data.followers;
-            $scope.profileUrl = data.profileUrl;
+            $scope.profileURL = data.profileURL;
             
             $scope.postsUrl = data.postsUrl;
             $scope.posts = data.posts;

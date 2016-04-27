@@ -45,7 +45,7 @@
     {
       "companyName": "LinkedIn",
       "companyUrl": "https://www.linkedin.com/company/1337?trk=prof-exp-company-name",
-      "companyLogo": "images/organization-logos/linkedin.png",
+      "companyLogo": "images/logos/linkedin.png",
       "title": "CEO",
       "startPeriod": "December 2008",
       "endPeriod": "Present",
@@ -56,7 +56,7 @@
     {
       "companyName": "Intuit",
       "companyUrl": "https://www.linkedin.com/company/1666?trk=prof-exp-company-name",
-      "companyLogo": "images/organization-logos/intuit.png",
+      "companyLogo": "images/logos/intuit.png",
       "title": "Member, Board of Directors",
       "startPeriod": "April 2012",
       "endPeriod": "Present",
@@ -67,7 +67,7 @@
     {
       "companyName": "DonorsChoose",
       "companyUrl": "https://www.linkedin.com/company/33101?trk=prof-exp-company-name",
-      "companyLogo": "images/organization-logos/donorschoose.png",
+      "companyLogo": "images/logos/donorschoose.png",
       "title": "Member, Board of Directors",
       "startPeriod": "2007",
       "endPeriod": "Present",
@@ -78,7 +78,7 @@
     {
       "companyName": "Boys & Girls Clubs of the Peninsula",
       "companyUrl": "https://www.linkedin.com/company/66930?trk=prof-exp-company-name",
-      "companyLogo": "images/organization-logos/boysngirlsclubsofthepeninsula.png",
+      "companyLogo": "images/logos/boysngirlsclubsofthepeninsula.png",
       "title": "Member, Advisory Board",
       "startPeriod": "2011",
       "endPeriod": "Present",
@@ -89,7 +89,7 @@
     {
       "companyName": "Venture For America",
       "companyUrl": "https://www.linkedin.com/company/1904212?trk=prof-exp-company-name",
-      "companyLogo": "images/organization-logos/ventureforamerica.png",
+      "companyLogo": "images/logos/ventureforamerica.png",
       "title": "Member, Advisory Board",
       "startPeriod": "2012",
       "endPeriod": "Present",
@@ -100,7 +100,7 @@
     {
       "companyName": "Malaria No More",
       "companyUrl": "https://www.linkedin.com/company/695380?trk=prof-exp-company-name",
-      "companyLogo": "images/organization-logos/malarianomore.png",
+      "companyLogo": "images/logos/malarianomore.png",
       "title": "Member, Board of Directors",
       "startPeriod": "2007",
       "endPeriod": "December 2015",
@@ -111,7 +111,7 @@
     {
       "companyName": "Accel Partners",
       "companyUrl": "https://www.linkedin.com/company/17412?trk=prof-exp-company-name",
-      "companyLogo": "images/organization-logos/accelpartners.png",
+      "companyLogo": "images/logos/accel.png",
       "title": "Executive in Residence",
       "startPeriod": "September 2008",
       "endPeriod": "June 2009",
@@ -122,7 +122,7 @@
     {
       "companyName": "Greylock",
       "companyUrl": "https://www.linkedin.com/company/18077?trk=prof-exp-company-name",
-      "companyLogo": "images/organization-logos/greylock.png",
+      "companyLogo": "images/logos/greylock.png",
       "title": "Executive in Residence",
       "startPeriod": "September 2008",
       "endPeriod": "June 2009",
@@ -133,7 +133,7 @@
     {
       "companyName": "Yahoo!",
       "companyUrl": "https://www.linkedin.com/company/1288?trk=prof-exp-company-name",
-      "companyLogo": "images/organization-logos/yahoo.png",
+      "companyLogo": "images/logos/yahoo.png",
       "title": "Executive Vice President Network Division",
       "startPeriod": "May 2001",
       "endPeriod": "June 2008",
@@ -155,7 +155,7 @@
     {
       "companyName": "Warner Bros.",
       "companyUrl": "https://www.linkedin.com/company/2470?trk=prof-exp-company-name",
-      "companyLogo": "images/organization-logos/warnerbros.png",
+      "companyLogo": "images/logos/warnerbros.png",
       "title": "Vice President Online",
       "startPeriod": "September 1994",
       "endPeriod": "March 2000",
@@ -304,7 +304,7 @@
     {
       "name": "University of Pennsylvania - The Wharton School",
       "url": "https://www.linkedin.com/edu/school?id=19329&trk=prof-edu-school-name",
-      "logo": "images/organization-logos/university-pennsylvania.png",
+      "logo": "images/logos/university-pennsylvania.png",
       "title": "Bachelor of Science, Economics",
       "startPeriod": "1988",
       "endPeriod": "June 1992"

@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html ng-app="linkedInApp">
 	<head>
 		<meta charset='utf-8'/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,26 +14,188 @@
 	</head>
 	<body ng-controller="content-controller">
 		<div id="timeline">
-			<img id="cover" src="images/cover.jpg" ng-src="{{cover}}" alt="cover" />
+			<img id="cover" ng-src="{{cover}}" alt="cover" />
+			<!--page content-->
 			<div id="profile-content">
-				<div id="profile-topcard">
-					<div class="row profile-main">
-						<img class="avatar col" src="images/avatar.jpg" ng-src="{{avatar}}" alt="avatar" />
-						<div class="profile-overview col">
+				<!--profile-top-->
+				<div id="profile-top">
+					<!--profile-card-->
+					<div class="row profile-card" style="padding: 0; margin: 0">
+						<!--avatar-->
+						<img class="avatar col m3" ng-src="{{avatar}}" alt="avatar" />
+						<!--end avatar-->
+						<!--overview-->
+						<div class="profile-overview col m9">
+							<!--overview top-->
 							<div class="overview-info row">
 								<div style="display: inline-block; float: left;">
-                                <h1 class="overview-name">{{name[0] + ' ' + name[1]}}</h1>
-                                <p class="overview-headline">{{headline}}</p>
-                                <p class="overview-demographics">
-                                    <a href="https://www.linkedin.com/vsearch/p?f_G={{workInfo.area}}&trk=prof-0-ovw-location">{{workInfo.area}}</a> |
-                                    <a href="https://www.linkedin.com/vsearch/p?f_I={{workInfo.industry}}&trk=prof-0-ovw-industry">{{workInfo.industry}}</a>
-                                </p>
-                                <table class="overview-summary">
+	                                <h1 class="overview-name">{{name[0] + ' ' + name[1]}}</h1>
+	                                <p class="overview-possition">{{possition}}</p>
+	                                <p class="overview-demographics">
+	                                    <a href="https://www.linkedin.com/vsearch/p?f_G={{workInfo.area}}&trk=prof-0-ovw-location">{{work.location}}</a> |
+	                                    <a href="https://www.linkedin.com/vsearch/p?f_I={{workInfo.industry}}&trk=prof-0-ovw-industry">{{work.industry}}</a>
+	                                </p>
+	                                <table class="overview-summary">
+	                                    <tr>
+	                                        <th scope="row"><a href="">Current</a></th>
+	                                        <td>
+	                                            <a ng-repeat="exp in experience | filter: {endPeriod: 'Present'} | limitTo: 3">
+	                                                {{exp.companyName}}<span ng-show="!$last">, </span>
+	                                            </a>
+	                                        </td>
+	                                    </tr>
+	                                    <tr>
+	                                        <th scope="row"><a href="">Previous</a></th>
+	                                        <td>
+	                                            <a ng-repeat="exp in experience | filter: {endPeriod: '!Present'} | limitTo: 3">
+	                                                {{exp.companyName}}<span ng-show="!$last">, </span>
+	                                            </a>
+	                                        </td>
+	                                    </tr>
+	                                    <tr>
+	                                        <th scope="row"><a href="">Education</a></th>
+	                                        <td>
+	                                            <a ng-repeat="edu in education | limitTo: 1">{{edu.name}}</a>
+	                                        </td>
+	                                    </tr>
+                                	</table>
+								</div>
+								<div style="display: inline-block; float: right;">
+                                	<img src="images/commons/influencer.png"/>
+                            	</div>
 							</div>
-						</div>										
+							<!--end overview top-->
+							<!--overview follow-->
+							<div id="profile-action" class="row">
+								<!--follow button-->
+	                            <div style="display: inline-block; float: left;">
+	                                <div style="display: inline-block">
+	                                    <a id="follow-btn" class="waves-effect waves-light btn">Follow</a>
+	                                    <a id="arrow-btn" class="waves-effect waves-light btn"><i class="arrow-down"></i></a>
+	                                </div>
+	                                <div id="supplemental-action">
+	                                    <p>Know <span>{{name[0]}}</span>?
+	                                        <a>Connect</a>
+	                                    </p>
+	                                </div>
+	                            </div>
+	                            <!--end follow button-->
+	                            <!--follower-->
+	                            <div class="member-connections" style="display: inline-block; float: right;">
+	                                <strong>{{followers | number}}</strong> followers
+	                            </div>
+	                            <!--end follower-->
+                        	</div>
+                        	<!--end overview follow-->
+						</div>
+						<!--end overview-->
 					</div>
+					<!--end profile-card-->
+					<!--profile-extra-->
+					<div class="row profile-extra">
+						<!--profile link-->
+	                    <div class="col link valign-wrapper">
+	                        <i id="linkA-bullet" class="valign"></i>
+	                        <a class="link-ref valign" href="{{profileUrl}}">
+	                            <p>{{profileURL}}</p>
+	                        </a>
+	                    </div>
+	                    <!--end profile link-->
+	                    <!--contact info-->
+	                    <div class="col right more-info valign-wrapper link">
+	                        <i id="linkB-bullet" class="valign"></i>
+	                        <a class="link-ref valign" href="">
+	                            <p>Contact Info</p>
+	                        </a>
+	                    </div>
+	                    <!-- end contact info-->
+                	</div>
+                	<!--end profile-extra-->
 				</div>
-			<div id="profile-content">
+				<!--end profile-top-->
+				<!--profile-->
+				<div class="row">
+					<!--left-->
+					<div id="profile" class="col">
+						<!--background-->
+						<div class="card-body">
+							<h2 class="card-title">Background</h2>
+                        	<div id="background-content" class="card-content">
+                        		<!--summary-->
+                        		<div class="background-section">
+	                                <div class="valign-wrapper background-section-header">
+	                                    <img src=".\images\commons\header-summary.png" class="valign" />
+	                                    <h3 class="valign">Summary</h3>
+	                                </div>
+	                                <p class="description">{{summary}}</p>
+                            	</div>
+                            	<!--end summary-->
+                            	<!--experience-->
+	                            <div class="background-section">
+	                                <div class="valign-wrapper background-section-header">
+	                                    <img src=".\images\commons\header-experience.png" class="valign" />
+	                                    <h3 class="valign">Experience</h3>
+	                                </div>
+	                                <!--loop each work-->
+	                                <div ng-repeat="exp in experience">
+	                                    <div class="row info-bar">
+	                                    	<!--info each work-->
+	                                        <div style="display: inline-block">
+	                                            <a href="https://www.linkedin.com/title/{{exp.title}}?trk=mprofile_title"
+	                                                title="Learn more about this title" class="info-title">{{exp.title}}</a>
+	                                            <a href="{{exp.companyUrl}}" class="info-subtitle">{{exp.companyName}}</a>
+	                                            <span class="info-date">{{exp.startPeriod}} – {{exp.endPeriod}}
+	                                                <span ng-show="exp.duration != ''">({{exp.duration}})</span>
+	                                            <span ng-show="exp.location != ''"> | {{exp.location}}</span>
+	                                            </span>
+	                                        </div>
+	                                        <div class="info-logo" ng-show="exp.companyLogo != ''">
+	                                            <a href="{{exp.companyUrl}}">
+	                                               <img src="{{exp.companyLogo}}" /> 
+	                                            </a>                                    
+	                                        </div>
+	                                        <!--end info each work-->
+	                                    </div>
+	                                    <p class="description">{{exp.description}}</p>
+	                                </div>
+	                                <!--end loop each work-->
+	                            </div>
+	                            <!--end experience-->
+	                            <!--volunteer-->
+	                            <div class="background-section">
+	                                <div class="valign-wrapper background-section-header">
+	                                    <img src=".\images\commons\header-volunteerExperience.png" class="valign" />
+	                                    <h3 class="valign">Volunteer Experience & Causes</h3>
+	                                </div>
+	                                <div id="background-volunteerexp">
+	                                    <h4>Causes {{name[0]}} cares about</h4>
+	                                    <ul class="browser-default">
+	                                        <li ng-repeat="c in caredCauses">{{c}}</li>
+	                                    </ul>
+	                                    <h4>Organizations {{name[0]}} supports</h4>
+	                                    <ul class="browser-default" style="margin-bottom: 0px !important;">
+	                                        <li ng-repeat="org in supportedOrganizations">
+	                                            <a href="https://www.linkedin.com/vsearch/p?company={{org}}&trk=prof-vol_interests-orgs-link">
+	                                                {{org}}
+	                                            </a>
+	                                        </li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+								<!-- end volunteer-->
+                        	</div>
+						</div>
+						<!--end background-->
+					</div>
+					<!--end left-->
+					<!--right nothing-->
+					<div id="right-column" class="col card-body">
+                	</div>
+                	<!--end right-->
+				</div>
+				<!--end profile-->
+			</div>
+			<!--end page content-->
 		</div>
 		
 		
@@ -46,3 +209,4 @@
 		<script src="js/app.js"></script>
 	</body>
 </html>
+
