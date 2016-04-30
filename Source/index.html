@@ -20,15 +20,15 @@
 				<!--profile-top-->
 				<div id="profile-top">
 					<!--profile-card-->
-					<div class="row profile-card" style="padding: 0; margin: 0">
+					<div class="row profile-card">
 						<!--avatar-->
 						<img class="avatar col m3" ng-src="{{avatar}}" alt="avatar" />
 						<!--end avatar-->
 						<!--overview-->
 						<div class="profile-overview col m9">
 							<!--overview top-->
-							<div class="overview-info row">
-								<div style="display: inline-block; float: left;">
+							<div class="row">
+								<div class="inline-block-left">
 	                                <h1 class="overview-name">{{name[0] + ' ' + name[1]}}</h1>
 	                                <p class="overview-possition">{{possition}}</p>
 	                                <p class="overview-demographics">
@@ -60,16 +60,16 @@
 	                                    </tr>
                                 	</table>
 								</div>
-								<div style="display: inline-block; float: right;">
-                                	<img src="images/commons/influencer.png"/>
+								<div class="inline-block-right">
+                                	<img class="inline-block-right" src="images/commons/influencer.png"/>
                             	</div>
 							</div>
 							<!--end overview top-->
 							<!--overview follow-->
 							<div id="profile-action" class="row">
 								<!--follow button-->
-	                            <div style="display: inline-block; float: left;">
-	                                <div style="display: inline-block">
+	                            <div class="follow-button" >
+	                                <div class="inline-block">
 	                                    <a id="follow-btn" class="waves-effect waves-light btn">Follow</a>
 	                                    <a id="arrow-btn" class="waves-effect waves-light btn"><i class="arrow-down"></i></a>
 	                                </div>
@@ -81,7 +81,7 @@
 	                            </div>
 	                            <!--end follow button-->
 	                            <!--follower-->
-	                            <div class="member-connections" style="display: inline-block; float: right;">
+	                            <div class="member-connections" class="inline-block-right">
 	                                <strong>{{followers | number}}</strong> followers
 	                            </div>
 	                            <!--end follower-->
@@ -140,7 +140,7 @@
 	                                <div ng-repeat="exp in experience">
 	                                    <div class="row info-bar">
 	                                    	<!--info each work-->
-	                                        <div style="display: inline-block">
+	                                        <div class="inline-block">
 	                                            <a href="https://www.linkedin.com/title/{{exp.title}}?trk=mprofile_title"
 	                                                title="Learn more about this title" class="info-title">{{exp.title}}</a>
 	                                            <a href="{{exp.companyUrl}}" class="info-subtitle">{{exp.companyName}}</a>
@@ -167,12 +167,12 @@
 	                                    <img src=".\images\commons\header-volunteerExperience.png" class="valign" />
 	                                    <h3 class="valign">Volunteer Experience & Causes</h3>
 	                                </div>
-	                                <div id="background-volunteerexp">
-	                                    <h4>Causes {{name[0]}} cares about</h4>
+	                                <div id="volunteerexp">
+	                                    <p>Causes {{name[0]}} cares about</p>
 	                                    <ul class="browser-default">
 	                                        <li ng-repeat="c in caredCauses">{{c}}</li>
 	                                    </ul>
-	                                    <h4>Organizations {{name[0]}} supports</h4>
+	                                    <p>Organizations {{name[0]}} supports</p>
 	                                    <ul class="browser-default" style="margin-bottom: 0px !important;">
 	                                        <li ng-repeat="org in supportedOrganizations">
 	                                            <a href="https://www.linkedin.com/vsearch/p?company={{org}}&trk=prof-vol_interests-orgs-link">
@@ -183,6 +183,64 @@
 	                                </div>
 	                            </div>
 								<!-- end volunteer-->
+
+								<!--skill-->
+								<div class="background-section">
+									<div class="valign-wrapper background-section-header">
+										<img src=".\images\commons\header-skill.png" class="valign" />
+										<h3 class="valign">Skill</h3>
+									</div>
+									<div>
+										<div>
+											<p class="skills-part">Top Skills</p>
+											<div class="skill-pill" ng-repeat="skill in skills | limitTo: 10">
+												<a class="btnskill-percent">{{skill.endorsers}}</a>
+												<a class="btnskill-description" href="https://www.linkedin.com/topic/{{skill.name}}?trk=mprofile_topic">
+													{{skill.name}}
+												</a>
+											</div>
+										</div>
+										<div id="different-skills" ng-show="skills.length > 10">
+											<p class="skills-part">{{name[0]}} also knows about...</p>
+											<div class="skill-pill" ng-repeat="skill in skills" ng-show="$index >= 10">
+												<a class="btnskill-percent">{{skill.endorsers}}</a>
+												<a class="btnskill-description" href="https://www.linkedin.com/topic/{{skill.name}}?trk=mprofile_topic">
+													{{skill.name}}
+												</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<!-- end skill-->
+
+								<!--education-->
+								<div class="background-section">
+									<div class="valign-wrapper background-section-header">
+										<img src=".\images\commons\header-education.png" class="valign" />
+										<h3 class="valign">Education</h3>
+									</div>
+									<!--info education-->
+									<div>
+										<div class="row info-bar" ng-repeat="edu in education">
+											<div class="inline-block">
+												<a href="{{edu.url}}" class="info-title" title="More Details for this school">
+													{{edu.name}}</a>
+												<a class="info-subtitle" href="http://www.linkedin.com/edu/fos?id=100990&amp;trk=prof-edu-field_of_study"
+												   title="Explore this field of study">{{edu.title}}</a>
+												<span class="info-date">{{edu.startPeriod}} – {{edu.endPeriod}}</span>
+											</div>
+											<div class="info-logo">
+												<a href="{{edu.url}}">
+													<img src="{{edu.logo}}" height="60" />
+												</a>
+											</div>
+										</div>
+									</div>
+									<!--end info education-->
+								</div>
+								<!-- end education-->
+
                         	</div>
 						</div>
 						<!--end background-->
@@ -205,7 +263,7 @@
 		<script src="js/angular.min.js"></script>
 		<!-- Materialize Js -->
 		<script src="js/materialize.min.js"></script>
-		<!-- App Js -->
+		<!-- My Js -->
 		<script src="js/app.js"></script>
 	</body>
 </html>

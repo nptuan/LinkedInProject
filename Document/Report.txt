@@ -1,4 +1,0 @@
-﻿Đã thực hiện đầy đủ chức năng: 8đ
-Ràng buộc dữ liệu AngularJS: 2đ
-Các từ khóa đã tham khảo ng-app; ng-controller; ng-model; ng-pattern; regular expression; ng-click; ng-blur
-Tự đánh giá: 10đ

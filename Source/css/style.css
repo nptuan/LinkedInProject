@@ -87,7 +87,8 @@ body {
 }
 
 .profile-card {
-    margin: 0;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 .profile-image {
     padding: 0 !important;
@@ -101,10 +102,19 @@ body {
     padding: 25px 40px !important;
     position: relative;
 }
-/******OVERVIEW-TOP****************************/
-.overview-info {
-    margin-bottom: 5px;
+/**********************************/
+.inline-block-left {
+    display: inline-block !important;
+    float: left !important;
 }
+.inline-block-right {
+    display: inline-block !important;
+    float: right !important;
+}
+.inline-block {
+    display: inline-block !important;
+}
+
 /******OVERVIEW-TOPLEFT******/
 .overview-name {
     margin: 0;
@@ -120,6 +130,11 @@ body {
     padding: 0px !important;
     margin: 0px !important;
 }
+.follow-button {
+    display: inline-block;
+    float: left;
+}
+
 #follow-btn {
     float: left;
     border: 1px solid #1b5480;
@@ -269,12 +284,7 @@ body {
 #background-content {
     padding: 0px 20px 0px 20px;
 }
-.background-section {
-    margin-top: 16px;
-    margin-bottom: 8px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #e8e8e8;
-}
+
 .background-last-section {
     border: none;
 }
@@ -340,36 +350,88 @@ body {
     max-height: 60px;
 }
 /***************volunteer*******************/
-#background-volunteerexp {
+#volunteerexp {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#background-volunteerexp h4 {
+#volunteerexp p {
     font-size: 16px;
     font-weight: bold;
     line-height: 18px;
     color: #000;
-    padding: 0;
+    padding: 0px;
     margin-top: 0px;
     margin-bottom: 4px;
 }
-#background-volunteerexp ul {
+#volunteerexp ul {
     margin: 10px 0px 30px 0px;
-    padding-top: 10px 0px 0px 0px;
-    list-style-type: disc;
+    padding-top: 10px;
     list-style-position: inside;
 }
-#background-volunteerexp li {
+#volunteerexp li {
     font-size: 14px;
     line-height: 17px;
     color: #333;
     font-weight: normal;
 }
-#background-volunteerexp a {
+#volunteerexp a {
     font: inherit;
     color: #080;
 }
-#background-volunteerexp a:hover {
+#volunteerexp a:hover {
     text-decoration: underline;
 }
 /**********************************************/
+/**********************************************/
+.skill-pill {
+    height: 25px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.skill-pill a {
+    float: left;
+    height: inherit;
+    line-height: 24px;
+}
+.skills-part {
+    font-size: 15px;
+    line-height: 16px;
+    color: #434649;
+    margin-top: 30px;
+    margin-bottom: 20;
+}
+.btnskill-percent {
+    padding: 0px 2px;
+    background-color: #1ba8e5;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-radius: 3px 0px 0px 3px;
+
+    min-width: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+.btnskill-percent:hover {
+    background-color: #069;
+}
+.btnskill-description {
+    padding: 0px 2px;
+    background-color: #f0f0f0;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-radius: 0px 3px 3px 0px;
+
+    min-width: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+.btnskill-description:hover {
+    color: #069;
+}
+
+#different-skills .skill-pill {
+    display: inline-block;
+}
