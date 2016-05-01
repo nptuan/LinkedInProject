@@ -29,12 +29,63 @@
 							<!--overview top-->
 							<div class="row">
 								<div class="inline-block-left">
-	                                <h1 class="overview-name">{{name[0] + ' ' + name[1]}}</h1>
-	                                <p class="overview-possition">{{possition}}</p>
-	                                <p class="overview-demographics">
+	                                <h1 class="overview-name inline-block">{{name[0] + ' ' + name[1]}}</h1>
+									<!--edit name-->
+									<button class="edit-name-button" ng-click="editNameShow()">
+										<img src="images/commons/edit.png">
+									</button>
+									<form class="editNameBox" ng-show="showEditName">
+										<strong class="edit-name-form"></strong>
+										<label>Name</label></br>
+										<input class="editNameText" type="text" ng-model="editFirstName" maxlength="20">
+										<input class="editNameText" type="text" ng-model="editLastName" maxlength="20"></br>
+										<a class="btn-save" class="waves-effect waves-light btn" ng-click="editNameSave()">Save</a>
+										<a class="btn-cancel" ng-click="showEditName=false">
+											Cancel
+										</a>
+									</form>
+									</br>
+									<!--end edit-->
+	                                <p class="overview-possition inline-block">{{possition}}</p>
+									<!--edit position-->
+									<button class="edit-position-button" ng-click="editPositionShow()">
+										<img src="images/commons/edit.png">
+									</button>
+									<form class="editPositionBox" ng-show="showEditPosition">
+										<strong class="edit-position-form"></strong>
+										<label>Your professional headline</label></br>
+										<input class="editPositionText" type="text" ng-model="editPosition" maxlength="30"></br>
+										<a class="btn-save" class="waves-effect waves-light btn" ng-click="editPositionSave()">Save</a>
+										<a class="btn-cancel" ng-click="showEditPosition=false">
+											Cancel
+										</a>
+									</form>
+									</br>
+									<!--end edit-->
+	                                <p class="overview-demographics inline-block">
 	                                    <a href="https://www.linkedin.com/vsearch/p?f_G={{workInfo.area}}&trk=prof-0-ovw-location">{{work.location}}</a> |
 	                                    <a href="https://www.linkedin.com/vsearch/p?f_I={{workInfo.industry}}&trk=prof-0-ovw-industry">{{work.industry}}</a>
 	                                </p>
+									<!--edit location and industry-->
+									<button class="edit-location-button" ng-click="editLocationShow()">
+										<img src="images/commons/edit.png">
+									</button>
+									<form class="editLocationBox" ng-show="showEditLocation">
+										<strong class="edit-location-form"></strong>
+										<label>Location</label></br>
+										<input class="editLocationText" type="text" ng-model="editLocation" maxlength="30"></br>
+										<label>Industry</label></br>
+										<input class="editIndustryText" type="text" ng-model="editIndustry" maxlength="20"></br>
+										<a class="btn-save" class="waves-effect waves-light btn" ng-click="editLocationSave()">Save</a>
+										<a class="btn-cancel" ng-click="showEditLocation=false">
+											Cancel
+										</a>
+									</form>
+									</br>
+									<!--end edit-->
+
+
+
 	                                <table class="overview-summary">
 	                                    <tr>
 	                                        <th scope="row"><a href="">Current</a></th>

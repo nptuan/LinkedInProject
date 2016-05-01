@@ -57,7 +57,7 @@ body {
     color: #66696a;
 }
 .overview-demographics a:hover {
-    color: #080;
+    color: #069;
 }
 .overview-summary {
     display: inline-block;
@@ -83,7 +83,7 @@ body {
     color: #333;   
 }
 .overview-summary td > a:hover {
-    color: #080;   
+    color: #069;
 }
 
 .profile-card {
@@ -150,7 +150,15 @@ body {
     border-radius: 0 3px 3px 0;
     border-left-width: 0px;
 }
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
 
+    border-top: 5px solid white;
+    display: inline-block;
+}
 #supplemental-action {
     display: inline-block;
     padding: 2px 0px 0px 10px;
@@ -220,7 +228,7 @@ body {
     display: inline-block;
 }
 .link:hover .link-ref {
-    color: #080 !important;
+    color: #069 !important;
 }
 
 #p {
@@ -376,7 +384,7 @@ body {
 }
 #volunteerexp a {
     font: inherit;
-    color: #080;
+    color: #069;
 }
 #volunteerexp a:hover {
     text-decoration: underline;
@@ -398,7 +406,7 @@ body {
     line-height: 16px;
     color: #434649;
     margin-top: 30px;
-    margin-bottom: 20;
+    margin-bottom: 20px;
 }
 .btnskill-percent {
     padding: 0px 2px;
@@ -425,7 +433,7 @@ body {
     border-radius: 0px 3px 3px 0px;
 
     min-width: 20px;
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
 }
 .btnskill-description:hover {
@@ -435,3 +443,266 @@ body {
 #different-skills .skill-pill {
     display: inline-block;
 }
+
+/*EDIT************************************/
+.btn-save {
+    font-weight: bold;
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    margin: 0;
+    overflow: visible;
+    text-decoration: none !important;
+    width: auto;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.35);
+    border-radius: 3px;
+    padding: 0 13px;
+    height: 31px;
+    line-height: 29px;
+    box-sizing: border-box;
+    font-size: 13px;
+    background-color: #287bbc !important;
+    border-color: #1b5480 !important;
+    white-space: nowrap;
+    display: inline-block !important;
+    zoom: 1;
+    vertical-align: middle;
+}
+.btn-cancel {
+    font-weight: bold;
+    color: #666;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    margin: 0;
+    overflow: visible;
+    text-decoration: none !important;
+    width: auto;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+    border-radius: 3px;
+    padding: 0 13px;
+    height: 31px;
+    line-height: 29px;
+    box-sizing: border-box;
+    font-size: 13px;
+    background-color: #f2f2f2 !important;
+    border-color: #a7a7a7 !important;
+    white-space: nowrap;
+    display: inline-block !important;
+    zoom: 1;
+    vertical-align: middle;
+}
+.btn-cancel:hover {
+    background-image: -webkit-linear-gradient(top, #e8e8e8 0%,#e3e3e3 13%,#d7d7d7 32%,#b9b9b9 71%,#a9a9a9 100%)!important;
+}
+/***Edit Name***/
+.profile-card:hover .edit-name-button {
+    display: inline-block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    }
+.edit-name-button {
+    display: none;
+}
+.edit-name-button:hover {
+    background-color: #00a0dc;
+}
+
+.edit-name-form {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #c9c9c9 transparent transparent;
+    border-width: 12px 12px 12px 5px;
+    overflow: visible;
+    content: "\0020";
+    position: absolute;
+    display: block;
+    background: none;
+    top: 0;
+    right: 100%;
+}
+.edit-name-form:after {
+    content: "\0020";
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.editNameBox {
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px !important;
+    border-color: #ededed #c9c9c9 #a4a4a4;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 15px 15px 15px;
+    background: #fff;
+    z-index: 10;
+}
+.editNameText {
+    border: 1px solid #ccc !important;
+    height: 2rem !important;
+    width: 100px !important;
+    border-radius: 3px !important;
+    margin-top: 5px !important;
+}
+/***end edit name**/
+
+
+/***Edit position***/
+.profile-card:hover .edit-position-button {
+    display: inline-block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+}
+.edit-position-button {
+    display: none;
+}
+.edit-position-button:hover {
+    background-color: #00a0dc;
+}
+
+.edit-position-form {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #c9c9c9 transparent transparent;
+    border-width: 12px 12px 12px 5px;
+    overflow: visible;
+    content: "\0020";
+    position: absolute;
+    display: block;
+    background: none;
+    top: 0;
+    right: 100%;
+}
+.edit-position-form:after {
+    content: "\0020";
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.editPositionBox {
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px !important;
+    border-color: #ededed #c9c9c9 #a4a4a4;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 15px 15px 15px;
+    background: #fff;
+    z-index: 10;
+}
+.editPositionText {
+    border: 1px solid #ccc !important;
+    height: 2rem !important;
+    border-radius: 3px !important;
+    margin-top: 5px !important;
+}
+/***end edit position**/
+
+/***Edit location***/
+.profile-card:hover .edit-location-button {
+    display: inline-block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+}
+.edit-location-button {
+    display: none;
+}
+.edit-location-button:hover {
+    background-color: #00a0dc;
+}
+
+.edit-location-form {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #c9c9c9 transparent transparent;
+    border-width: 12px 12px 12px 5px;
+    overflow: visible;
+    content: "\0020";
+    position: absolute;
+    display: block;
+    background: none;
+    top: 0;
+    right: 100%;
+}
+.edit-location-form:after {
+    content: "\0020";
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.editLocationBox {
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px !important;
+    border-color: #ededed #c9c9c9 #a4a4a4;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 15px 15px 15px;
+    background: #fff;
+    z-index: 10;
+}
+.editLocationText {
+    border: 1px solid #ccc !important;
+    height: 2rem !important;
+    border-radius: 3px !important;
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+}
+.editIndustryText {
+    border: 1px solid #ccc !important;
+    height: 2rem !important;
+    border-radius: 3px !important;
+    margin-top: 5px !important;
+}
+/***end edit location**/
+
+
+
+

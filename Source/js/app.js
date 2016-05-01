@@ -32,6 +32,44 @@ linkedInApp.controller('content-controller', ['$scope','$http',
             $scope.skills = data.skills;
             
             $scope.education = data.education;
+
+
+
+
+
+            $scope.showEditName = false;
+            $scope.editNameShow = function() {
+                $scope.editFirstName = $scope.name[0];
+                $scope.editLastName = $scope.name[1];
+                $scope.showEditName = true;
+            };
+            $scope.editNameSave = function() {
+                $scope.name[0] = $scope.editFirstName;
+                $scope.name[1] = $scope.editLastName;
+                $scope.showEditName = false;
+            };
+
+            $scope.showEditPosition = false;
+            $scope.editPositionShow = function() {
+                $scope.editPosition = $scope.possition;
+                $scope.showEditPosition = true;
+            };
+            $scope.editPositionSave = function() {
+                $scope.possition = $scope.editPosition;
+                $scope.showEditPosition = false;
+            };
+
+            $scope.showEditLocation = false;
+            $scope.editLocationShow = function() {
+                $scope.editLocation = $scope.work.location;
+                $scope.editIndustry = $scope.work.industry;
+                $scope.showEditLocation = true;
+            };
+            $scope.editLocationSave = function() {
+                $scope.work.location = $scope.editLocation;
+                $scope.work.industry = $scope.editIndustry;
+                $scope.showEditLocation = false;
+            };
             
         });
     }]);
