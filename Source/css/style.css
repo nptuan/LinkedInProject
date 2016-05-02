@@ -6,9 +6,9 @@ body {
 } 
 
 #cover {
-    height: 404px;
+    height: 400px;
     width: 100%;
-    min-width: 974px;
+    min-width: 975px;
 }
 .avatar {
     padding: 0 !important;
@@ -20,7 +20,7 @@ body {
     left: 0;
     right: 0;
     margin: 0px auto;
-    width: 974px;
+    width: 975px;
 }
 
 #profile-top {
@@ -29,7 +29,7 @@ body {
     background-image: -o-linear-gradient(rgba(255,255,255,0.85),#ffffff 65%,#ffffff);
     background-image: linear-gradient(rgba(255,255,255,0.85),#ffffff 65%,#ffffff);
     background-color: transparent;
-    margin-bottom: 10px;
+    margin-bottom: 5px !important;
     box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -99,7 +99,7 @@ body {
 .profile-overview {
     width: 734px;
     height: 235px;
-    padding: 25px 40px !important;
+    padding: 25px 20px 25px 40px !important;
     position: relative;
 }
 /**********************************/
@@ -119,9 +119,9 @@ body {
 .overview-name {
     margin: 0;
     padding: 0;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
-    line-height: 24px;
+    line-height: 25px;
     color: #000;
 }
 
@@ -138,17 +138,14 @@ body {
 #follow-btn {
     float: left;
     border: 1px solid #1b5480;
-    border-radius: 3px 0 0 3px;
-    
-    padding: 0 13px;
+    border-radius: 5px 0 0 5px;
 }
 #arrow-btn {  
     float: left;
-    width: 31px;
+    width: 35px;
     padding: 0;
     border: 1px solid #1b5480;
-    border-radius: 0 3px 3px 0;
-    border-left-width: 0px;
+    border-radius: 0 5px 5px 0;
 }
 .arrow-down {
     width: 0;
@@ -165,9 +162,8 @@ body {
     vertical-align: top;
 }
 #supplemental-action p, a {
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
     margin: 0;
     padding: 0;
     
@@ -205,17 +201,20 @@ body {
     clear: both;
     border-top: 1px dashed #ccc;
     background: #f6f6f6;
+    margin-bottom: 10px !important;
 }
 .more-info {
-    border-left: 1px solid #ccc;
+    padding: 5px 10px 5px 10px !important;
+    border-left: 2px solid #ccc;
     background-color: #ececec;
-    background-image: -webkit-linear-gradient(top, #ececec 0%,#e1e1e1 100%);
-    background-image: -moz-linear-gradient(top, #ececec 0%,#e1e1e1 100%);
-    background-image: -o-linear-gradient(top, #ececec 0%,#e1e1e1 100%);
-    background-image: linear-gradient(top, #ececec 0%,#e1e1e1 100%);
-    height: 38px; 
+    background-image: -webkit-linear-gradient(top, #ececec 0%, #e1e1e1 100%);
+    background-image: -moz-linear-gradient(top, #ececec 0%, #e1e1e1 100%);
+    background-image: -o-linear-gradient(top, #ececec 0%, #e1e1e1 100%);
+    height: 38px;
     width: 122px;
+    text-align: center;
 }
+
 /**********************************************/
 .link {
     height: 38px; 
@@ -231,26 +230,25 @@ body {
     color: #069 !important;
 }
 
-#p {
-    background: url('../images/commons/link-idle.png') no-repeat;
-    width: 12px;
-    height: 12px;
-    margin-left: 21px;
+#link-profile {
+    background: url('../images/commons/logo-in.png') no-repeat;
+    width: 15px;
+    height: 11px;
     cursor: pointer;
     display: inline-block;
 }
-.link:hover #linkA-bullet {
-    background: url('../images/commons/link-hover.png') no-repeat;
+.link:hover #link-profile {
+    background: url('../images/commons/logo-in-hover.png') no-repeat;
 }
 
-#linkB-bullet {
+#link-contact {
     background: url('../images/commons/contact-idle.png') no-repeat;
     width: 15px;
     height: 11px;
     cursor: pointer;
     display: inline-block;
 }
-.link:hover #linkB-bullet {
+.link:hover #link-contact {
     background: url('../images/commons/contact-hover.png') no-repeat;
 }
 
@@ -285,8 +283,8 @@ body {
     font-size: 13px;
     line-height: 17px;
     font-weight: bold;
-    padding: 7.5px 20px;
-    margin: 0px;
+    padding: 8px 35px 8px 35px;
+    margin: 0px 0px 10px 0px;
 }
 /*****************background*******************/
 #background-content {
@@ -296,8 +294,8 @@ body {
 .background-last-section {
     border: none;
 }
-.background-section-header {  
-    margin-bottom: -10px;
+.background-section-header {
+    margin-top: 10px;
 }
 .background-section-header > h3 {
     display: inline;
@@ -312,6 +310,7 @@ body {
     font-size: 13px;
     line-height: 17px;
     font-weight: normal;
+    color: #333;
 }
 /**********************************************/
 /***************Experience***************/
@@ -336,7 +335,7 @@ body {
     font-size: 14px;
     font-weight: normal;
     line-height: 16px;
-    color: #96999c;
+    color: #434649;
 }
 .info-subtitle:hover {
     color: #006fa6;
@@ -468,6 +467,11 @@ body {
     display: inline-block !important;
     zoom: 1;
     vertical-align: middle;
+}
+.btn-save:hover {
+    background-image: -webkit-linear-gradient(top, #2672ae 0%,#1e4f7e 100%);
+    background-image: -moz-linear-gradient(top, #2672ae 0%,#1e4f7e 100%);
+    background-image: -o-linear-gradient(top, #2672ae 0%,#1e4f7e 100%);
 }
 .btn-cancel {
     font-weight: bold;
@@ -702,6 +706,268 @@ body {
     margin-top: 5px !important;
 }
 /***end edit location**/
+
+/***Edit summary***/
+.card-content:hover .edit-summary-button {
+    display: block;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    margin-left: auto;
+}
+.edit-summary-button {
+    display: none;
+}
+.edit-summary-button:hover {
+    background-color: #00a0dc;
+}
+
+.edit-summary-form {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #c9c9c9 transparent transparent;
+    border-width: 12px 12px 12px 5px;
+    overflow: visible;
+    content: "\0020";
+    position: absolute;
+    display: block;
+    background: none;
+    top: 0;
+    right: 100%;
+}
+.edit-summary-form:after {
+    content: "\0020";
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.editSummaryBox {
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px !important;
+    border-color: #ededed #c9c9c9 #a4a4a4;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 15px 15px 15px;
+    background: #fff;
+    z-index: 10;
+}
+.editSummaryText {
+    border: 1px solid #ccc !important;
+    height: 2rem !important;
+    border-radius: 3px !important;
+    margin-top: 5px !important;
+}
+/***end edit summary**/
+
+
+/***Edit current***/
+.profile-card:hover .edit-current-button {
+    display: block;
+    position: relative;
+    height: 17px;
+    width: 17px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    margin-left: auto;
+}
+.edit-current-button {
+    display: none;
+}
+.edit-current-button:hover {
+    background-color: #00a0dc;
+}
+/***end Edit current***/
+
+/***Edit previous***/
+.profile-card:hover .edit-previous-button {
+    display: block;
+    position: relative;
+    height: 17px;
+    width: 17px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    margin-left: auto;
+}
+.edit-previous-button {
+    display: none;
+}
+.edit-previous-button:hover {
+    background-color: #00a0dc;
+}
+/***end Edit previous***/
+
+/***Edit education***/
+.profile-card:hover .edit-education-button {
+    display: block;
+    position: relative;
+    height: 17px;
+    width: 17px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    margin-left: auto;
+}
+.edit-education-button {
+    display: none;
+}
+.edit-education-button:hover {
+    background-color: #00a0dc;
+}
+/***end Edit education***/
+
+/***Edit experience***/
+.card-content:hover .edit-experience-button {
+    display: block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    margin-left: auto;
+}
+.edit-experience-button {
+    display: none;
+}
+.edit-experience-button:hover {
+    background-color: #00a0dc;
+}
+
+.edit-experience-form {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #c9c9c9 transparent transparent;
+    border-width: 12px 12px 12px 5px;
+    overflow: visible;
+    content: "\0020";
+    position: absolute;
+    display: block;
+    background: none;
+    top: 0;
+    right: 100%;
+}
+.edit-experience-form:after {
+    content: "\0020";
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.editExperienceBox {
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px !important;
+    border-color: #ededed #c9c9c9 #a4a4a4;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 15px 15px 15px;
+    background: #fff;
+    z-index: 10;
+}
+.editExperienceText {
+    border: 1px solid #ccc !important;
+    height: 2rem !important;
+    border-radius: 3px !important;
+    margin-top: 5px !important;
+}
+/***end edit experience**/
+
+
+/***Edit education***/
+.card-content:hover .edit-education-button {
+    display: block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    margin-left: auto;
+}
+.edit-education-button {
+    display: none;
+}
+.edit-education-button:hover {
+    background-color: #00a0dc;
+}
+
+.edit-education-form {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #c9c9c9 transparent transparent;
+    border-width: 12px 12px 12px 5px;
+    overflow: visible;
+    content: "\0020";
+    position: absolute;
+    display: block;
+    background: none;
+    top: 0;
+    right: 100%;
+}
+.edit-education-form:after {
+    content: "\0020";
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.editEducationBox {
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px !important;
+    border-color: #ededed #c9c9c9 #a4a4a4;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 15px 15px 15px;
+    background: #fff;
+    z-index: 10;
+}
+.editEducationText {
+    border: 1px solid #ccc !important;
+    height: 2rem !important;
+    border-radius: 3px !important;
+    margin-top: 5px !important;
+}
+/***end edit education**/
 
 
 

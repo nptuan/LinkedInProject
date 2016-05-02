@@ -39,7 +39,7 @@
 										<label>Name</label></br>
 										<input class="editNameText" type="text" ng-model="editFirstName" maxlength="20">
 										<input class="editNameText" type="text" ng-model="editLastName" maxlength="20"></br>
-										<a class="btn-save" class="waves-effect waves-light btn" ng-click="editNameSave()">Save</a>
+										<a class="btn-save" ng-click="editNameSave()">Save</a>
 										<a class="btn-cancel" ng-click="showEditName=false">
 											Cancel
 										</a>
@@ -55,7 +55,7 @@
 										<strong class="edit-position-form"></strong>
 										<label>Your professional headline</label></br>
 										<input class="editPositionText" type="text" ng-model="editPosition" maxlength="30"></br>
-										<a class="btn-save" class="waves-effect waves-light btn" ng-click="editPositionSave()">Save</a>
+										<a class="btn-save" ng-click="editPositionSave()">Save</a>
 										<a class="btn-cancel" ng-click="showEditPosition=false">
 											Cancel
 										</a>
@@ -76,40 +76,68 @@
 										<input class="editLocationText" type="text" ng-model="editLocation" maxlength="30"></br>
 										<label>Industry</label></br>
 										<input class="editIndustryText" type="text" ng-model="editIndustry" maxlength="20"></br>
-										<a class="btn-save" class="waves-effect waves-light btn" ng-click="editLocationSave()">Save</a>
+										<a class="btn-save" ng-click="editLocationSave()">Save</a>
 										<a class="btn-cancel" ng-click="showEditLocation=false">
 											Cancel
 										</a>
 									</form>
 									</br>
 									<!--end edit-->
+									<table class="overview-summary">
 
 
 
-	                                <table class="overview-summary">
-	                                    <tr>
-	                                        <th scope="row"><a href="">Current</a></th>
-	                                        <td>
-	                                            <a ng-repeat="exp in experience | filter: {endPeriod: 'Present'} | limitTo: 3">
-	                                                {{exp.companyName}}<span ng-show="!$last">, </span>
-	                                            </a>
-	                                        </td>
-	                                    </tr>
-	                                    <tr>
-	                                        <th scope="row"><a href="">Previous</a></th>
-	                                        <td>
-	                                            <a ng-repeat="exp in experience | filter: {endPeriod: '!Present'} | limitTo: 3">
-	                                                {{exp.companyName}}<span ng-show="!$last">, </span>
-	                                            </a>
-	                                        </td>
-	                                    </tr>
-	                                    <tr>
-	                                        <th scope="row"><a href="">Education</a></th>
-	                                        <td>
-	                                            <a ng-repeat="edu in education | limitTo: 1">{{edu.name}}</a>
-	                                        </td>
-	                                    </tr>
-                                	</table>
+
+										<tr>
+											<th scope="row"><a href="">Current</a></th>
+											<td>
+												<a ng-repeat="exp in experience | filter: {endPeriod: 'Present'} | limitTo: 3">
+													{{exp.companyName}}<span ng-show="!$last">, </span>
+												</a>
+											</td>
+											<td>
+												<!--edit current work-->
+												<button class="edit-current-button" ng-click="editCurrentShow()">
+													<img src="images/commons/edit.png">
+												</button>
+												<!--end edit current work-->
+											</td>
+
+
+										</tr>
+										<tr>
+											<th scope="row"><a href="">Previous</a></th>
+											<td>
+												<a ng-repeat="exp in experience | filter: {endPeriod: '!Present'} | limitTo: 3">
+													{{exp.companyName}}<span ng-show="!$last">, </span>
+												</a>
+											</td>
+											<td>
+												<!--edit previous work-->
+												<button class="edit-previous-button" ng-click="editPreviousShow()">
+													<img src="images/commons/edit.png">
+												</button>
+												<!--end edit previous work-->
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><a href="">Education</a></th>
+											<td>
+												<a ng-repeat="edu in education | limitTo: 1">{{edu.name}}</a>
+											</td>
+											<td>
+												<!--edit education-->
+												<button class="edit-education-button" ng-click="editEducationShow()">
+													<img src="images/commons/edit.png">
+												</button>
+												<!--end edit education-->
+											</td>
+										</tr>
+
+
+
+
+									</table>
 								</div>
 								<div class="inline-block-right">
                                 	<img class="inline-block-right" src="images/commons/influencer.png"/>
@@ -146,17 +174,18 @@
 					<div class="row profile-extra">
 						<!--profile link-->
 	                    <div class="col link valign-wrapper">
-	                        <i id="linkA-bullet" class="valign"></i>
+	                        <i id="link-profile" class="valign">
+							</i>
 	                        <a class="link-ref valign" href="{{profileUrl}}">
-	                            <p>{{profileURL}}</p>
+	                            {{profileURL}}
 	                        </a>
 	                    </div>
 	                    <!--end profile link-->
 	                    <!--contact info-->
 	                    <div class="col right more-info valign-wrapper link">
-	                        <i id="linkB-bullet" class="valign"></i>
-	                        <a class="link-ref valign" href="">
-	                            <p>Contact Info</p>
+	                        <i id="link-contact" class="valign"></i>
+	                        <a class="link-ref valign" href="{{profileURL}}">
+	                            Contact Info
 	                        </a>
 	                    </div>
 	                    <!-- end contact info-->
@@ -177,18 +206,57 @@
 	                                <div class="valign-wrapper background-section-header">
 	                                    <img src=".\images\commons\header-summary.png" class="valign" />
 	                                    <h3 class="valign">Summary</h3>
+										<!--edit summary-->
+										<button class="edit-summary-button" ng-click="editSummaryShow()">
+											<img src="images/commons/edit.png">
+										</button>
+										<form class="editSummaryBox" ng-show="showEditSummary">
+											<strong class="edit-summary-form"></strong>
+											<label>Your professional headline</label></br>
+											<input class="editSummaryText" type="text" ng-model="editSummary" maxlength="30"></br>
+											<a class="btn-save" ng-click="editSummarySave()">Save</a>
+											<a class="btn-cancel" ng-click="showEditSummary=false">
+												Cancel
+											</a>
+										</form>
+										</br>
+										<!--end edit-->
 	                                </div>
 	                                <p class="description">{{summary}}</p>
                             	</div>
                             	<!--end summary-->
+
+
+
                             	<!--experience-->
-	                            <div class="background-section">
+	                            <div id="id-experience" class="background-section">
 	                                <div class="valign-wrapper background-section-header">
 	                                    <img src=".\images\commons\header-experience.png" class="valign" />
 	                                    <h3 class="valign">Experience</h3>
 	                                </div>
 	                                <!--loop each work-->
 	                                <div ng-repeat="exp in experience">
+										<button class="edit-experience-button" ng-click="editExperienceShow($index)">
+											<img src="images/commons/edit.png">
+										</button>
+										<form class="editExperienceBox" ng-show="showEditExperience[$index]">
+											<strong class="edit-experience-form"></strong>
+											<label>Company Name</label></br>
+											<input class="editExperienceText" type="text" ng-model="editExperience[$index].companyName" maxlength="30"></br>
+											<label>Position</label></br>
+											<input class="editExperienceText" type="text" ng-model="editExperience[$index].title" maxlength="30"></br>
+											<label>Start Period</label></br>
+											<input class="editExperienceText" type="text" ng-model="editExperience[$index].startPeriod" maxlength="30"></br>
+											<label>End Period</label></br>
+											<input class="editExperienceText" type="text" ng-model="editExperience[$index].endPeriod" maxlength="30"></br>
+											<label>Location</label></br>
+											<input class="editExperienceText" type="text" ng-model="editExperience[$index].location" maxlength="30"></br>
+											<label>Description</label></br>
+											<input class="editExperienceText" type="text" ng-model="editExperience[$index].description" maxlength="30"></br>
+											<a class="btn-save" ng-click="editExperienceSave($index)">Save</a>
+											<a class="btn-cancel" ng-click="showEditExperience[$index]=false">Cancel</a>
+										</form>
+										</br>
 	                                    <div class="row info-bar">
 	                                    	<!--info each work-->
 	                                        <div class="inline-block">
@@ -212,6 +280,8 @@
 	                                <!--end loop each work-->
 	                            </div>
 	                            <!--end experience-->
+
+
 	                            <!--volunteer-->
 	                            <div class="background-section">
 	                                <div class="valign-wrapper background-section-header">
@@ -266,7 +336,7 @@
 								<!-- end skill-->
 
 								<!--education-->
-								<div class="background-section">
+								<div id="id-education" class="background-section">
 									<div class="valign-wrapper background-section-header">
 										<img src=".\images\commons\header-education.png" class="valign" />
 										<h3 class="valign">Education</h3>
@@ -274,6 +344,29 @@
 									<!--info education-->
 									<div>
 										<div class="row info-bar" ng-repeat="edu in education">
+
+
+
+											<button class="edit-education-button" ng-click="editEducationShow($index)">
+												<img src="images/commons/edit.png">
+											</button>
+											<form class="editEducationBox" ng-show="showEditEducation[$index]">
+												<strong class="edit-education-form"></strong>
+												<label>Name</label></br>
+												<input class="editEducationText" type="text" ng-model="editEducation[$index].name" maxlength="30"></br>
+												<label>Position</label></br>
+												<input class="editEducationText" type="text" ng-model="editEducation[$index].title" maxlength="30"></br>
+												<label>Start Period</label></br>
+												<input class="editEducationText" type="text" ng-model="editEducation[$index].startPeriod" maxlength="30"></br>
+												<label>End Period</label></br>
+												<input class="editEducationText" type="text" ng-model="editEducation[$index].endPeriod" maxlength="30"></br>
+												<a class="btn-save" ng-click="editEducationSave($index)">Save</a>
+												<a class="btn-cancel" ng-click="showEditEducation[$index]=false">Cancel</a>
+											</form>
+											</br>
+
+
+
 											<div class="inline-block">
 												<a href="{{edu.url}}" class="info-title" title="More Details for this school">
 													{{edu.name}}</a>

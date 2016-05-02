@@ -7,7 +7,7 @@ linkedInApp.controller('content-controller', ['$scope','$http',
         window.sc = $scope;
         $scope.dummyUrl = "https://google.com";
     
-        $http.get('https://api.myjson.com/bins/40p2a').success(function (data) {
+        $http.get('https://api.myjson.com/bins/2sjy8').success(function (data) {
             //Read model from json data
             $scope.cover = data.cover;
             $scope.avatar = data.avatar;
@@ -70,6 +70,80 @@ linkedInApp.controller('content-controller', ['$scope','$http',
                 $scope.work.industry = $scope.editIndustry;
                 $scope.showEditLocation = false;
             };
-            
+
+            $scope.showEditSummary = false;
+            $scope.editSummaryShow = function() {
+                $scope.editSummary = $scope.summary;
+                $scope.showEditSummary = true;
+            };
+            $scope.editSummarySave = function() {
+                $scope.summary = $scope.editSummary;
+                $scope.showEditSummary = false;
+            };
+
+
+            $scope.editCurrentShow = function() {
+                $('html, body').animate({ scrollTop: $('#id-experience').offset().top }, 'slow');
+            };
+
+            $scope.editPreviousShow = function() {
+                $('html, body').animate({ scrollTop: $('#id-experience').offset().top }, 'slow');
+            };
+
+            $scope.editEducationShow = function() {
+                $('html, body').animate({ scrollTop: $('#id-education').offset().top }, 'slow');
+            };
+
+
+
+
+            $scope.showEditExperience = new Array($scope.experience.length).fill(false);
+            $scope.editExperience = $scope.experience;
+            $scope.editExperienceShow = function(index) {
+                $scope.editExperience[index].companyName = $scope.experience[index].companyName;
+                $scope.editExperience[index].title = $scope.experience[index].title;
+                $scope.editExperience[index].startPeriod = $scope.experience[index].startPeriod;
+                $scope.editExperience[index].endPeriod = $scope.experience[index].endPeriod;
+                $scope.editExperience[index].location = $scope.experience[index].location;
+                $scope.editExperience[index].description = $scope.experience[index].description;
+
+                $scope.showEditExperience[index] = true;
+            };
+
+            $scope.editExperienceSave = function(index) {
+                $scope.experience[index].companyName = $scope.editExperience[index].companyName;
+                $scope.experience[index].title = $scope.editExperience[index].title;
+                $scope.experience[index].startPeriod = $scope.editExperience[index].startPeriod;
+                $scope.experience[index].endPeriod = $scope.editExperience[index].endPeriod;
+                $scope.experience[index].location = $scope.editExperience[index].location;
+                $scope.experience[index].description = $scope.editExperience[index].description;
+
+
+                $scope.showEditExperience[index] = false;
+            };
+
+
+
+
+            $scope.showEditEducation = new Array($scope.education.length).fill(false);
+            $scope.editEducation = $scope.education;
+            $scope.editEducationShow = function(index) {
+                $scope.editEducation[index].name = $scope.education[index].name;
+                $scope.editEducation[index].title = $scope.education[index].title;
+                $scope.editEducation[index].startPeriod = $scope.education[index].startPeriod;
+                $scope.editEducation[index].endPeriod = $scope.education[index].endPeriod;
+
+                $scope.showEditEducation[index] = true;
+            };
+
+            $scope.editEducationSave = function(index) {
+                $scope.education[index].name = $scope.editEducation[index].name;
+                $scope.education[index].title = $scope.editEducation[index].title;
+                $scope.education[index].startPeriod = $scope.editEducation[index].startPeriod;
+                $scope.education[index].endPeriod = $scope.editEducation[index].endPeriod;
+
+                $scope.showEditEducation[index] = false;
+            };
+
         });
     }]);
