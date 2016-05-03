@@ -1,15 +1,17 @@
 body {
     background: url('../images/commons/bg-texture.png');
 }
+
 #timeline {
-    position: relative;   
-} 
+    position: relative;
+}
 
 #cover {
     height: 400px;
     width: 100%;
     min-width: 975px;
 }
+
 .avatar {
     padding: 0 !important;
 }
@@ -24,10 +26,10 @@ body {
 }
 
 #profile-top {
-    background-image: -webkit-linear-gradient(rgba(255,255,255,0.85),#ffffff 65%,#ffffff);
-    background-image: -moz-linear-gradient(rgba(255,255,255,0.85),#ffffff 65%,#ffffff);
-    background-image: -o-linear-gradient(rgba(255,255,255,0.85),#ffffff 65%,#ffffff);
-    background-image: linear-gradient(rgba(255,255,255,0.85),#ffffff 65%,#ffffff);
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.85), #ffffff 65%, #ffffff);
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.85), #ffffff 65%, #ffffff);
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0.85), #ffffff 65%, #ffffff);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85), #ffffff 65%, #ffffff);
     background-color: transparent;
     margin-bottom: 5px !important;
     box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -50,38 +52,45 @@ body {
     margin: 2px 0px;
     padding: 0;
     font-size: 13px;
-    line-height: 17px;    
+    line-height: 17px;
     font-weight: normal;
 }
+
 .overview-demographics a {
     color: #66696a;
 }
+
 .overview-demographics a:hover {
     color: #069;
 }
+
 .overview-summary {
     display: inline-block;
     margin-top: 10px;
     padding: 0;
 }
+
 .overview-summary th, td {
     font-size: 12px !important;
     line-height: 15px;
-    vertical-align: top;  
+    vertical-align: top;
     text-align: left;
     margin: 0px !important;
     padding: 2px 0px 0px 0px !important;
 }
+
 .overview-summary th > a {
     font-size: 12px !important;
     padding-right: 20px;
-    color: #999;   
+    color: #999;
 }
+
 .overview-summary td > a {
     font-size: 12px !important;
     cursor: pointer;
-    color: #333;   
+    color: #333;
 }
+
 .overview-summary td > a:hover {
     color: #069;
 }
@@ -90,11 +99,13 @@ body {
     margin: 0 !important;
     padding: 0 !important;
 }
+
 .profile-image {
     padding: 0 !important;
     width: 240px;
     height: 240px;
 }
+
 /**********************************************/
 .profile-overview {
     width: 734px;
@@ -102,15 +113,18 @@ body {
     padding: 25px 20px 25px 40px !important;
     position: relative;
 }
+
 /**********************************/
 .inline-block-left {
     display: inline-block !important;
     float: left !important;
 }
+
 .inline-block-right {
     display: inline-block !important;
     float: right !important;
 }
+
 .inline-block {
     display: inline-block !important;
 }
@@ -130,6 +144,7 @@ body {
     padding: 0px !important;
     margin: 0px !important;
 }
+
 .follow-button {
     display: inline-block;
     float: left;
@@ -140,13 +155,15 @@ body {
     border: 1px solid #1b5480;
     border-radius: 5px 0 0 5px;
 }
-#arrow-btn {  
+
+#arrow-btn {
     float: left;
     width: 35px;
     padding: 0;
     border: 1px solid #1b5480;
     border-radius: 0 5px 5px 0;
 }
+
 .arrow-down {
     width: 0;
     height: 0;
@@ -156,27 +173,32 @@ body {
     border-top: 5px solid white;
     display: inline-block;
 }
+
 #supplemental-action {
     display: inline-block;
     padding: 2px 0px 0px 10px;
     vertical-align: top;
 }
+
 #supplemental-action p, a {
     font-size: 13px;
     line-height: 17px;
     margin: 0;
     padding: 0;
-    
+
 }
+
 #supplemental-action a {
     display: block;
     font-weight: bold;
     color: #006fa6;
     cursor: pointer;
 }
+
 #supplemental-action a:hover {
     text-decoration: underline;
 }
+
 /****OVERVIEW-BOTTOMRIGHT*****/
 .member-connections {
     font-size: 11px;
@@ -187,6 +209,7 @@ body {
     vertical-align: bottom;
     text-align: right;
 }
+
 .member-connections strong {
     font-weight: bold;
     display: block;
@@ -194,6 +217,7 @@ body {
     font-size: 18px;
     line-height: 14px;
 }
+
 .profile-extra {
     -webkit-box-shadow: 0 1px 0 #fff inset;
     -moz-box-shadow: 0 1px 0 #fff inset;
@@ -203,6 +227,7 @@ body {
     background: #f6f6f6;
     margin-bottom: 10px !important;
 }
+
 .more-info {
     padding: 5px 10px 5px 10px !important;
     border-left: 2px solid #ccc;
@@ -217,7 +242,7 @@ body {
 
 /**********************************************/
 .link {
-    height: 38px; 
+    height: 38px;
 }
 
 .link-ref {
@@ -226,6 +251,7 @@ body {
     font-size: 11px;
     display: inline-block;
 }
+
 .link:hover .link-ref {
     color: #069 !important;
 }
@@ -237,6 +263,7 @@ body {
     cursor: pointer;
     display: inline-block;
 }
+
 .link:hover #link-profile {
     background: url('../images/commons/logo-in-hover.png') no-repeat;
 }
@@ -248,6 +275,7 @@ body {
     cursor: pointer;
     display: inline-block;
 }
+
 .link:hover #link-contact {
     background: url('../images/commons/contact-hover.png') no-repeat;
 }
@@ -260,25 +288,29 @@ body {
     margin-right: 10px;
     padding: 0px;
 }
+
 #right-column {
     background: white;
     height: 2900px;
     width: 318px;
 }
+
 .card-body {
     background: white;
     padding-bottom: 20px;
     margin-bottom: 18px;
     box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .card-content {
     font: inherit;
-    font-size: 100%;  
+    font-size: 100%;
     word-wrap: break-word;
 }
+
 .card-title {
-    background-color: #333; 
-    color: white; 
+    background-color: #333;
+    color: white;
     display: inline-block;
     font-size: 13px;
     line-height: 17px;
@@ -286,6 +318,7 @@ body {
     padding: 8px 35px 8px 35px;
     margin: 0px 0px 10px 0px;
 }
+
 /*****************background*******************/
 #background-content {
     padding: 0px 20px 0px 20px;
@@ -294,9 +327,11 @@ body {
 .background-last-section {
     border: none;
 }
+
 .background-section-header {
     margin-top: 10px;
 }
+
 .background-section-header > h3 {
     display: inline;
     margin-left: 20px;
@@ -305,6 +340,7 @@ body {
     line-height: 18px;
     color: #434649;
 }
+
 .description {
     white-space: pre-line;
     font-size: 13px;
@@ -312,12 +348,14 @@ body {
     font-weight: normal;
     color: #333;
 }
+
 /**********************************************/
 /***************Experience***************/
 .info-bar {
     padding-top: 20px;
     margin-bottom: -10px;
 }
+
 .info-title {
     display: block;
     font-size: 16px;
@@ -327,9 +365,11 @@ body {
     margin-top: 0px;
     margin-bottom: 4px;
 }
+
 .info-title:hover {
     color: #006fa6;
 }
+
 .info-subtitle {
     display: block;
     font-size: 14px;
@@ -337,9 +377,11 @@ body {
     line-height: 16px;
     color: #434649;
 }
+
 .info-subtitle:hover {
     color: #006fa6;
 }
+
 .info-date {
     display: block;
     margin-top: 3px;
@@ -347,20 +389,24 @@ body {
     font-size: 13px;
     line-height: 17px;
 }
+
 .info-logo {
     float: right;
     width: 100px;
     text-align: center;
 }
+
 .info-logo img {
     max-width: 100px;
     max-height: 60px;
 }
+
 /***************volunteer*******************/
 #volunteerexp {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 #volunteerexp p {
     font-size: 16px;
     font-weight: bold;
@@ -370,24 +416,29 @@ body {
     margin-top: 0px;
     margin-bottom: 4px;
 }
+
 #volunteerexp ul {
     margin: 10px 0px 30px 0px;
     padding-top: 10px;
     list-style-position: inside;
 }
+
 #volunteerexp li {
     font-size: 14px;
     line-height: 17px;
     color: #333;
     font-weight: normal;
 }
+
 #volunteerexp a {
     font: inherit;
     color: #069;
 }
+
 #volunteerexp a:hover {
     text-decoration: underline;
 }
+
 /**********************************************/
 /**********************************************/
 .skill-pill {
@@ -395,11 +446,13 @@ body {
     margin-bottom: 5px;
     margin-left: 5px;
 }
+
 .skill-pill a {
     float: left;
     height: inherit;
     line-height: 24px;
 }
+
 .skills-part {
     font-size: 15px;
     line-height: 16px;
@@ -407,6 +460,7 @@ body {
     margin-top: 30px;
     margin-bottom: 20px;
 }
+
 .btnskill-percent {
     padding: 0px 2px;
     background-color: #1ba8e5;
@@ -420,9 +474,11 @@ body {
     font-weight: bold;
     text-align: center;
 }
+
 .btnskill-percent:hover {
     background-color: #069;
 }
+
 .btnskill-description {
     padding: 0px 2px;
     background-color: #f0f0f0;
@@ -435,6 +491,7 @@ body {
     font-size: 13px;
     text-align: center;
 }
+
 .btnskill-description:hover {
     color: #069;
 }
@@ -454,7 +511,7 @@ body {
     overflow: visible;
     text-decoration: none !important;
     width: auto;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.35);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
     border-radius: 3px;
     padding: 0 13px;
     height: 31px;
@@ -468,11 +525,13 @@ body {
     zoom: 1;
     vertical-align: middle;
 }
+
 .btn-save:hover {
-    background-image: -webkit-linear-gradient(top, #2672ae 0%,#1e4f7e 100%);
-    background-image: -moz-linear-gradient(top, #2672ae 0%,#1e4f7e 100%);
-    background-image: -o-linear-gradient(top, #2672ae 0%,#1e4f7e 100%);
+    background-image: -webkit-linear-gradient(top, #2672ae 0%, #1e4f7e 100%);
+    background-image: -moz-linear-gradient(top, #2672ae 0%, #1e4f7e 100%);
+    background-image: -o-linear-gradient(top, #2672ae 0%, #1e4f7e 100%);
 }
+
 .btn-cancel {
     font-weight: bold;
     color: #666;
@@ -483,7 +542,7 @@ body {
     overflow: visible;
     text-decoration: none !important;
     width: auto;
-    text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
     border-radius: 3px;
     padding: 0 13px;
     height: 31px;
@@ -497,9 +556,11 @@ body {
     zoom: 1;
     vertical-align: middle;
 }
+
 .btn-cancel:hover {
-    background-image: -webkit-linear-gradient(top, #e8e8e8 0%,#e3e3e3 13%,#d7d7d7 32%,#b9b9b9 71%,#a9a9a9 100%)!important;
+    background-image: -webkit-linear-gradient(top, #e8e8e8 0%, #e3e3e3 13%, #d7d7d7 32%, #b9b9b9 71%, #a9a9a9 100%) !important;
 }
+
 /***Edit Name***/
 .profile-card:hover .edit-name-button {
     display: inline-block;
@@ -510,10 +571,12 @@ body {
     border: 0px;
     color: #505e69;
     padding: 0 0 0 0;
-    }
+}
+
 .edit-name-button {
     display: none;
 }
+
 .edit-name-button:hover {
     background-color: #00a0dc;
 }
@@ -535,6 +598,7 @@ body {
     top: 0;
     right: 100%;
 }
+
 .edit-name-form:after {
     content: "\0020";
     display: block;
@@ -547,6 +611,7 @@ body {
     border-width: 12px 12px 12px 0;
     border-color: transparent #fff transparent transparent;
 }
+
 .editNameBox {
     display: inline-block;
     position: absolute;
@@ -558,6 +623,7 @@ body {
     background: #fff;
     z-index: 10;
 }
+
 .editNameText {
     border: 1px solid #ccc !important;
     height: 2rem !important;
@@ -565,8 +631,8 @@ body {
     border-radius: 3px !important;
     margin-top: 5px !important;
 }
-/***end edit name**/
 
+/***end edit name**/
 
 /***Edit position***/
 .profile-card:hover .edit-position-button {
@@ -579,9 +645,11 @@ body {
     color: #505e69;
     padding: 0 0 0 0;
 }
+
 .edit-position-button {
     display: none;
 }
+
 .edit-position-button:hover {
     background-color: #00a0dc;
 }
@@ -603,6 +671,7 @@ body {
     top: 0;
     right: 100%;
 }
+
 .edit-position-form:after {
     content: "\0020";
     display: block;
@@ -615,6 +684,7 @@ body {
     border-width: 12px 12px 12px 0;
     border-color: transparent #fff transparent transparent;
 }
+
 .editPositionBox {
     display: inline-block;
     position: absolute;
@@ -626,12 +696,14 @@ body {
     background: #fff;
     z-index: 10;
 }
+
 .editPositionText {
     border: 1px solid #ccc !important;
     height: 2rem !important;
     border-radius: 3px !important;
     margin-top: 5px !important;
 }
+
 /***end edit position**/
 
 /***Edit location***/
@@ -645,9 +717,11 @@ body {
     color: #505e69;
     padding: 0 0 0 0;
 }
+
 .edit-location-button {
     display: none;
 }
+
 .edit-location-button:hover {
     background-color: #00a0dc;
 }
@@ -669,6 +743,7 @@ body {
     top: 0;
     right: 100%;
 }
+
 .edit-location-form:after {
     content: "\0020";
     display: block;
@@ -681,6 +756,7 @@ body {
     border-width: 12px 12px 12px 0;
     border-color: transparent #fff transparent transparent;
 }
+
 .editLocationBox {
     display: inline-block;
     position: absolute;
@@ -692,6 +768,7 @@ body {
     background: #fff;
     z-index: 10;
 }
+
 .editLocationText {
     border: 1px solid #ccc !important;
     height: 2rem !important;
@@ -699,12 +776,14 @@ body {
     margin-top: 5px !important;
     margin-bottom: 10px !important;
 }
+
 .editIndustryText {
     border: 1px solid #ccc !important;
     height: 2rem !important;
     border-radius: 3px !important;
     margin-top: 5px !important;
 }
+
 /***end edit location**/
 
 /***Edit summary***/
@@ -718,9 +797,11 @@ body {
     padding: 0 0 0 0;
     margin-left: auto;
 }
+
 .edit-summary-button {
     display: none;
 }
+
 .edit-summary-button:hover {
     background-color: #00a0dc;
 }
@@ -742,6 +823,7 @@ body {
     top: 0;
     right: 100%;
 }
+
 .edit-summary-form:after {
     content: "\0020";
     display: block;
@@ -754,6 +836,7 @@ body {
     border-width: 12px 12px 12px 0;
     border-color: transparent #fff transparent transparent;
 }
+
 .editSummaryBox {
     display: inline-block;
     position: absolute;
@@ -765,14 +848,15 @@ body {
     background: #fff;
     z-index: 10;
 }
+
 .editSummaryText {
     border: 1px solid #ccc !important;
     height: 2rem !important;
     border-radius: 3px !important;
     margin-top: 5px !important;
 }
-/***end edit summary**/
 
+/***end edit summary**/
 
 /***Edit current***/
 .profile-card:hover .edit-current-button {
@@ -786,12 +870,15 @@ body {
     padding: 0 0 0 0;
     margin-left: auto;
 }
+
 .edit-current-button {
     display: none;
 }
+
 .edit-current-button:hover {
     background-color: #00a0dc;
 }
+
 /***end Edit current***/
 
 /***Edit previous***/
@@ -806,12 +893,15 @@ body {
     padding: 0 0 0 0;
     margin-left: auto;
 }
+
 .edit-previous-button {
     display: none;
 }
+
 .edit-previous-button:hover {
     background-color: #00a0dc;
 }
+
 /***end Edit previous***/
 
 /***Edit education***/
@@ -826,12 +916,15 @@ body {
     padding: 0 0 0 0;
     margin-left: auto;
 }
+
 .edit-education-button {
     display: none;
 }
+
 .edit-education-button:hover {
     background-color: #00a0dc;
 }
+
 /***end Edit education***/
 
 /***Edit experience***/
@@ -846,9 +939,11 @@ body {
     padding: 0 0 0 0;
     margin-left: auto;
 }
+
 .edit-experience-button {
     display: none;
 }
+
 .edit-experience-button:hover {
     background-color: #00a0dc;
 }
@@ -870,6 +965,7 @@ body {
     top: 0;
     right: 100%;
 }
+
 .edit-experience-form:after {
     content: "\0020";
     display: block;
@@ -882,6 +978,7 @@ body {
     border-width: 12px 12px 12px 0;
     border-color: transparent #fff transparent transparent;
 }
+
 .editExperienceBox {
     display: inline-block;
     position: absolute;
@@ -893,14 +990,15 @@ body {
     background: #fff;
     z-index: 10;
 }
+
 .editExperienceText {
     border: 1px solid #ccc !important;
     height: 2rem !important;
     border-radius: 3px !important;
     margin-top: 5px !important;
 }
-/***end edit experience**/
 
+/***end edit experience**/
 
 /***Edit education***/
 .card-content:hover .edit-education-button {
@@ -914,9 +1012,11 @@ body {
     padding: 0 0 0 0;
     margin-left: auto;
 }
+
 .edit-education-button {
     display: none;
 }
+
 .edit-education-button:hover {
     background-color: #00a0dc;
 }
@@ -938,6 +1038,7 @@ body {
     top: 0;
     right: 100%;
 }
+
 .edit-education-form:after {
     content: "\0020";
     display: block;
@@ -950,6 +1051,7 @@ body {
     border-width: 12px 12px 12px 0;
     border-color: transparent #fff transparent transparent;
 }
+
 .editEducationBox {
     display: inline-block;
     position: absolute;
@@ -961,14 +1063,179 @@ body {
     background: #fff;
     z-index: 10;
 }
+
 .editEducationText {
     border: 1px solid #ccc !important;
     height: 2rem !important;
     border-radius: 3px !important;
     margin-top: 5px !important;
 }
+
 /***end edit education**/
 
+/***Edit causes***/
+.card-content:hover .edit-causes-button {
+    display: block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    margin-left: auto;
+}
+
+.edit-causes-button {
+    display: none;
+}
+
+.edit-causes-button:hover {
+    background-color: #00a0dc;
+}
+
+.edit-causes-form {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #c9c9c9 transparent transparent;
+    border-width: 12px 12px 12px 5px;
+    overflow: visible;
+    content: "\0020";
+    position: absolute;
+    display: block;
+    background: none;
+    top: 0;
+    right: 100%;
+}
+
+.edit-causes-form:after {
+    content: "\0020";
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.editCausesBox {
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px !important;
+    border-color: #ededed #c9c9c9 #a4a4a4;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 15px 15px 15px;
+    background: #fff;
+    z-index: 10;
+}
+
+.editCausesText {
+    border: 1px solid #ccc !important;
+    height: 2rem !important;
+    border-radius: 3px !important;
+    margin-top: 5px !important;
+}
+
+/***end edit causes**/
+
+/***Edit Organizations***/
+.card-content:hover .edit-organizations-button {
+    display: block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    margin-left: auto;
+}
+
+.edit-organizations-button {
+    display: none;
+}
+
+.edit-organizations-button:hover {
+    background-color: #00a0dc;
+}
+
+.edit-organizations-form {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #c9c9c9 transparent transparent;
+    border-width: 12px 12px 12px 5px;
+    overflow: visible;
+    content: "\0020";
+    position: absolute;
+    display: block;
+    background: none;
+    top: 0;
+    right: 100%;
+}
+
+.edit-organizations-form:after {
+    content: "\0020";
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.editOrganizationsBox {
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px !important;
+    border-color: #ededed #c9c9c9 #a4a4a4;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 15px 15px 15px;
+    background: #fff;
+    z-index: 10;
+}
+
+.editOrganizationsText {
+    border: 1px solid #ccc !important;
+    height: 2rem !important;
+    border-radius: 3px !important;
+    margin-top: 5px !important;
+}
+
+/***end edit Organizations**/
+.top-button {
+    background-image: url("../images/commons/top.png");
+    background-color: #fff;
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 36px;
+    width: 36px;
+    line-height: 26px;
+    border: 0;
+    color: #505e69;
+    padding: 0 0 0 0;
+}
+
+.top-button:hover {
+    background-color: #00a0dc;
+}
 
 
 

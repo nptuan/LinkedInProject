@@ -1,46 +1,40 @@
 {
-	"cover": "images/cover.jpg",
-	"avatar": "images/avatar.jpg",
-	"name": [
-		"Jeff",
-		"Weiner"
-	],
-	"possition": "CEO at LinkedIn",
-	"work": {
-		"location": "San Francisco Bay Area",
-		"industry": "Internet"
-	},
-	"Influencer": true,
-	"followers": 4047268,
-	"profileURL": "https://www.linkedin.com/in/jeffweiner08",
-
-
-	"postsUrl": "https://www.linkedin.com/today/author/0_1HzVUN_pW553HoPu1F7I0Q?trk=prof-sm",
-	"posts": [
-		{
-		  "image": "images/posts/post1.jpg",
-		  "title": "My Interview with Oprah",
-		  "date": "October 15, 2015",
-		  "url": "https://www.linkedin.com/pulse/my-interview-oprah-jeff-weiner?trk=prof-post"
-		},
-		{
-		  "image": "images/posts/post2.jpg",
-		  "title": "Always Be Learning: LinkedIn to Acquire lynda.com",
-		  "date": "April 9, 2015",
-		  "url": "https://www.linkedin.com/pulse/always-learning-linkedin-acquire-lyndacom-jeff-weiner?trk=prof-post"
-		},
-		{
-		  "image": "images/posts/post3.jpg",
-		  "title": "How LinkedIn is Helping Power the President's Tech Jobs Initiative",
-		  "date": "March 10, 2015",
-		  "url": "https://www.linkedin.com/pulse/how-linkedin-helping-power-presidents-tech-jobs-jeff-weiner?trk=prof-post"
-		}
+  "cover": "images/cover.jpg",
+  "avatar": "images/avatar.jpg",
+  "name": [
+    "Jeff",
+    "Weiner"
   ],
-
-
+  "possition": "CEO at LinkedIn",
+  "work": {
+    "location": "San Francisco Bay Area",
+    "industry": "Internet"
+  },
+  "Influencer": true,
+  "followers": 4047268,
+  "profileURL": "https://www.linkedin.com/in/jeffweiner08",
+  "postsUrl": "https://www.linkedin.com/today/author/0_1HzVUN_pW553HoPu1F7I0Q?trk=prof-sm",
+  "posts": [
+    {
+      "image": "images/posts/post1.jpg",
+      "title": "My Interview with Oprah",
+      "date": "October 15, 2015",
+      "url": "https://www.linkedin.com/pulse/my-interview-oprah-jeff-weiner?trk=prof-post"
+    },
+    {
+      "image": "images/posts/post2.jpg",
+      "title": "Always Be Learning: LinkedIn to Acquire lynda.com",
+      "date": "April 9, 2015",
+      "url": "https://www.linkedin.com/pulse/always-learning-linkedin-acquire-lyndacom-jeff-weiner?trk=prof-post"
+    },
+    {
+      "image": "images/posts/post3.jpg",
+      "title": "How LinkedIn is Helping Power the President's Tech Jobs Initiative",
+      "date": "March 10, 2015",
+      "url": "https://www.linkedin.com/pulse/how-linkedin-helping-power-presidents-tech-jobs-jeff-weiner?trk=prof-post"
+    }
+  ],
   "summary": "Internet executive with over 20 years of experience, including general management of mid to large size organizations, corporate development, product development, business operations, and strategy.\n\nCurrently CEO at LinkedIn, the web's largest and most powerful network of professionals.\n\nPrior to LinkedIn, was an Executive in Residence at Accel Partners and Greylock Partners. Primarily focused on advising the leadership teams of the firm's existing consumer technology portfolio companies while also working closely with the firm's partners to evaluate new investment opportunities.\n\nPreviously served in key leadership roles at Yahoo! for over seven years, most recently as the Executive Vice President of Yahoo!'s Network Division managing Yahoo's consumer web product portfolio, including Yahoo's Front Page, Mail, Search, and Media products.\n\nSpecialties: general management, corporate development, product development, business operations, strategy, product marketing, non-profit governance",
-
-
   "experience": [
     {
       "companyName": "LinkedIn",
@@ -175,23 +169,17 @@
       "description": "Analyst for strategic management consulting division of Deloitte & Touche. Case work included scenario planning, international expansion, brand consolidation, and new distribution strategies across multiple industries including food, health care, and energy."
     }
   ],
-
-
   "caredCauses": [
     "Economic Empowerment",
     "Education",
     "Health"
   ],
-
-
   "supportedOrganizations": [
     "Boys & Girls Clubs of the Peninsula",
     "DonorsChoose.org",
     "Malaria No More",
     "Venture For America"
   ],
-
-
   "skills": [
     {
       "name": "Bussiness Strategy",
@@ -298,8 +286,6 @@
       "endorsers": "3"
     }
   ],
-
-
   "education": [
     {
       "name": "University of Pennsylvania - The Wharton School",

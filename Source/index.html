@@ -1,414 +1,467 @@
 <!doctype html>
 <html ng-app="linkedInApp">
-	<head>
-		<meta charset='utf-8'/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
-		<title>LinkedIn</title>
-		<link rel="icon" href="https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico">
-		
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>	
-		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/materialize.min.css">
-		<link rel="stylesheet" href="css/materialize-extension.min.css">
-	</head>
-	<body ng-controller="content-controller">
-		<div id="timeline">
-			<img id="cover" ng-src="{{cover}}" alt="cover" />
-			<!--page content-->
-			<div id="profile-content">
-				<!--profile-top-->
-				<div id="profile-top">
-					<!--profile-card-->
-					<div class="row profile-card">
-						<!--avatar-->
-						<img class="avatar col m3" ng-src="{{avatar}}" alt="avatar" />
-						<!--end avatar-->
-						<!--overview-->
-						<div class="profile-overview col m9">
-							<!--overview top-->
-							<div class="row">
-								<div class="inline-block-left">
-	                                <h1 class="overview-name inline-block">{{name[0] + ' ' + name[1]}}</h1>
-									<!--edit name-->
-									<button class="edit-name-button" ng-click="editNameShow()">
-										<img src="images/commons/edit.png">
-									</button>
-									<form class="editNameBox" ng-show="showEditName">
-										<strong class="edit-name-form"></strong>
-										<label>Name</label></br>
-										<input class="editNameText" type="text" ng-model="editFirstName" maxlength="20">
-										<input class="editNameText" type="text" ng-model="editLastName" maxlength="20"></br>
-										<a class="btn-save" ng-click="editNameSave()">Save</a>
-										<a class="btn-cancel" ng-click="showEditName=false">
-											Cancel
-										</a>
-									</form>
-									</br>
-									<!--end edit-->
-	                                <p class="overview-possition inline-block">{{possition}}</p>
-									<!--edit position-->
-									<button class="edit-position-button" ng-click="editPositionShow()">
-										<img src="images/commons/edit.png">
-									</button>
-									<form class="editPositionBox" ng-show="showEditPosition">
-										<strong class="edit-position-form"></strong>
-										<label>Your professional headline</label></br>
-										<input class="editPositionText" type="text" ng-model="editPosition" maxlength="30"></br>
-										<a class="btn-save" ng-click="editPositionSave()">Save</a>
-										<a class="btn-cancel" ng-click="showEditPosition=false">
-											Cancel
-										</a>
-									</form>
-									</br>
-									<!--end edit-->
-	                                <p class="overview-demographics inline-block">
-	                                    <a href="https://www.linkedin.com/vsearch/p?f_G={{workInfo.area}}&trk=prof-0-ovw-location">{{work.location}}</a> |
-	                                    <a href="https://www.linkedin.com/vsearch/p?f_I={{workInfo.industry}}&trk=prof-0-ovw-industry">{{work.industry}}</a>
-	                                </p>
-									<!--edit location and industry-->
-									<button class="edit-location-button" ng-click="editLocationShow()">
-										<img src="images/commons/edit.png">
-									</button>
-									<form class="editLocationBox" ng-show="showEditLocation">
-										<strong class="edit-location-form"></strong>
-										<label>Location</label></br>
-										<input class="editLocationText" type="text" ng-model="editLocation" maxlength="30"></br>
-										<label>Industry</label></br>
-										<input class="editIndustryText" type="text" ng-model="editIndustry" maxlength="20"></br>
-										<a class="btn-save" ng-click="editLocationSave()">Save</a>
-										<a class="btn-cancel" ng-click="showEditLocation=false">
-											Cancel
-										</a>
-									</form>
-									</br>
-									<!--end edit-->
-									<table class="overview-summary">
+<head>
+    <meta charset='utf-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>LinkedIn</title>
+    <link rel="icon" href="https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/materialize-extension.min.css">
+</head>
+<body ng-controller="content-controller">
+<div id="timeline">
+    <img id="cover" ng-src="{{cover}}" alt="cover"/>
+    <!--page content-->
+    <div id="profile-content">
+        <!--profile-top-->
+        <div id="profile-top">
+            <!--profile-card-->
+            <div class="row profile-card">
+                <!--avatar-->
+                <img class="avatar col m3" ng-src="{{avatar}}" alt="avatar"/>
+                <!--end avatar-->
+                <!--overview-->
+                <div class="profile-overview col m9">
+                    <!--overview top-->
+                    <div class="row">
+                        <div class="inline-block-left">
+                            <h1 class="overview-name inline-block">{{name[0] + ' ' + name[1]}}</h1>
+                            <!--edit name-->
+                            <button class="edit-name-button" ng-click="editNameShow()">
+                                <img src="images/commons/edit.png">
+                            </button>
+                            <form class="editNameBox" ng-show="showEditName">
+                                <strong class="edit-name-form"></strong>
+                                <label>Name</label></br>
+                                <input class="editNameText" type="text" ng-model="editFirstName" maxlength="20">
+                                <input class="editNameText" type="text" ng-model="editLastName" maxlength="20"></br>
+                                <a class="btn-save" ng-click="editNameSave()">Save</a>
+                                <a class="btn-cancel" ng-click="showEditName=false">
+                                    Cancel
+                                </a>
+                            </form>
+                            </br>
+                            <!--end edit-->
+                            <p class="overview-possition inline-block">{{possition}}</p>
+                            <!--edit position-->
+                            <button class="edit-position-button" ng-click="editPositionShow()">
+                                <img src="images/commons/edit.png">
+                            </button>
+                            <form class="editPositionBox" ng-show="showEditPosition">
+                                <strong class="edit-position-form"></strong>
+                                <label>Your professional headline</label></br>
+                                <input class="editPositionText" type="text" ng-model="editPosition" maxlength="30"></br>
+                                <a class="btn-save" ng-click="editPositionSave()">Save</a>
+                                <a class="btn-cancel" ng-click="showEditPosition=false">
+                                    Cancel
+                                </a>
+                            </form>
+                            </br>
+                            <!--end edit-->
+                            <p class="overview-demographics inline-block">
+                                <a href="https://www.linkedin.com/vsearch/p?f_G={{workInfo.area}}&trk=prof-0-ovw-location">{{work.location}}</a>
+                                |
+                                <a href="https://www.linkedin.com/vsearch/p?f_I={{workInfo.industry}}&trk=prof-0-ovw-industry">{{work.industry}}</a>
+                            </p>
+                            <!--edit location and industry-->
+                            <button class="edit-location-button" ng-click="editLocationShow()">
+                                <img src="images/commons/edit.png">
+                            </button>
+                            <form class="editLocationBox" ng-show="showEditLocation">
+                                <strong class="edit-location-form"></strong>
+                                <label>Location</label></br>
+                                <input class="editLocationText" type="text" ng-model="editLocation" maxlength="30"></br>
+                                <label>Industry</label></br>
+                                <input class="editIndustryText" type="text" ng-model="editIndustry" maxlength="20"></br>
+                                <a class="btn-save" ng-click="editLocationSave()">Save</a>
+                                <a class="btn-cancel" ng-click="showEditLocation=false">
+                                    Cancel
+                                </a>
+                            </form>
+                            </br>
+                            <!--end edit-->
+                            <table class="overview-summary">
 
 
+                                <tr>
+                                    <th scope="row"><a href="">Current</a></th>
+                                    <td>
+                                        <a ng-repeat="exp in experience | filter: {endPeriod: 'Present'} | limitTo: 3">
+                                            {{exp.companyName}}<span ng-show="!$last">, </span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <!--edit current work-->
+                                        <button class="edit-current-button" ng-click="editCurrentShow()">
+                                            <img src="images/commons/edit.png">
+                                        </button>
+                                        <!--end edit current work-->
+                                    </td>
 
 
-										<tr>
-											<th scope="row"><a href="">Current</a></th>
-											<td>
-												<a ng-repeat="exp in experience | filter: {endPeriod: 'Present'} | limitTo: 3">
-													{{exp.companyName}}<span ng-show="!$last">, </span>
-												</a>
-											</td>
-											<td>
-												<!--edit current work-->
-												<button class="edit-current-button" ng-click="editCurrentShow()">
-													<img src="images/commons/edit.png">
-												</button>
-												<!--end edit current work-->
-											</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="">Previous</a></th>
+                                    <td>
+                                        <a ng-repeat="exp in experience | filter: {endPeriod: '!Present'} | limitTo: 3">
+                                            {{exp.companyName}}<span ng-show="!$last">, </span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <!--edit previous work-->
+                                        <button class="edit-previous-button" ng-click="editPreviousShow()">
+                                            <img src="images/commons/edit.png">
+                                        </button>
+                                        <!--end edit previous work-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="">Education</a></th>
+                                    <td>
+                                        <a ng-repeat="edu in education | limitTo: 1">{{edu.name}}</a>
+                                    </td>
+                                    <td>
+                                        <!--edit education-->
+                                        <button class="edit-education-button" ng-click="editEducationTopShow()">
+                                            <img src="images/commons/edit.png">
+                                        </button>
+                                        <!--end edit education-->
+                                    </td>
+                                </tr>
 
 
-										</tr>
-										<tr>
-											<th scope="row"><a href="">Previous</a></th>
-											<td>
-												<a ng-repeat="exp in experience | filter: {endPeriod: '!Present'} | limitTo: 3">
-													{{exp.companyName}}<span ng-show="!$last">, </span>
-												</a>
-											</td>
-											<td>
-												<!--edit previous work-->
-												<button class="edit-previous-button" ng-click="editPreviousShow()">
-													<img src="images/commons/edit.png">
-												</button>
-												<!--end edit previous work-->
-											</td>
-										</tr>
-										<tr>
-											<th scope="row"><a href="">Education</a></th>
-											<td>
-												<a ng-repeat="edu in education | limitTo: 1">{{edu.name}}</a>
-											</td>
-											<td>
-												<!--edit education-->
-												<button class="edit-education-button" ng-click="editEducationShow()">
-													<img src="images/commons/edit.png">
-												</button>
-												<!--end edit education-->
-											</td>
-										</tr>
+                            </table>
+                        </div>
+                        <div class="inline-block-right">
+                            <img class="inline-block-right" src="images/commons/influencer.png"/>
+                        </div>
+                    </div>
+                    <!--end overview top-->
+                    <!--overview follow-->
+                    <div id="profile-action" class="row">
+                        <!--follow button-->
+                        <div class="follow-button">
+                            <div class="inline-block">
+                                <a id="follow-btn" class="waves-effect waves-light btn">Follow</a>
+                                <a id="arrow-btn" class="waves-effect waves-light btn"><i class="arrow-down"></i></a>
+                            </div>
+                            <div id="supplemental-action">
+                                <p>Know <span>{{name[0]}}</span>?
+                                    <a>Connect</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!--end follow button-->
+                        <!--follower-->
+                        <div class="member-connections" class="inline-block-right">
+                            <strong>{{followers | number}}</strong> followers
+                        </div>
+                        <!--end follower-->
+                    </div>
+                    <!--end overview follow-->
+                </div>
+                <!--end overview-->
+            </div>
+            <!--end profile-card-->
+            <!--profile-extra-->
+            <div class="row profile-extra">
+                <!--profile link-->
+                <div class="col link valign-wrapper">
+                    <i id="link-profile" class="valign">
+                    </i>
+                    <a class="link-ref valign" href="{{profileUrl}}">
+                        {{profileURL}}
+                    </a>
+                </div>
+                <!--end profile link-->
+                <!--contact info-->
+                <div class="col right more-info valign-wrapper link">
+                    <i id="link-contact" class="valign"></i>
+                    <a class="link-ref valign" href="{{profileURL}}">
+                        Contact Info
+                    </a>
+                </div>
+                <!-- end contact info-->
+            </div>
+            <!--end profile-extra-->
+        </div>
+        <!--end profile-top-->
+        <!--profile-->
+        <div class="row">
+            <!--left-->
+            <div id="profile" class="col">
+                <!--background-->
+                <div class="card-body">
+                    <h2 class="card-title">Background</h2>
+                    <div id="background-content" class="card-content">
+                        <!--summary-->
+                        <div class="background-section">
+                            <div class="valign-wrapper background-section-header">
+                                <img src=".\images\commons\header-summary.png" class="valign"/>
+                                <h3 class="valign">Summary</h3>
+                                <!--edit summary-->
+                                <button class="edit-summary-button" ng-click="editSummaryShow()">
+                                    <img src="images/commons/edit.png">
+                                </button>
+                                <form class="editSummaryBox" ng-show="showEditSummary">
+                                    <strong class="edit-summary-form"></strong>
+                                    <label>Your professional headline</label></br>
+                                    <input class="editSummaryText" type="text" ng-model="editSummary"
+                                           maxlength="30"></br>
+                                    <a class="btn-save" ng-click="editSummarySave()">Save</a>
+                                    <a class="btn-cancel" ng-click="showEditSummary=false">
+                                        Cancel
+                                    </a>
+                                </form>
+                                </br>
+                                <!--end edit-->
+                            </div>
+                            <p class="description">{{summary}}</p>
+                        </div>
+                        <!--end summary-->
 
 
-
-
-									</table>
-								</div>
-								<div class="inline-block-right">
-                                	<img class="inline-block-right" src="images/commons/influencer.png"/>
-                            	</div>
-							</div>
-							<!--end overview top-->
-							<!--overview follow-->
-							<div id="profile-action" class="row">
-								<!--follow button-->
-	                            <div class="follow-button" >
-	                                <div class="inline-block">
-	                                    <a id="follow-btn" class="waves-effect waves-light btn">Follow</a>
-	                                    <a id="arrow-btn" class="waves-effect waves-light btn"><i class="arrow-down"></i></a>
-	                                </div>
-	                                <div id="supplemental-action">
-	                                    <p>Know <span>{{name[0]}}</span>?
-	                                        <a>Connect</a>
-	                                    </p>
-	                                </div>
-	                            </div>
-	                            <!--end follow button-->
-	                            <!--follower-->
-	                            <div class="member-connections" class="inline-block-right">
-	                                <strong>{{followers | number}}</strong> followers
-	                            </div>
-	                            <!--end follower-->
-                        	</div>
-                        	<!--end overview follow-->
-						</div>
-						<!--end overview-->
-					</div>
-					<!--end profile-card-->
-					<!--profile-extra-->
-					<div class="row profile-extra">
-						<!--profile link-->
-	                    <div class="col link valign-wrapper">
-	                        <i id="link-profile" class="valign">
-							</i>
-	                        <a class="link-ref valign" href="{{profileUrl}}">
-	                            {{profileURL}}
-	                        </a>
-	                    </div>
-	                    <!--end profile link-->
-	                    <!--contact info-->
-	                    <div class="col right more-info valign-wrapper link">
-	                        <i id="link-contact" class="valign"></i>
-	                        <a class="link-ref valign" href="{{profileURL}}">
-	                            Contact Info
-	                        </a>
-	                    </div>
-	                    <!-- end contact info-->
-                	</div>
-                	<!--end profile-extra-->
-				</div>
-				<!--end profile-top-->
-				<!--profile-->
-				<div class="row">
-					<!--left-->
-					<div id="profile" class="col">
-						<!--background-->
-						<div class="card-body">
-							<h2 class="card-title">Background</h2>
-                        	<div id="background-content" class="card-content">
-                        		<!--summary-->
-                        		<div class="background-section">
-	                                <div class="valign-wrapper background-section-header">
-	                                    <img src=".\images\commons\header-summary.png" class="valign" />
-	                                    <h3 class="valign">Summary</h3>
-										<!--edit summary-->
-										<button class="edit-summary-button" ng-click="editSummaryShow()">
-											<img src="images/commons/edit.png">
-										</button>
-										<form class="editSummaryBox" ng-show="showEditSummary">
-											<strong class="edit-summary-form"></strong>
-											<label>Your professional headline</label></br>
-											<input class="editSummaryText" type="text" ng-model="editSummary" maxlength="30"></br>
-											<a class="btn-save" ng-click="editSummarySave()">Save</a>
-											<a class="btn-cancel" ng-click="showEditSummary=false">
-												Cancel
-											</a>
-										</form>
-										</br>
-										<!--end edit-->
-	                                </div>
-	                                <p class="description">{{summary}}</p>
-                            	</div>
-                            	<!--end summary-->
-
-
-
-                            	<!--experience-->
-	                            <div id="id-experience" class="background-section">
-	                                <div class="valign-wrapper background-section-header">
-	                                    <img src=".\images\commons\header-experience.png" class="valign" />
-	                                    <h3 class="valign">Experience</h3>
-	                                </div>
-	                                <!--loop each work-->
-	                                <div ng-repeat="exp in experience">
-										<button class="edit-experience-button" ng-click="editExperienceShow($index)">
-											<img src="images/commons/edit.png">
-										</button>
-										<form class="editExperienceBox" ng-show="showEditExperience[$index]">
-											<strong class="edit-experience-form"></strong>
-											<label>Company Name</label></br>
-											<input class="editExperienceText" type="text" ng-model="editExperience[$index].companyName" maxlength="30"></br>
-											<label>Position</label></br>
-											<input class="editExperienceText" type="text" ng-model="editExperience[$index].title" maxlength="30"></br>
-											<label>Start Period</label></br>
-											<input class="editExperienceText" type="text" ng-model="editExperience[$index].startPeriod" maxlength="30"></br>
-											<label>End Period</label></br>
-											<input class="editExperienceText" type="text" ng-model="editExperience[$index].endPeriod" maxlength="30"></br>
-											<label>Location</label></br>
-											<input class="editExperienceText" type="text" ng-model="editExperience[$index].location" maxlength="30"></br>
-											<label>Description</label></br>
-											<input class="editExperienceText" type="text" ng-model="editExperience[$index].description" maxlength="30"></br>
-											<a class="btn-save" ng-click="editExperienceSave($index)">Save</a>
-											<a class="btn-cancel" ng-click="showEditExperience[$index]=false">Cancel</a>
-										</form>
-										</br>
-	                                    <div class="row info-bar">
-	                                    	<!--info each work-->
-	                                        <div class="inline-block">
-	                                            <a href="https://www.linkedin.com/title/{{exp.title}}?trk=mprofile_title"
-	                                                title="Learn more about this title" class="info-title">{{exp.title}}</a>
-	                                            <a href="{{exp.companyUrl}}" class="info-subtitle">{{exp.companyName}}</a>
+                        <!--experience-->
+                        <div id="id-experience" class="background-section">
+                            <div class="valign-wrapper background-section-header">
+                                <img src=".\images\commons\header-experience.png" class="valign"/>
+                                <h3 class="valign">Experience</h3>
+                            </div>
+                            <!--loop each work-->
+                            <div ng-repeat="exp in experience">
+                                <button class="edit-experience-button" ng-click="editExperienceShow($index)">
+                                    <img src="images/commons/edit.png">
+                                </button>
+                                <form class="editExperienceBox" ng-show="showEditExperience[$index]">
+                                    <strong class="edit-experience-form"></strong>
+                                    <label>Company Name</label></br>
+                                    <input class="editExperienceText" type="text"
+                                           ng-model="editExperienceCompanyName[$index]" maxlength="100"></br>
+                                    <label>Position</label></br>
+                                    <input class="editExperienceText" type="text"
+                                           ng-model="editExperienceTitle[$index]" maxlength="100"></br>
+                                    <label>Start Period</label></br>
+                                    <input class="editExperienceText" type="text"
+                                           ng-model="editExperienceStartPeriod[$index]" maxlength="100"></br>
+                                    <label>End Period</label></br>
+                                    <input class="editExperienceText" type="text"
+                                           ng-model="editExperienceEndPeriod[$index]" maxlength="100"></br>
+                                    <label>Location</label></br>
+                                    <input class="editExperienceText" type="text"
+                                           ng-model="editExperienceLocation[$index]" maxlength="100"></br>
+                                    <label>Description</label></br>
+                                    <input class="editExperienceText" type="text"
+                                           ng-model="editExperienceDescription[$index]" maxlength="100"></br>
+                                    <a class="btn-save" ng-click="editExperienceSave($index)">Save</a>
+                                    <a class="btn-cancel" ng-click="showEditExperience[$index]=false">Cancel</a>
+                                </form>
+                                </br>
+                                <div class="row info-bar">
+                                    <!--info each work-->
+                                    <div class="inline-block">
+                                        <a href="https://www.linkedin.com/title/{{exp.title}}?trk=mprofile_title"
+                                           title="Learn more about this title" class="info-title">{{exp.title}}</a>
+                                        <a href="{{exp.companyUrl}}" class="info-subtitle">{{exp.companyName}}</a>
 	                                            <span class="info-date">{{exp.startPeriod}} – {{exp.endPeriod}}
 	                                                <span ng-show="exp.duration != ''">({{exp.duration}})</span>
 	                                            <span ng-show="exp.location != ''"> | {{exp.location}}</span>
 	                                            </span>
-	                                        </div>
-	                                        <div class="info-logo" ng-show="exp.companyLogo != ''">
-	                                            <a href="{{exp.companyUrl}}">
-	                                               <img src="{{exp.companyLogo}}" /> 
-	                                            </a>                                    
-	                                        </div>
-	                                        <!--end info each work-->
-	                                    </div>
-	                                    <p class="description">{{exp.description}}</p>
-	                                </div>
-	                                <!--end loop each work-->
-	                            </div>
-	                            <!--end experience-->
+                                    </div>
+                                    <div class="info-logo" ng-show="exp.companyLogo != ''">
+                                        <a href="{{exp.companyUrl}}">
+                                            <img src="{{exp.companyLogo}}"/>
+                                        </a>
+                                    </div>
+                                    <!--end info each work-->
+                                </div>
+                                <p class="description">{{exp.description}}</p>
+                            </div>
+                            <!--end loop each work-->
+                        </div>
+                        <!--end experience-->
 
 
-	                            <!--volunteer-->
-	                            <div class="background-section">
-	                                <div class="valign-wrapper background-section-header">
-	                                    <img src=".\images\commons\header-volunteerExperience.png" class="valign" />
-	                                    <h3 class="valign">Volunteer Experience & Causes</h3>
-	                                </div>
-	                                <div id="volunteerexp">
-	                                    <p>Causes {{name[0]}} cares about</p>
-	                                    <ul class="browser-default">
-	                                        <li ng-repeat="c in caredCauses">{{c}}</li>
-	                                    </ul>
-	                                    <p>Organizations {{name[0]}} supports</p>
-	                                    <ul class="browser-default" style="margin-bottom: 0px !important;">
-	                                        <li ng-repeat="org in supportedOrganizations">
-	                                            <a href="https://www.linkedin.com/vsearch/p?company={{org}}&trk=prof-vol_interests-orgs-link">
-	                                                {{org}}
-	                                            </a>
-	                                        </li>
-	                                    </ul>
-	                                </div>
-	                            </div>
-								<!-- end volunteer-->
+                        <!--volunteer-->
+                        <div class="background-section">
+                            <div class="valign-wrapper background-section-header">
+                                <img src=".\images\commons\header-volunteerExperience.png" class="valign"/>
+                                <h3 class="valign">Volunteer Experience & Causes</h3>
+                            </div>
+                            <div id="volunteerexp">
+                                <p>Causes {{name[0]}} cares about</p>
+                                <ul class="browser-default">
+                                    <li ng-repeat="c in caredCauses">
+                                        {{c}}
 
-								<!--skill-->
-								<div class="background-section">
-									<div class="valign-wrapper background-section-header">
-										<img src=".\images\commons\header-skill.png" class="valign" />
-										<h3 class="valign">Skill</h3>
-									</div>
-									<div>
-										<div>
-											<p class="skills-part">Top Skills</p>
-											<div class="skill-pill" ng-repeat="skill in skills | limitTo: 10">
-												<a class="btnskill-percent">{{skill.endorsers}}</a>
-												<a class="btnskill-description" href="https://www.linkedin.com/topic/{{skill.name}}?trk=mprofile_topic">
-													{{skill.name}}
-												</a>
-											</div>
-										</div>
-										<div id="different-skills" ng-show="skills.length > 10">
-											<p class="skills-part">{{name[0]}} also knows about...</p>
-											<div class="skill-pill" ng-repeat="skill in skills" ng-show="$index >= 10">
-												<a class="btnskill-percent">{{skill.endorsers}}</a>
-												<a class="btnskill-description" href="https://www.linkedin.com/topic/{{skill.name}}?trk=mprofile_topic">
-													{{skill.name}}
-												</a>
-											</div>
+                                        <!--edit Causes-->
+                                        <button class="edit-causes-button" ng-click="editCausesShow($index)">
+                                            <img src="images/commons/edit.png">
+                                        </button>
+                                        <form class="editCausesBox" ng-show="showEditCauses[$index]">
+                                            <strong class="edit-causes-form"></strong>
+                                            <label>Causes</label></br>
+                                            <input class="editCausesText" type="text" ng-model="editCauses[$index]"
+                                                   maxlength="30"></br>
+                                            <span class="btn-save" ng-click="editCausesSave($index)">Save</span>
+                                            <span class="btn-cancel" ng-click="showEditCauses[$index]=false">
+                                                Cancel
+                                            </span>
+                                        </form>
+                                        </br>
+                                        <!--end edit-->
 
-										</div>
-									</div>
-								</div>
-								<!-- end skill-->
 
-								<!--education-->
-								<div id="id-education" class="background-section">
-									<div class="valign-wrapper background-section-header">
-										<img src=".\images\commons\header-education.png" class="valign" />
-										<h3 class="valign">Education</h3>
-									</div>
-									<!--info education-->
-									<div>
-										<div class="row info-bar" ng-repeat="edu in education">
+                                    </li>
+
+                                </ul>
+                                <p>Organizations {{name[0]}} supports</p>
+                                <ul class="browser-default" style="margin-bottom: 0px !important;">
+                                    <li ng-repeat="org in supportedOrganizations">
+                                        <a href="https://www.linkedin.com/vsearch/p?company={{org}}&trk=prof-vol_interests-orgs-link">
+                                            {{org}}
+                                        </a>
+
+                                        <!--edit Organizations-->
+                                        <button class="edit-organizations-button" ng-click="editOrganizationsShow($index)">
+                                            <img src="images/commons/edit.png">
+                                        </button>
+                                        <form class="editOrganizationsBox" ng-show="showEditOrganizations[$index]">
+                                            <strong class="edit-organizations-form"></strong>
+                                            <label>Supported Organization</label></br>
+                                            <input class="editOrganizationsText" type="text" ng-model="editOrganizations[$index]"
+                                                   maxlength="30"></br>
+                                            <span class="btn-save" ng-click="editOrganizationsSave($index)">Save</span>
+                                            <span class="btn-cancel" ng-click="showEditOrganizations[$index]=false">
+                                                Cancel
+                                            </span>
+                                        </form>
+                                        </br>
+                                        <!--end edit Organizations-->
 
 
 
-											<button class="edit-education-button" ng-click="editEducationShow($index)">
-												<img src="images/commons/edit.png">
-											</button>
-											<form class="editEducationBox" ng-show="showEditEducation[$index]">
-												<strong class="edit-education-form"></strong>
-												<label>Name</label></br>
-												<input class="editEducationText" type="text" ng-model="editEducation[$index].name" maxlength="30"></br>
-												<label>Position</label></br>
-												<input class="editEducationText" type="text" ng-model="editEducation[$index].title" maxlength="30"></br>
-												<label>Start Period</label></br>
-												<input class="editEducationText" type="text" ng-model="editEducation[$index].startPeriod" maxlength="30"></br>
-												<label>End Period</label></br>
-												<input class="editEducationText" type="text" ng-model="editEducation[$index].endPeriod" maxlength="30"></br>
-												<a class="btn-save" ng-click="editEducationSave($index)">Save</a>
-												<a class="btn-cancel" ng-click="showEditEducation[$index]=false">Cancel</a>
-											</form>
-											</br>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end volunteer-->
+
+                        <!--skill-->
+                        <div class="background-section">
+                            <div class="valign-wrapper background-section-header">
+                                <img src=".\images\commons\header-skill.png" class="valign"/>
+                                <h3 class="valign">Skill</h3>
+                            </div>
+                            <div>
+                                <div>
+                                    <p class="skills-part">Top Skills</p>
+                                    <div class="skill-pill" ng-repeat="skill in skills | limitTo: 10">
+                                        <a class="btnskill-percent">{{skill.endorsers}}</a>
+                                        <a class="btnskill-description"
+                                           href="https://www.linkedin.com/topic/{{skill.name}}?trk=mprofile_topic">
+                                            {{skill.name}}
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="different-skills" ng-show="skills.length > 10">
+                                    <p class="skills-part">{{name[0]}} also knows about...</p>
+                                    <div class="skill-pill" ng-repeat="skill in skills" ng-show="$index >= 10">
+                                        <a class="btnskill-percent">{{skill.endorsers}}</a>
+                                        <a class="btnskill-description"
+                                           href="https://www.linkedin.com/topic/{{skill.name}}?trk=mprofile_topic">
+                                            {{skill.name}}
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end skill-->
+
+                        <!--education-->
+                        <div id="id-education" class="background-section">
+                            <div class="valign-wrapper background-section-header">
+                                <img src=".\images\commons\header-education.png" class="valign"/>
+                                <h3 class="valign">Education</h3>
+                            </div>
+                            <!--info education-->
+                            <div>
+                                <div class="row info-bar" ng-repeat="edu in education">
 
 
+                                    <button class="edit-education-button" ng-click="editEducationShow($index)">
+                                        <img src="images/commons/edit.png">
+                                    </button>
+                                    <form class="editEducationBox" ng-show="showEditEducation[$index]">
+                                        <strong class="edit-education-form"></strong>
+                                        <label>Name</label></br>
+                                        <input class="editEducationText" type="text"
+                                               ng-model="editEducationName[$index]" maxlength="100"></br>
+                                        <label>Position</label></br>
+                                        <input class="editEducationText" type="text"
+                                               ng-model="editEducationTitle[$index]" maxlength="100"></br>
+                                        <label>Start Period</label></br>
+                                        <input class="editEducationText" type="text"
+                                               ng-model="editEducationStartPeriod[$index]" maxlength="100"></br>
+                                        <label>End Period</label></br>
+                                        <input class="editEducationText" type="text"
+                                               ng-model="editEducationEndPeriod[$index]" maxlength="100"></br>
+                                        <a class="btn-save" ng-click="editEducationSave($index)">Save</a>
+                                        <a class="btn-cancel" ng-click="showEditEducation[$index]=false">Cancel</a>
+                                    </form>
+                                    </br>
 
-											<div class="inline-block">
-												<a href="{{edu.url}}" class="info-title" title="More Details for this school">
-													{{edu.name}}</a>
-												<a class="info-subtitle" href="http://www.linkedin.com/edu/fos?id=100990&amp;trk=prof-edu-field_of_study"
-												   title="Explore this field of study">{{edu.title}}</a>
-												<span class="info-date">{{edu.startPeriod}} – {{edu.endPeriod}}</span>
-											</div>
-											<div class="info-logo">
-												<a href="{{edu.url}}">
-													<img src="{{edu.logo}}" height="60" />
-												</a>
-											</div>
-										</div>
-									</div>
-									<!--end info education-->
-								</div>
-								<!-- end education-->
 
-                        	</div>
-						</div>
-						<!--end background-->
-					</div>
-					<!--end left-->
-					<!--right nothing-->
-					<div id="right-column" class="col card-body">
-                	</div>
-                	<!--end right-->
-				</div>
-				<!--end profile-->
-			</div>
-			<!--end page content-->
-		</div>
-		
-		
-		<!-- JQuery -->
-		<script src="js/jquery-2.2.3.min.js"></script>
-		<!-- Angular Js -->
-		<script src="js/angular.min.js"></script>
-		<!-- Materialize Js -->
-		<script src="js/materialize.min.js"></script>
-		<!-- My Js -->
-		<script src="js/app.js"></script>
-	</body>
+                                    <div class="inline-block">
+                                        <a href="{{edu.url}}" class="info-title" title="More Details for this school">
+                                            {{edu.name}}</a>
+                                        <a class="info-subtitle"
+                                           href="http://www.linkedin.com/edu/fos?id=100990&amp;trk=prof-edu-field_of_study"
+                                           title="Explore this field of study">{{edu.title}}</a>
+                                        <span class="info-date">{{edu.startPeriod}} – {{edu.endPeriod}}</span>
+                                    </div>
+                                    <div class="info-logo">
+                                        <a href="{{edu.url}}">
+                                            <img src="{{edu.logo}}" height="60"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end info education-->
+                        </div>
+                        <!-- end education-->
+
+                    </div>
+                </div>
+                <!--end background-->
+            </div>
+            <!--end left-->
+            <!--right nothing-->
+            <div id="right-column" class="col card-body">
+            </div>
+            <!--end right-->
+        </div>
+        <!--end profile-->
+    </div>
+    <!--end page content-->
+</div>
+
+<button class="top-button" ng-click="goTop()">
+</button>
+
+<!-- JQuery -->
+<script src="js/jquery-2.2.3.min.js"></script>
+<!-- Angular Js -->
+<script src="js/angular.min.js"></script>
+<!-- Materialize Js -->
+<script src="js/materialize.min.js"></script>
+<!-- My Js -->
+<script src="js/app.js"></script>
+</body>
 </html>
 

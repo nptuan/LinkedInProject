@@ -1,3 +1,7 @@
 https://docs.angularjs.org
-http://www.w3schools.com/angular/
+http://www.w3schools.com/
 http://myjson.com/
+https://jsfiddle.net/a5vw32tf/5/
+http://stackoverflow.com/
+https://www.linkedin.com/
+https://www.google.com/
