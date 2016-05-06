@@ -97,7 +97,7 @@
                                     <td>
                                         <!--edit current work-->
                                         <button class="edit-current-button" ng-click="editCurrentShow()">
-                                            <img src="images/commons/edit.png">
+                                            <img src="images/commons/edit_small.png">
                                         </button>
                                         <!--end edit current work-->
                                     </td>
@@ -114,7 +114,7 @@
                                     <td>
                                         <!--edit previous work-->
                                         <button class="edit-previous-button" ng-click="editPreviousShow()">
-                                            <img src="images/commons/edit.png">
+                                            <img src="images/commons/edit_small.png">
                                         </button>
                                         <!--end edit previous work-->
                                     </td>
@@ -126,8 +126,8 @@
                                     </td>
                                     <td>
                                         <!--edit education-->
-                                        <button class="edit-education-button" ng-click="editEducationTopShow()">
-                                            <img src="images/commons/edit.png">
+                                        <button class="edit-education-top-button" ng-click="editEducationTopShow()">
+                                            <img src="images/commons/edit_small.png">
                                         </button>
                                         <!--end edit education-->
                                     </td>
@@ -204,19 +204,19 @@
                                 <img src=".\images\commons\header-summary.png" class="valign"/>
                                 <h3 class="valign">Summary</h3>
                                 <!--edit summary-->
-                                <button class="edit-summary-button" ng-click="editSummaryShow()">
-                                    <img src="images/commons/edit.png">
-                                </button>
                                 <form class="editSummaryBox" ng-show="showEditSummary">
                                     <strong class="edit-summary-form"></strong>
-                                    <label>Your professional headline</label></br>
+                                    <label>Your professional headline</label>
                                     <input class="editSummaryText" type="text" ng-model="editSummary"
-                                           maxlength="30"></br>
+                                            /></br>
                                     <a class="btn-save" ng-click="editSummarySave()">Save</a>
                                     <a class="btn-cancel" ng-click="showEditSummary=false">
                                         Cancel
                                     </a>
                                 </form>
+                                <button class="edit-summary-button" ng-click="editSummaryShow()">
+                                    <img src="images/commons/edit.png">
+                                </button>
                                 </br>
                                 <!--end edit-->
                             </div>
@@ -230,9 +230,49 @@
                             <div class="valign-wrapper background-section-header">
                                 <img src=".\images\commons\header-experience.png" class="valign"/>
                                 <h3 class="valign">Experience</h3>
+                                <!--add experience-->
+
+                                <form class="addExperienceBox" ng-show="showAddExperience">
+                                    <strong class="add-experience-form"></strong>
+                                    <label>New Experience</label></br>
+                                    <label>Company Name</label></br>
+                                    <input class="addExperienceText" type="text"
+                                           ng-model="Experience.companyName" maxlength="100"></br>
+                                    <label>Position</label></br>
+                                    <input class="addExperienceText" type="text"
+                                           ng-model="Experience.title" maxlength="100"></br>
+                                    <label>Start Period</label></br>
+                                    <input class="addExperienceText" type="text"
+                                           ng-model="Experience.startPeriod" maxlength="100"></br>
+                                    <label>End Period</label></br>
+                                    <input class="addExperienceText" type="text"
+                                           ng-model="Experience.endPeriod" maxlength="100"></br>
+                                    <label>Duration</label></br>
+                                    <input class="addExperienceText" type="text"
+                                           ng-model="Experience.duration" maxlength="100"></br>
+                                    <label>Location</label></br>
+                                    <input class="addExperienceText" type="text"
+                                           ng-model="Experience.location" maxlength="100"></br>
+                                    <label>Description</label></br>
+                                    <input class="addExperienceText" type="text"
+                                           ng-model="Experience.description" maxlength="100"></br>
+                                    <a class="btn-save" ng-click="addExperienceSave()">Save</a>
+                                    <a class="btn-cancel" ng-click="showAddExperience=false">Cancel</a>
+                                </form>
+                                <button class="add-experience-button" ng-click="addExperienceShow()">
+                                    <img src="images/commons/add.png">
+                                </button>
+                                </br>
+                                <!--end add experience-->
                             </div>
                             <!--loop each work-->
-                            <div ng-repeat="exp in experience">
+                            <div ng-repeat="exp in experience" style="position: relative">
+                                <!--delete exp-->
+                                <button class="delete-experience-button" ng-click="deleteExperience($index)">
+                                    <img src="images/commons/delete.png">
+                                </button>
+                                <!--end delete exp-->
+                                <!--edit exp-->
                                 <button class="edit-experience-button" ng-click="editExperienceShow($index)">
                                     <img src="images/commons/edit.png">
                                 </button>
@@ -260,6 +300,12 @@
                                     <a class="btn-cancel" ng-click="showEditExperience[$index]=false">Cancel</a>
                                 </form>
                                 </br>
+                                <!--end edit exp-->
+
+
+
+
+
                                 <div class="row info-bar">
                                     <!--info each work-->
                                     <div class="inline-block">
@@ -295,53 +341,61 @@
                                 <p>Causes {{name[0]}} cares about</p>
                                 <ul class="browser-default">
                                     <li ng-repeat="c in caredCauses">
-                                        {{c}}
-
-                                        <!--edit Causes-->
-                                        <button class="edit-causes-button" ng-click="editCausesShow($index)">
-                                            <img src="images/commons/edit.png">
-                                        </button>
-                                        <form class="editCausesBox" ng-show="showEditCauses[$index]">
-                                            <strong class="edit-causes-form"></strong>
-                                            <label>Causes</label></br>
-                                            <input class="editCausesText" type="text" ng-model="editCauses[$index]"
-                                                   maxlength="30"></br>
-                                            <span class="btn-save" ng-click="editCausesSave($index)">Save</span>
-                                            <span class="btn-cancel" ng-click="showEditCauses[$index]=false">
-                                                Cancel
-                                            </span>
-                                        </form>
-                                        </br>
-                                        <!--end edit-->
-
-
+                                        <div class="ul-li-div">
+                                            {{c}}
+                                            <!--edit Causes-->
+                                            <button class="edit-causes-button" ng-click="editCausesShow($index)">
+                                                <img src="images/commons/edit_small.png">
+                                            </button>
+                                            <form class="editCausesBox" ng-show="showEditCauses[$index]">
+                                                <strong class="edit-causes-form"></strong>
+                                                <label>Causes</label>
+                                                <input class="editCausesText" type="text" ng-model="editCauses[$index]"
+                                                       maxlength="30">
+                                                <span class="btn-save" ng-click="editCausesSave($index)">Save</span>
+                                                <span class="btn-cancel" ng-click="showEditCauses[$index]=false">Cancel</span>
+                                            </form>
+                                            <!--end edit Causes-->
+                                            <!--delete Causes--->
+                                            <button class="delete-causes-button" ng-click="deleteCauses($index)">
+                                                <img src="images/commons/delete_small.png">
+                                            </button>
+                                            </br>
+                                            <!--end delete Causes--->
+                                        </div>
                                     </li>
-
                                 </ul>
                                 <p>Organizations {{name[0]}} supports</p>
                                 <ul class="browser-default" style="margin-bottom: 0px !important;">
                                     <li ng-repeat="org in supportedOrganizations">
-                                        <a href="https://www.linkedin.com/vsearch/p?company={{org}}&trk=prof-vol_interests-orgs-link">
-                                            {{org}}
-                                        </a>
 
-                                        <!--edit Organizations-->
-                                        <button class="edit-organizations-button" ng-click="editOrganizationsShow($index)">
-                                            <img src="images/commons/edit.png">
-                                        </button>
-                                        <form class="editOrganizationsBox" ng-show="showEditOrganizations[$index]">
-                                            <strong class="edit-organizations-form"></strong>
-                                            <label>Supported Organization</label></br>
-                                            <input class="editOrganizationsText" type="text" ng-model="editOrganizations[$index]"
-                                                   maxlength="30"></br>
-                                            <span class="btn-save" ng-click="editOrganizationsSave($index)">Save</span>
-                                            <span class="btn-cancel" ng-click="showEditOrganizations[$index]=false">
-                                                Cancel
-                                            </span>
-                                        </form>
-                                        </br>
-                                        <!--end edit Organizations-->
+                                        <div class="ul-li-div">
+                                            <a href="https://www.linkedin.com/vsearch/p?company={{org}}&trk=prof-vol_interests-orgs-link">
+                                                {{org}}
+                                            </a>
 
+                                            <!--edit Organizations-->
+                                            <button class="edit-organizations-button" ng-click="editOrganizationsShow($index)">
+                                                <img src="images/commons/edit_small.png">
+                                            </button>
+                                            <form class="editOrganizationsBox" ng-show="showEditOrganizations[$index]">
+                                                <strong class="edit-organizations-form"></strong>
+                                                <label>Supported Organization</label></br>
+                                                <input class="editOrganizationsText" type="text" ng-model="editOrganizations[$index]"
+                                                       maxlength="30"></br>
+                                                <span class="btn-save" ng-click="editOrganizationsSave($index)">Save</span>
+                                                <span class="btn-cancel" ng-click="showEditOrganizations[$index]=false">
+                                                    Cancel
+                                                </span>
+                                            </form>
+                                            <!--end edit Organizations-->
+                                            <!--delete Organizations--->
+                                            <button class="delete-organizations-button" ng-click="deleteOrganizations($index)">
+                                                <img src="images/commons/delete_small.png">
+                                            </button>
+                                            </br>
+                                            <!--end delete Organizations--->
+                                        </div>
 
 
                                     </li>
@@ -366,16 +420,80 @@
                                            href="https://www.linkedin.com/topic/{{skill.name}}?trk=mprofile_topic">
                                             {{skill.name}}
                                         </a>
+                                        <!--edit skills-->
+                                        <button class="edit-skills-button" ng-click="editSkillsShow($index)">
+                                            <img src="images/commons/edit.png">
+                                        </button>
+                                        <form class="editSkillsBox" ng-show="showEditSkills[$index]">
+                                            <strong class="edit-skills-form"></strong>
+                                            <label>Name</label></br>
+                                            <input class="editSkillsText" type="text"
+                                                   ng-model="editSkillsName[$index]" maxlength="100"></br>
+                                            <label>Endorsers</label></br>
+                                            <input class="editSkillsText" type="text"
+                                                   ng-model="editSkillsEndorsers[$index]" maxlength="100"></br>
+                                            <a class="btn-save" ng-click="editSkillsSave($index)">Save</a>
+                                            <a class="btn-cancel" ng-click="showEditSkills[$index]=false">Cancel</a>
+                                        </form>
+                                        </br>
+                                        <!--end edit skills-->
+                                        <!--delete skills-->
+                                        <button class="delete-skills-button" ng-click="deleteSkills($index)">
+                                            <img src="images/commons/delete.png">
+                                        </button>
+                                        <!--end delete skills-->
                                     </div>
                                 </div>
                                 <div id="different-skills" ng-show="skills.length > 10">
                                     <p class="skills-part">{{name[0]}} also knows about...</p>
+                                    <!--add skills-->
+                                    <form class="addSkillsBox" ng-show="showAddSkills">
+                                        <strong class="add-skills-form"></strong>
+                                        <label>New Skill</label></br>
+                                        <label>Name</label></br>
+                                        <input class="addSkillsText" type="text"
+                                               ng-model="Skill.name" maxlength="100"></br>
+                                        <label>Endorsers</label></br>
+                                        <input class="addSkillsText" type="text"
+                                               ng-model="Skill.endorsers" maxlength="100"></br>
+                                        <a class="btn-save" ng-click="addSkillsSave()">Save</a>
+                                        <a class="btn-cancel" ng-click="showAddSkills=false">Cancel</a>
+                                    </form>
+                                    <button class="add-skills-button" ng-click="addSkillsShow()">
+                                        <img src="images/commons/add.png">
+                                    </button>
+                                    </br>
+                                    <!--end add skills-->
                                     <div class="skill-pill" ng-repeat="skill in skills" ng-show="$index >= 10">
                                         <a class="btnskill-percent">{{skill.endorsers}}</a>
                                         <a class="btnskill-description"
                                            href="https://www.linkedin.com/topic/{{skill.name}}?trk=mprofile_topic">
                                             {{skill.name}}
                                         </a>
+                                        <!--edit skills-->
+                                        <button class="edit-skills-button" ng-click="editSkillsShow($index)">
+                                            <img src="images/commons/edit.png">
+                                        </button>
+                                        <form class="editSkillsBox" ng-show="showEditSkills[$index]">
+                                            <strong class="edit-skills-form"></strong>
+                                            <label>Name</label></br>
+                                            <input class="editSkillsText" type="text"
+                                                   ng-model="editSkillsName[$index]" maxlength="100"></br>
+                                            <label>Endorsers</label></br>
+                                            <input class="editSkillsText" type="text"
+                                                   ng-model="editSkillsEndorsers[$index]" maxlength="100"></br>
+                                            <a class="btn-save" ng-click="editSkillsSave($index)">Save</a>
+                                            <a class="btn-cancel" ng-click="showEditSkills[$index]=false">Cancel</a>
+                                        </form>
+                                        </br>
+                                        <!--end edit skills-->
+                                        <!--delete skills-->
+                                        <button class="delete-skills-button" ng-click="deleteSkills($index)">
+                                            <img src="images/commons/delete.png">
+                                        </button>
+                                        <!--end delete skills-->
+
+
                                     </div>
 
                                 </div>
@@ -388,12 +506,44 @@
                             <div class="valign-wrapper background-section-header">
                                 <img src=".\images\commons\header-education.png" class="valign"/>
                                 <h3 class="valign">Education</h3>
+
+                                <!--add education--->
+
+                                <form class="addEducationBox" ng-show="showAddEducation">
+                                    <strong class="add-education-form"></strong>
+                                    <label>New Education</label></br>
+                                    <label>Name</label></br>
+                                    <input class="addEducationText" type="text"
+                                           ng-model="Education.name" maxlength="100"></br>
+                                    <label>Position</label></br>
+                                    <input class="addEducationText" type="text"
+                                           ng-model="Education.title" maxlength="100"></br>
+                                    <label>Start Period</label></br>
+                                    <input class="addEducationText" type="text"
+                                           ng-model="Education.startPeriod" maxlength="100"></br>
+                                    <label>End Period</label></br>
+                                    <input class="addEducationText" type="text"
+                                           ng-model="Education.endPeriod" maxlength="100"></br>
+                                    <a class="btn-save" ng-click="addEducationSave()">Save</a>
+                                    <a class="btn-cancel" ng-click="showAddEducation=false">Cancel</a>
+                                </form>
+                                <button class="add-education-button" ng-click="addEducationShow()">
+                                    <img src="images/commons/add.png">
+                                </button>
+                                </br>
+                                <!--end add education--->
+
+
                             </div>
                             <!--info education-->
                             <div>
-                                <div class="row info-bar" ng-repeat="edu in education">
-
-
+                                <div class="row" ng-repeat="edu in education">
+                                    <!--delete education--->
+                                    <button class="delete-education-button" ng-click="deleteEducation($index)">
+                                        <img src="images/commons/delete.png">
+                                    </button>
+                                    <!--end delete education--->
+                                    <!--edit education--->
                                     <button class="edit-education-button" ng-click="editEducationShow($index)">
                                         <img src="images/commons/edit.png">
                                     </button>
@@ -415,26 +565,119 @@
                                         <a class="btn-cancel" ng-click="showEditEducation[$index]=false">Cancel</a>
                                     </form>
                                     </br>
+                                    <!--end edit education--->
 
-
-                                    <div class="inline-block">
-                                        <a href="{{edu.url}}" class="info-title" title="More Details for this school">
-                                            {{edu.name}}</a>
-                                        <a class="info-subtitle"
-                                           href="http://www.linkedin.com/edu/fos?id=100990&amp;trk=prof-edu-field_of_study"
-                                           title="Explore this field of study">{{edu.title}}</a>
-                                        <span class="info-date">{{edu.startPeriod}} – {{edu.endPeriod}}</span>
-                                    </div>
-                                    <div class="info-logo">
-                                        <a href="{{edu.url}}">
-                                            <img src="{{edu.logo}}" height="60"/>
-                                        </a>
+                                    <div class="info-bar">
+                                        <div class="inline-block">
+                                            <a href="{{edu.url}}" class="info-title" title="More Details for this school">
+                                                {{edu.name}}</a>
+                                            <a class="info-subtitle"
+                                               href="http://www.linkedin.com/edu/fos?id=100990&amp;trk=prof-edu-field_of_study"
+                                               title="Explore this field of study">{{edu.title}}</a>
+                                            <span class="info-date">{{edu.startPeriod}} – {{edu.endPeriod}}</span>
+                                        </div>
+                                        <div class="info-logo">
+                                            <a href="{{edu.url}}">
+                                                <img src="{{edu.logo}}" height="60"/>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <!--end info education-->
                         </div>
                         <!-- end education-->
+                        <!--project-->
+                        <div class="background-section">
+                            <div class="valign-wrapper background-section-header">
+                                <img src=".\images\commons\header_project.png" class="valign"/>
+                                <h3 class="valign">Project</h3>
+
+                                <!--add project--->
+
+                                <form class="addProjectBox" ng-show="showAddProject">
+                                    <strong class="add-project-form"></strong>
+                                    <label>New Project</label></br>
+                                    <label>Name</label></br>
+                                    <input class="addProjectText" type="text"
+                                           ng-model="Project.name" maxlength="100"></br>
+                                    <label>Position</label></br>
+                                    <input class="addProjectText" type="text"
+                                           ng-model="Project.position" maxlength="100"></br>
+                                    <label>Year</label></br>
+                                    <input class="addProjectText" type="text"
+                                           ng-model="Project.year" maxlength="100"></br>
+                                    <label>Duration</label></br>
+                                    <input class="addProjectText" type="text"
+                                           ng-model="Project.duration" maxlength="100"></br>
+                                    <label>Detail</label></br>
+                                    <input class="addProjectText" type="text"
+                                           ng-model="Project.detail" maxlength="100"></br>
+                                    <a class="btn-save" ng-click="addProjectSave()">Save</a>
+                                    <a class="btn-cancel" ng-click="showAddProject=false">Cancel</a>
+                                </form>
+                                <button class="add-project-button" ng-click="addProjectShow()">
+                                    <img src="images/commons/add.png">
+                                </button>
+                                </br>
+                                <!--end add Project--->
+
+
+                            </div>
+                            <!--info Project-->
+                            <div>
+                                <div class="row" ng-repeat="proj in project">
+                                    <!--delete project--->
+                                    <button class="delete-project-button" ng-click="deleteProject($index)">
+                                        <img src="images/commons/delete.png">
+                                    </button>
+                                    <!--end delete project--->
+                                    <!--edit project--->
+                                    <button class="edit-project-button" ng-click="editProjectShow($index)">
+                                        <img src="images/commons/edit.png">
+                                    </button>
+                                    <form class="editProjectBox" ng-show="showEditProject[$index]">
+                                        <strong class="edit-project-form"></strong>
+                                        <label>Name</label></br>
+                                        <input class="editProjectText" type="text"
+                                               ng-model="editProjectName[$index]" maxlength="100"></br>
+                                        <label>Position</label></br>
+                                        <input class="editProjectText" type="text"
+                                               ng-model="editProjectPosition[$index]" maxlength="100"></br>
+                                        <label>Year</label></br>
+                                        <input class="editProjectText" type="text"
+                                               ng-model="editProjectYear[$index]" maxlength="100"></br>
+                                        <label>Duration</label></br>
+                                        <input class="editProjectText" type="text"
+                                               ng-model="editProjectDuration[$index]" maxlength="100"></br>
+                                        <label>Detail</label></br>
+                                        <input class="editProjectText" type="text"
+                                               ng-model="editProjectDetail[$index]" maxlength="100"></br>
+                                        <a class="btn-save" ng-click="editProjectSave($index)">Save</a>
+                                        <a class="btn-cancel" ng-click="showEditProject[$index]=false">Cancel</a>
+                                    </form>
+                                    </br>
+                                    <!--end edit project--->
+
+                                    <div class="info-bar">
+                                        <div class="inline-block">
+                                            <a class="info-title">
+                                                {{proj.name}}</a>
+                                            <a class="info-subtitle">{{proj.position}}</a>
+                                            <span class="info-date">{{proj.year}} | {{proj.duration}}</span>
+                                        </div>
+                                        <div class="info-logo">
+                                            <a href="https://www.linkedin.com/">
+                                                <img src="{{proj.logo}}" height="60"/>
+                                            </a>
+                                        </div>
+                                        <p class="description">{{proj.detail}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end info project-->
+                        </div>
+                        <!-- end project-->
 
                     </div>
                 </div>

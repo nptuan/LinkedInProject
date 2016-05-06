@@ -7,7 +7,7 @@ linkedInApp.controller('content-controller', ['$scope', '$http',
         window.sc = $scope;
         $scope.dummyUrl = "https://google.com";
 
-        $http.get('https://api.myjson.com/bins/2sjy8').success(function (data) {
+        $http.get('https://api.myjson.com/bins/2diik').success(function (data) {
             //Read model from json data
             $scope.cover = data.cover;
             $scope.avatar = data.avatar;
@@ -32,6 +32,8 @@ linkedInApp.controller('content-controller', ['$scope', '$http',
             $scope.skills = data.skills;
 
             $scope.education = data.education;
+
+            $scope.project = data.project;
 
 
             $scope.showEditName = false;
@@ -127,6 +129,59 @@ linkedInApp.controller('content-controller', ['$scope', '$http',
                 $scope.showEditExperience[index] = false;
             };
 
+            $scope.showAddExperience = false;
+            $scope.addExperienceShow = function() {
+                $scope.Experience = {   companyName: "",
+                                        title: "",
+                                        startPeriod: "",
+                                        endPeriod: "",
+                                        duration:"",
+                                        location: "",
+                                        description: ""};
+                $scope.showAddExperience = true;
+            };
+
+            $scope.addExperienceSave = function() {
+                $scope.experience.push($scope.Experience);
+                $scope.showAddExperience = false;
+            };
+
+
+            $scope.showEditSkills = new Array($scope.skills.length).fill(false);
+            $scope.editSkillsName = new Array($scope.skills.length);
+            $scope.editSkillsEndorsers = new Array($scope.skills.length);
+
+            $scope.editSkillsShow = function(index) {
+                $scope.editSkillsName[index] = $scope.skills[index].name;
+                $scope.editSkillsEndorsers[index] = $scope.skills[index].endorsers;
+
+                $scope.showEditSkills[index] = true;
+            };
+
+            $scope.editSkillsSave = function(index) {
+                $scope.skills[index].name = $scope.editSkillsName[index];
+                $scope.skills[index].endorsers = $scope.editSkillsEndorsers[index];
+
+
+                $scope.showEditSkills[index] = false;
+            };
+
+            $scope.showAddSkills = false;
+            $scope.addSkillsShow = function() {
+                $scope.Skill = {name: "", endorsers: ""};
+                $scope.showAddSkills = true;
+            };
+
+            $scope.addSkillsSave = function() {
+
+                $scope.skills.push($scope.Skill);
+                $scope.showAddSkills = false;
+            };
+
+
+
+
+
 
             $scope.showEditEducation = new Array($scope.education.length).fill(false);
             $scope.editEducationName = new Array($scope.education.length);
@@ -152,6 +207,20 @@ linkedInApp.controller('content-controller', ['$scope', '$http',
                 $scope.showEditEducation[index] = false;
             };
 
+            $scope.showAddEducation = false;
+            $scope.addEducationShow = function() {
+                $scope.Education = {    name: "",
+                                        title: "",
+                                        startPeriod: "",
+                                        endPeriod: ""};
+                $scope.showAddEducation = true;
+            };
+
+            $scope.addEducationSave = function() {
+                $scope.education.push($scope.Education);
+                $scope.showAddEducation = false;
+            };
+
             $scope.showEditCauses = new Array($scope.caredCauses.length).fill(false);
             $scope.editCauses = new Array($scope.caredCauses.length);
             $scope.editCausesShow = function (index) {
@@ -175,6 +244,66 @@ linkedInApp.controller('content-controller', ['$scope', '$http',
                 $scope.supportedOrganizations[index] = $scope.editOrganizations[index];
                 $scope.showEditOrganizations[index] = false;
             };
+
+            $scope.showEditProject = new Array($scope.project.length).fill(false);
+            $scope.editProjectName = new Array($scope.project.length);
+            $scope.editProjectPosition = new Array($scope.project.length);
+            $scope.editProjectYear = new Array($scope.project.length);
+            $scope.editProjectDuration = new Array($scope.project.length);
+            $scope.editProjectDetail = new Array($scope.project.length);
+            $scope.editProjectShow = function(index) {
+                $scope.editProjectName[index] = $scope.project[index].name;
+                $scope.editProjectPosition[index] = $scope.project[index].position;
+                $scope.editProjectYear[index] = $scope.project[index].year;
+                $scope.editProjectDuration[index] = $scope.project[index].duration;
+                $scope.editProjectDetail[index] = $scope.project[index].detail;
+                $scope.showEditProject[index] = true;
+            };
+
+            $scope.editProjectSave = function(index) {
+                $scope.project[index].name = $scope.editProjectName[index];
+                $scope.project[index].position = $scope.editProjectPosition[index];
+                $scope.project[index].year = $scope.editProjectYear[index];
+                $scope.project[index].duration = $scope.editProjectDuration[index];
+                $scope.project[index].detail = $scope.editProjectDetail[index];
+                $scope.showEditProject[index] = false;
+            };
+
+            $scope.showAddProject = false;
+            $scope.addProjectShow = function() {
+                $scope.Project = {      name: "",
+                                        logo: "",
+                                        position: "",
+                                        year: "",
+                                        duration: "",
+                                        detail: ""};
+                $scope.showAddProject = true;
+            };
+
+            $scope.addProjectSave = function() {
+                $scope.project.push($scope.Project);
+                $scope.showAddProject = false;
+            };
+
+            $scope.deleteExperience = function (index) {
+                $scope.experience.splice(index, 1);
+            };
+            $scope.deleteEducation = function (index) {
+                $scope.education.splice(index, 1);
+            };
+            $scope.deleteProject = function (index) {
+                $scope.project.splice(index, 1);
+            };
+            $scope.deleteOrganizations = function (index) {
+                $scope.supportedOrganizations.splice(index, 1);
+            };
+            $scope.deleteCauses = function (index) {
+                $scope.caredCauses.splice(index, 1);
+            };
+            $scope.deleteSkills = function (index) {
+                $scope.skills.splice(index, 1);
+            };
+
 
         });
     }]);

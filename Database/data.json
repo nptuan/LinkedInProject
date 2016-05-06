@@ -262,14 +262,6 @@
       "endorsers": "10"
     },
     {
-      "name": "Nonprofits",
-      "endorsers": "9"
-    },
-    {
-      "name": "Mentoring",
-      "endorsers": "8"
-    },
-    {
       "name": "Mobile Applications",
       "endorsers": "6"
     },
@@ -280,10 +272,6 @@
     {
       "name": "Awesomeness",
       "endorsers": "5"
-    },
-    {
-      "name": "Education",
-      "endorsers": "3"
     }
   ],
   "education": [
@@ -294,6 +282,33 @@
       "title": "Bachelor of Science, Economics",
       "startPeriod": "1988",
       "endPeriod": "June 1992"
+    },
+    {
+      "name": "VNU-HCM University of Science",
+      "url": "https://www.linkedin.com/company/1827085?trk=prof-0-ovw-curr_pos",
+      "logo": "images/logos/hcmus.png",
+      "title": "Bachelor, Information Technology",
+      "startPeriod": "2013",
+      "endPeriod": "2017"
+    }
+  ],
+  "project": [
+    {
+      "name": "Design LinkedIn UI/UX Project",
+      "logo": "images/logos/linkedin.png",
+      "position": "Manager",
+      "year": "2008",
+      "duration": "6 month",
+      "detail": "I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. "
+    },
+    {
+      "name": "Startup LinkedIn Project",
+      "logo": "images/logos/linkedin.png",
+      "position": "Founded",
+      "year": "2008",
+      "duration": "current",
+      "detail": "I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. "
     }
   ]
+
 }

@@ -354,6 +354,7 @@ body {
 .info-bar {
     padding-top: 20px;
     margin-bottom: -10px;
+    position: relative;
 }
 
 .info-title {
@@ -442,6 +443,8 @@ body {
 /**********************************************/
 /**********************************************/
 .skill-pill {
+    position: relative;
+    display: flex;
     height: 25px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -452,8 +455,9 @@ body {
     height: inherit;
     line-height: 24px;
 }
-
 .skills-part {
+    display: inline-block;
+    position: relative;
     font-size: 15px;
     line-height: 16px;
     color: #434649;
@@ -497,7 +501,7 @@ body {
 }
 
 #different-skills .skill-pill {
-    display: inline-block;
+    display: flex;
 }
 
 /*EDIT************************************/
@@ -905,7 +909,7 @@ body {
 /***end Edit previous***/
 
 /***Edit education***/
-.profile-card:hover .edit-education-button {
+.profile-card:hover .edit-education-top-button {
     display: block;
     position: relative;
     height: 17px;
@@ -914,30 +918,200 @@ body {
     border: 0px;
     color: #505e69;
     padding: 0 0 0 0;
-    margin-left: auto;
 }
 
-.edit-education-button {
+.edit-education-top-button {
     display: none;
 }
 
-.edit-education-button:hover {
+.edit-education-top-button:hover {
     background-color: #00a0dc;
 }
 
 /***end Edit education***/
 
-/***Edit experience***/
-.card-content:hover .edit-experience-button {
+/***Edit skills***/
+.card-content:hover .edit-skills-button {
     display: block;
-    position: absolute;
+    position: relative;
     height: 25px;
     width: 25px;
     line-height: 26px;
     border: 0px;
     color: #505e69;
     padding: 0 0 0 0;
+}
+
+.edit-skills-button {
+    display: none;
+}
+
+.edit-skills-button:hover {
+    background-color: #00a0dc;
+}
+
+.edit-skills-form {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #c9c9c9 transparent transparent;
+    border-width: 12px 12px 12px 5px;
+    overflow: visible;
+    content: "\0020";
+    position: absolute;
+    display: block;
+    background: none;
+    top: 0;
+    right: 100%;
+}
+
+.edit-skills-form:after {
+    content: "\0020";
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.editSkillsBox {
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px !important;
+    border-color: #ededed #c9c9c9 #a4a4a4;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 15px 15px 15px;
+    background: #fff;
+    z-index: 10;
     margin-left: auto;
+}
+
+.editSkillsText {
+    border: 1px solid #ccc !important;
+    height: 2rem !important;
+    border-radius: 3px !important;
+    margin-top: 5px !important;
+}
+
+/***end edit skills**/
+
+/***delete skills***/
+.card-content:hover .delete-skills-button {
+    display: block;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+}
+
+.delete-skills-button {
+    display: none;
+}
+
+.delete-skills-button:hover {
+    background-color: #00a0dc;
+}
+/***end delete skills**/
+
+/***add skills***/
+.card-content:hover .add-skills-button {
+    display: block;
+    position: relative;
+    margin-top: 25px;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    float: right;
+}
+
+.add-skills-button {
+    display: none;
+}
+
+.add-skills-button:hover {
+    background-color: #00a0dc;
+}
+
+.add-skills-form {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #c9c9c9 transparent transparent;
+    border-width: 12px 12px 12px 5px;
+    overflow: visible;
+    content: "\0020";
+    position: absolute;
+    display: block;
+    background: none;
+    top: 0;
+    right: 100%;
+}
+
+.add-skills-form:after {
+    content: "\0020";
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.addSkillsBox {
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px !important;
+    border-color: #ededed #c9c9c9 #a4a4a4;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 15px 15px 15px;
+    background: #fff;
+    z-index: 10;
+    margin-left: auto;
+}
+
+.addSkillsText {
+    border: 1px solid #ccc !important;
+    height: 2rem !important;
+    border-radius: 3px !important;
+    margin-top: 5px !important;
+}
+
+/***end add skills**/
+
+
+
+/***Edit experience***/
+.card-content:hover .edit-experience-button {
+    display: block;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    float: right;
 }
 
 .edit-experience-button {
@@ -989,6 +1163,7 @@ body {
     padding: 8px 15px 15px 15px;
     background: #fff;
     z-index: 10;
+    margin-left: auto;
 }
 
 .editExperienceText {
@@ -1000,17 +1175,115 @@ body {
 
 /***end edit experience**/
 
-/***Edit education***/
-.card-content:hover .edit-education-button {
+
+/***delete experience***/
+.card-content:hover .delete-experience-button {
     display: block;
-    position: absolute;
+    position: relative;
     height: 25px;
     width: 25px;
     line-height: 26px;
     border: 0px;
     color: #505e69;
     padding: 0 0 0 0;
+    float: right;
+}
+
+.delete-experience-button {
+    display: none;
+}
+
+.delete-experience-button:hover {
+    background-color: #00a0dc;
+}
+/***end delete experience**/
+
+/***add experience***/
+.card-content:hover .add-experience-button {
+    display: block;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    float: right;
     margin-left: auto;
+}
+
+.add-experience-button {
+    display: none;
+}
+
+.add-experience-button:hover {
+    background-color: #00a0dc;
+}
+
+.add-experience-form {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #c9c9c9 transparent transparent;
+    border-width: 12px 12px 12px 5px;
+    overflow: visible;
+    content: "\0020";
+    position: absolute;
+    display: block;
+    background: none;
+    top: 0;
+    right: 100%;
+}
+
+.add-experience-form:after {
+    content: "\0020";
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.addExperienceBox {
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px !important;
+    border-color: #ededed #c9c9c9 #a4a4a4;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 15px 15px 15px;
+    background: #fff;
+    z-index: 10;
+    margin-left: auto;
+}
+
+.addExperienceText {
+    border: 1px solid #ccc !important;
+    height: 2rem !important;
+    border-radius: 3px !important;
+    margin-top: 5px !important;
+}
+
+/***end add experience**/
+
+/***Edit education***/
+.card-content:hover .edit-education-button {
+    display: block;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    float: right;
 }
 
 .edit-education-button {
@@ -1073,19 +1346,293 @@ body {
 
 /***end edit education**/
 
-/***Edit causes***/
-.card-content:hover .edit-causes-button {
+/***add education***/
+.card-content:hover .add-education-button {
     display: block;
-    position: absolute;
+    position: relative;
     height: 25px;
     width: 25px;
     line-height: 26px;
     border: 0px;
     color: #505e69;
     padding: 0 0 0 0;
+    float: right;
     margin-left: auto;
 }
 
+.add-education-button {
+    display: none;
+}
+
+.add-education-button:hover {
+    background-color: #00a0dc;
+}
+
+.add-education-form {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #c9c9c9 transparent transparent;
+    border-width: 12px 12px 12px 5px;
+    overflow: visible;
+    content: "\0020";
+    position: absolute;
+    display: block;
+    background: none;
+    top: 0;
+    right: 100%;
+}
+
+.add-education-form:after {
+    content: "\0020";
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.addEducationBox {
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px !important;
+    border-color: #ededed #c9c9c9 #a4a4a4;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 15px 15px 15px;
+    background: #fff;
+    z-index: 10;
+    margin-left: auto;
+}
+
+.addEducationText {
+    border: 1px solid #ccc !important;
+    height: 2rem !important;
+    border-radius: 3px !important;
+    margin-top: 5px !important;
+}
+
+/***end add education**/
+
+/***delete education***/
+.card-content:hover .delete-education-button {
+    display: block;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    float: right;
+}
+
+.delete-education-button {
+    display: none;
+}
+
+.delete-education-button:hover {
+    background-color: #00a0dc;
+}
+/***end delete education**/
+
+
+
+/***Edit project***/
+.card-content:hover .edit-project-button {
+    display: block;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    float: right;
+}
+
+.edit-project-button {
+    display: none;
+}
+
+.edit-project-button:hover {
+    background-color: #00a0dc;
+}
+
+.edit-project-form {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #c9c9c9 transparent transparent;
+    border-width: 12px 12px 12px 5px;
+    overflow: visible;
+    content: "\0020";
+    position: absolute;
+    display: block;
+    background: none;
+    top: 0;
+    right: 100%;
+}
+
+.edit-project-form:after {
+    content: "\0020";
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.editProjectBox {
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px !important;
+    border-color: #ededed #c9c9c9 #a4a4a4;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 15px 15px 15px;
+    background: #fff;
+    z-index: 10;
+}
+
+.editProjectText {
+    border: 1px solid #ccc !important;
+    height: 2rem !important;
+    border-radius: 3px !important;
+    margin-top: 5px !important;
+}
+
+/***end edit project**/
+
+/***add project***/
+.card-content:hover .add-project-button {
+    display: block;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    float: right;
+    margin-left: auto;
+}
+
+.add-project-button {
+    display: none;
+}
+
+.add-project-button:hover {
+    background-color: #00a0dc;
+}
+
+.add-project-form {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #c9c9c9 transparent transparent;
+    border-width: 12px 12px 12px 5px;
+    overflow: visible;
+    content: "\0020";
+    position: absolute;
+    display: block;
+    background: none;
+    top: 0;
+    right: 100%;
+    float: right;
+    margin-left: auto;
+}
+
+.add-project-form:after {
+    content: "\0020";
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.addProjectBox {
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px !important;
+    border-color: #ededed #c9c9c9 #a4a4a4;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 15px 15px 15px;
+    background: #fff;
+    z-index: 10;
+    margin-left: auto;
+}
+
+.addProjectText {
+    border: 1px solid #ccc !important;
+    height: 2rem !important;
+    border-radius: 3px !important;
+    margin-top: 5px !important;
+}
+
+/***end add project**/
+
+/***delete project***/
+.card-content:hover .delete-project-button {
+    display: block;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    float: right;
+}
+
+.delete-project-button {
+    display: none;
+}
+
+.delete-project-button:hover {
+    background-color: #00a0dc;
+}
+/***end delete project**/
+
+/***Edit causes***/
+.ul-li-div {
+    position: relative;
+    display: inline-flex;
+}
+.card-content:hover .edit-causes-button {
+    display: inline-block;
+    position: relative;
+    height: 17px;
+    width: 17px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    margin-left: auto;
+}
 .edit-causes-button {
     display: none;
 }
@@ -1146,12 +1693,34 @@ body {
 
 /***end edit causes**/
 
+/***delete causes***/
+.card-content:hover .delete-causes-button {
+    display: inline-block;
+    position: relative;
+    height: 17px;
+    width: 17px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    margin-left: auto;
+}
+
+.delete-causes-button {
+    display: none;
+}
+
+.delete-causes-button:hover {
+    background-color: #00a0dc;
+}
+/***end delete causes**/
+
 /***Edit Organizations***/
 .card-content:hover .edit-organizations-button {
-    display: block;
-    position: absolute;
-    height: 25px;
-    width: 25px;
+    display: inline-block;
+    position: relative;
+    height: 17px;
+    width: 17px;
     line-height: 26px;
     border: 0px;
     color: #505e69;
@@ -1218,6 +1787,111 @@ body {
 }
 
 /***end edit Organizations**/
+
+/***delete organizations***/
+.card-content:hover .delete-organizations-button {
+    display: inline-block;
+    position: relative;
+    height: 17px;
+    width: 17px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+    margin-left: auto;
+}
+
+.delete-organizations-button {
+    display: none;
+}
+
+.delete-organizations-button:hover {
+    background-color: #00a0dc;
+}
+/***end delete organizations**/
+
+/***Edit location***/
+.profile-card:hover .edit-location-button {
+    display: inline-block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    line-height: 26px;
+    border: 0px;
+    color: #505e69;
+    padding: 0 0 0 0;
+}
+
+.edit-location-button {
+    display: none;
+}
+
+.edit-location-button:hover {
+    background-color: #00a0dc;
+}
+
+.edit-location-form {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #c9c9c9 transparent transparent;
+    border-width: 12px 12px 12px 5px;
+    overflow: visible;
+    content: "\0020";
+    position: absolute;
+    display: block;
+    background: none;
+    top: 0;
+    right: 100%;
+}
+
+.edit-location-form:after {
+    content: "\0020";
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.editLocationBox {
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px !important;
+    border-color: #ededed #c9c9c9 #a4a4a4;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 15px 15px 15px;
+    background: #fff;
+    z-index: 10;
+}
+
+.editLocationText {
+    border: 1px solid #ccc !important;
+    height: 2rem !important;
+    border-radius: 3px !important;
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+}
+
+.editIndustryText {
+    border: 1px solid #ccc !important;
+    height: 2rem !important;
+    border-radius: 3px !important;
+    margin-top: 5px !important;
+}
+
+/***end edit location**/
+
+
+/***go top of page**/
 .top-button {
     background-image: url("../images/commons/top.png");
     background-color: #fff;
@@ -1236,6 +1910,6 @@ body {
 .top-button:hover {
     background-color: #00a0dc;
 }
-
+/***end go top of page**/
 
 
