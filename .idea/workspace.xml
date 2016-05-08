@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0de64771-a432-4bed-9ab0-d10ade4c6bcc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/images/commons/edit.png" afterPath="$PROJECT_DIR$/Source/images/commons/edit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Document/1312664_Report.docx" afterPath="$PROJECT_DIR$/Document/1312664_Report.docx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/LinkedInProject.iml" afterPath="$PROJECT_DIR$/.idea/LinkedInProject.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Database/data.json" afterPath="$PROJECT_DIR$/Database/data.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/css/style.css" afterPath="$PROJECT_DIR$/Source/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo/VideoDemo.txt" afterPath="$PROJECT_DIR$/Demo/VideoDemo.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/index.html" afterPath="$PROJECT_DIR$/Source/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/js/app.js" afterPath="$PROJECT_DIR$/Source/js/app.js" />
     </list>
@@ -32,8 +33,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="447" column="57" selection-start-line="447" selection-start-column="46" selection-end-line="447" selection-end-column="57" />
+            <state relative-caret-position="306">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding>
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -45,7 +46,7 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="28781">
               <caret line="1693" column="22" selection-start-line="1693" selection-start-column="22" selection-end-line="1693" selection-end-column="22" />
               <folding />
             </state>
@@ -55,8 +56,18 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+            <state relative-caret-position="476">
+              <caret line="46" column="24" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="firebase.html" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/firebase.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -65,8 +76,8 @@
       <file leaf-file-name="data.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Database/data.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="291" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="313" selection-end-column="1" />
+            <state relative-caret-position="5338">
+              <caret line="314" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="314" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -81,9 +92,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test_RefineCode" />
-        <option value="$PROJECT_DIR$/Source/index.html" />
         <option value="$PROJECT_DIR$/Source/css/style.css" />
+        <option value="$PROJECT_DIR$/Source/index.html" />
         <option value="$PROJECT_DIR$/Database/data.json" />
+        <option value="$USER_HOME$/Desktop/firebase.html" />
         <option value="$PROJECT_DIR$/Source/js/app.js" />
       </list>
     </option>
@@ -129,7 +141,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -196,6 +207,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,17 +289,23 @@
       <workItem from="1462453965919" duration="6373000" />
       <workItem from="1462495402738" duration="2219000" />
       <workItem from="1462497654242" duration="7185000" />
+      <workItem from="1462506592118" duration="1443000" />
+      <workItem from="1462546061423" duration="117000" />
+      <workItem from="1462546784675" duration="1075000" />
+      <workItem from="1462633026471" duration="4309000" />
+      <workItem from="1462670591308" duration="3581000" />
+      <workItem from="1462675957366" duration="4017000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85080000" />
+    <option name="totallyTimeSpent" value="99622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22622108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24485861" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -341,14 +359,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Source/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Database/data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2992">
@@ -742,16 +752,32 @@
     <entry file="file://$PROJECT_DIR$/test_RefineCode" />
     <entry file="file://$PROJECT_DIR$/Source/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="28781">
           <caret line="1693" column="22" selection-start-line="1693" selection-start-column="22" selection-end-line="1693" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5338">
+          <caret line="314" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="314" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/firebase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="447" column="57" selection-start-line="447" selection-start-column="46" selection-end-line="447" selection-end-column="57" />
+        <state relative-caret-position="306">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
           <folding>
             <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -759,18 +785,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Database/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="291" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="313" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+        <state relative-caret-position="476">
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="24" />
           <folding />
         </state>
       </provider>

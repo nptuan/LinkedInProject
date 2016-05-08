@@ -1,314 +1,315 @@
 {
-  "cover": "images/cover.jpg",
-  "avatar": "images/avatar.jpg",
-  "name": [
-    "Jeff",
-    "Weiner"
-  ],
-  "possition": "CEO at LinkedIn",
-  "work": {
-    "location": "San Francisco Bay Area",
-    "industry": "Internet"
-  },
-  "Influencer": true,
-  "followers": 4047268,
-  "profileURL": "https://www.linkedin.com/in/jeffweiner08",
-  "postsUrl": "https://www.linkedin.com/today/author/0_1HzVUN_pW553HoPu1F7I0Q?trk=prof-sm",
-  "posts": [
-    {
-      "image": "images/posts/post1.jpg",
-      "title": "My Interview with Oprah",
-      "date": "October 15, 2015",
-      "url": "https://www.linkedin.com/pulse/my-interview-oprah-jeff-weiner?trk=prof-post"
-    },
-    {
-      "image": "images/posts/post2.jpg",
-      "title": "Always Be Learning: LinkedIn to Acquire lynda.com",
-      "date": "April 9, 2015",
-      "url": "https://www.linkedin.com/pulse/always-learning-linkedin-acquire-lyndacom-jeff-weiner?trk=prof-post"
-    },
-    {
-      "image": "images/posts/post3.jpg",
-      "title": "How LinkedIn is Helping Power the President's Tech Jobs Initiative",
-      "date": "March 10, 2015",
-      "url": "https://www.linkedin.com/pulse/how-linkedin-helping-power-presidents-tech-jobs-jeff-weiner?trk=prof-post"
-    }
-  ],
-  "summary": "Internet executive with over 20 years of experience, including general management of mid to large size organizations, corporate development, product development, business operations, and strategy.\n\nCurrently CEO at LinkedIn, the web's largest and most powerful network of professionals.\n\nPrior to LinkedIn, was an Executive in Residence at Accel Partners and Greylock Partners. Primarily focused on advising the leadership teams of the firm's existing consumer technology portfolio companies while also working closely with the firm's partners to evaluate new investment opportunities.\n\nPreviously served in key leadership roles at Yahoo! for over seven years, most recently as the Executive Vice President of Yahoo!'s Network Division managing Yahoo's consumer web product portfolio, including Yahoo's Front Page, Mail, Search, and Media products.\n\nSpecialties: general management, corporate development, product development, business operations, strategy, product marketing, non-profit governance",
-  "experience": [
-    {
-      "companyName": "LinkedIn",
-      "companyUrl": "https://www.linkedin.com/company/1337?trk=prof-exp-company-name",
-      "companyLogo": "images/logos/linkedin.png",
-      "title": "CEO",
-      "startPeriod": "December 2008",
-      "endPeriod": "Present",
-      "duration": "7 years 5 months",
-      "location": "",
-      "description": "Connecting the world's professionals to make them more productive and successful. Since joining the company in December 2008, LinkedIn has expanded its global platform to 23 languages and more than 30 offices around the world, grown its membership base from 33M to more than 347M, and increased its revenue from $78M to over $2.2B in 2014."
-    },
-    {
-      "companyName": "Intuit",
-      "companyUrl": "https://www.linkedin.com/company/1666?trk=prof-exp-company-name",
-      "companyLogo": "images/logos/intuit.png",
-      "title": "Member, Board of Directors",
-      "startPeriod": "April 2012",
-      "endPeriod": "Present",
-      "duration": "4 years 1 month",
-      "location": "Moutain View, CA",
-      "description": "With revenue of $4B+ and approximately 8,000 employees, Intuit is a leading provider of innovative business and financial management solutions for small and medium-sized businesses, consumers, accounting professionals and financial institutions."
-    },
-    {
-      "companyName": "DonorsChoose",
-      "companyUrl": "https://www.linkedin.com/company/33101?trk=prof-exp-company-name",
-      "companyLogo": "images/logos/donorschoose.png",
-      "title": "Member, Board of Directors",
-      "startPeriod": "2007",
-      "endPeriod": "Present",
-      "duration": "9 years",
-      "location": "",
-      "description": "One of the web's leading philanthropic marketplaces, designed to enable teachers to upload classroom projects in need of funding, and for anyone to select and fund a project."
-    },
-    {
-      "companyName": "Boys & Girls Clubs of the Peninsula",
-      "companyUrl": "https://www.linkedin.com/company/66930?trk=prof-exp-company-name",
-      "companyLogo": "images/logos/boysngirlsclubsofthepeninsula.png",
-      "title": "Member, Advisory Board",
-      "startPeriod": "2011",
-      "endPeriod": "Present",
-      "duration": "5 years",
+  "data": {
+    "cover": "images/cover.jpg",
+    "avatar": "images/avatar.jpg",
+    "name": [
+      "Jeff",
+      "Weiner"
+    ],
+    "possition": "CEO at LinkedIn",
+    "work": {
       "location": "San Francisco Bay Area",
-      "description": "BGCP's mission is to help its members develop the academic and life skills they need to complete high school ready for college and career.\n\nBGCP serves youth in grades K'12 at nine locations: three clubhouses and six school sites in East Palo Alto, Menlo Park, and Redwood City, where over half the youth drop out of high school. While most youth development organizations select the young people whom they serve, BGCP serves all youth. The organization has grown rapidly over the past five years and now serves 2,000 active members at its nine sites."
+      "industry": "Internet"
     },
-    {
-      "companyName": "Venture For America",
-      "companyUrl": "https://www.linkedin.com/company/1904212?trk=prof-exp-company-name",
-      "companyLogo": "images/logos/ventureforamerica.png",
-      "title": "Member, Advisory Board",
-      "startPeriod": "2012",
-      "endPeriod": "Present",
-      "duration": "4 years",
-      "location": "Greater New York City Area",
-      "description": "Innovative fellowship program that places top college graduates in start-ups for two years in low-cost U.S. cities to generate job growth and train the next generation of entrepreneurs."
-    },
-    {
-      "companyName": "Malaria No More",
-      "companyUrl": "https://www.linkedin.com/company/695380?trk=prof-exp-company-name",
-      "companyLogo": "images/logos/malarianomore.png",
-      "title": "Member, Board of Directors",
-      "startPeriod": "2007",
-      "endPeriod": "December 2015",
-      "duration": "8 years",
-      "location": "",
-      "description": "Non-profit organization with the mission to eradicate the millions of preventable and treatable deaths due to malaria. Working in conjunction with the United Nations Millennium Development Goals."
-    },
-    {
-      "companyName": "Accel Partners",
-      "companyUrl": "https://www.linkedin.com/company/17412?trk=prof-exp-company-name",
-      "companyLogo": "images/logos/accel.png",
-      "title": "Executive in Residence",
-      "startPeriod": "September 2008",
-      "endPeriod": "June 2009",
-      "duration": "10 months",
-      "location": "",
-      "description": ""
-    },
-    {
-      "companyName": "Greylock",
-      "companyUrl": "https://www.linkedin.com/company/18077?trk=prof-exp-company-name",
-      "companyLogo": "images/logos/greylock.png",
-      "title": "Executive in Residence",
-      "startPeriod": "September 2008",
-      "endPeriod": "June 2009",
-      "duration": "10 months",
-      "location": "",
-      "description": ""
-    },
-    {
-      "companyName": "Yahoo!",
-      "companyUrl": "https://www.linkedin.com/company/1288?trk=prof-exp-company-name",
-      "companyLogo": "images/logos/yahoo.png",
-      "title": "Executive Vice President Network Division",
-      "startPeriod": "May 2001",
-      "endPeriod": "June 2008",
-      "duration": "7 years 2 months",
-      "location": "",
-      "description": "Led a team of over 3,000 employees, managing products reaching over 500 million consumers, and overseeing a P&L responsible for roughly $3 billion in annual revenue. Helped drive the Network's Open and Social strategy and growth of the company's category-leading consumer web products, including Yahoo's Front Page, Mail, Search, and Media products, e.g. News, Sports, Finance, Entertainment.\n\nPreviously, was part of the Search leadership team that directed the acquisition and integration of Inktomi, AltaVista, FAST as well as the development of Yahoo! Search Technology. Oversaw development of Yahoo! Answers, and led the acquisitions of Flickr and del.icio.us. Helped lead the team formed to revitalize the company's Search Marketing efforts.\n\nFrom 2001 to 2002, oversaw Corporate Development at Yahoo!, responsible for the development and modification of overall corporate and individual business unit strategy and M&A."
-    },
-    {
-      "companyName": "Windsor Media",
-      "companyUrl": "https://www.linkedin.com/vsearch/p?company=Windsor+Media&trk=prof-exp-company-name",
-      "companyLogo": "",
-      "title": "Founding Partner",
-      "startPeriod": "June 2000",
-      "endPeriod": "April 2001",
-      "duration": "11 months",
-      "location": "",
-      "description": ""
-    },
-    {
-      "companyName": "Warner Bros.",
-      "companyUrl": "https://www.linkedin.com/company/2470?trk=prof-exp-company-name",
-      "companyLogo": "images/logos/warnerbros.png",
-      "title": "Vice President Online",
-      "startPeriod": "September 1994",
-      "endPeriod": "March 2000",
-      "duration": "5 years 7 months",
-      "location": "",
-      "description": "Helped oversee Warner Bros.' online efforts, including Warner Bros. Online and Entertaindom (one of the web's first original entertainment destination sites).\n\nIn December, 1994, began developing the initial business plan for Warner Bros. Online while an analyst in Corporate Planning & Development."
-    },
-    {
-      "companyName": "Braxton Associates",
-      "companyUrl": "https://www.linkedin.com/company/17573?trk=prof-exp-company-name",
-      "companyLogo": "",
-      "title": "Senior Analyst",
-      "startPeriod": "September 1992",
-      "endPeriod": "September 1994",
-      "duration": "2 years 1 month",
-      "location": "Boston",
-      "description": "Analyst for strategic management consulting division of Deloitte & Touche. Case work included scenario planning, international expansion, brand consolidation, and new distribution strategies across multiple industries including food, health care, and energy."
-    }
-  ],
-  "caredCauses": [
-    "Economic Empowerment",
-    "Education",
-    "Health"
-  ],
-  "supportedOrganizations": [
-    "Boys & Girls Clubs of the Peninsula",
-    "DonorsChoose.org",
-    "Malaria No More",
-    "Venture For America"
-  ],
-  "skills": [
-    {
-      "name": "Bussiness Strategy",
-      "endorsers": "99+"
-    },
-    {
-      "name": "Leadership",
-      "endorsers": "99+"
-    },
-    {
-      "name": "Strategy",
-      "endorsers": "99+"
-    },
-    {
-      "name": "Entrepreneurship",
-      "endorsers": "99+"
-    },
-    {
-      "name": "Product Marketing",
-      "endorsers": "99+"
-    },
-    {
-      "name": "Strategic Planning",
-      "endorsers": "99+"
-    },
-    {
-      "name": "Executive Managament",
-      "endorsers": "96"
-    },
-    {
-      "name": "Product Development",
-      "endorsers": "86"
-    },
-    {
-      "name": "Product Management",
-      "endorsers": "75"
-    },
-    {
-      "name": "LinkedIn",
-      "endorsers": "73"
-    },
-    {
-      "name": "Social Media",
-      "endorsers": "64"
-    },
-    {
-      "name": "User Experience",
-      "endorsers": "48"
-    },
-    {
-      "name": "Corporate Development",
-      "endorsers": "35"
-    },
-    {
-      "name": "Non-profits",
-      "endorsers": "31"
-    },
-    {
-      "name": "Analytics",
-      "endorsers": "27"
-    },
-    {
-      "name": "Mergers & Acquisitions",
-      "endorsers": "27"
-    },
-    {
-      "name": "Team Leadership",
-      "endorsers": "13"
-    },
-    {
-      "name": "Thought Leadership",
-      "endorsers": "12"
-    },
-    {
-      "name": "Business Operations",
-      "endorsers": "10"
-    },
-    {
-      "name": "Leadership Development",
-      "endorsers": "10"
-    },
-    {
-      "name": "Mobile Applications",
-      "endorsers": "6"
-    },
-    {
-      "name": "Motivation",
-      "endorsers": "5"
-    },
-    {
-      "name": "Awesomeness",
-      "endorsers": "5"
-    }
-  ],
-  "education": [
-    {
-      "name": "University of Pennsylvania - The Wharton School",
-      "url": "https://www.linkedin.com/edu/school?id=19329&trk=prof-edu-school-name",
-      "logo": "images/logos/university-pennsylvania.png",
-      "title": "Bachelor of Science, Economics",
-      "startPeriod": "1988",
-      "endPeriod": "June 1992"
-    },
-    {
-      "name": "VNU-HCM University of Science",
-      "url": "https://www.linkedin.com/company/1827085?trk=prof-0-ovw-curr_pos",
-      "logo": "images/logos/hcmus.png",
-      "title": "Bachelor, Information Technology",
-      "startPeriod": "2013",
-      "endPeriod": "2017"
-    }
-  ],
-  "project": [
-    {
-      "name": "Design LinkedIn UI/UX Project",
-      "logo": "images/logos/linkedin.png",
-      "position": "Manager",
-      "year": "2008",
-      "duration": "6 month",
-      "detail": "I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. "
-    },
-    {
-      "name": "Startup LinkedIn Project",
-      "logo": "images/logos/linkedin.png",
-      "position": "Founded",
-      "year": "2008",
-      "duration": "current",
-      "detail": "I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. "
-    }
-  ]
-
+    "Influencer": true,
+    "followers": 4047268,
+    "profileURL": "https://www.linkedin.com/in/jeffweiner08",
+    "postsUrl": "https://www.linkedin.com/today/author/0_1HzVUN_pW553HoPu1F7I0Q?trk=prof-sm",
+    "posts": [
+      {
+        "image": "images/posts/post1.jpg",
+        "title": "My Interview with Oprah",
+        "date": "October 15, 2015",
+        "url": "https://www.linkedin.com/pulse/my-interview-oprah-jeff-weiner?trk=prof-post"
+      },
+      {
+        "image": "images/posts/post2.jpg",
+        "title": "Always Be Learning: LinkedIn to Acquire lynda.com",
+        "date": "April 9, 2015",
+        "url": "https://www.linkedin.com/pulse/always-learning-linkedin-acquire-lyndacom-jeff-weiner?trk=prof-post"
+      },
+      {
+        "image": "images/posts/post3.jpg",
+        "title": "How LinkedIn is Helping Power the President's Tech Jobs Initiative",
+        "date": "March 10, 2015",
+        "url": "https://www.linkedin.com/pulse/how-linkedin-helping-power-presidents-tech-jobs-jeff-weiner?trk=prof-post"
+      }
+    ],
+    "summary": "Internet executive with over 20 years of experience, including general management of mid to large size organizations, corporate development, product development, business operations, and strategy.\n\nCurrently CEO at LinkedIn, the web's largest and most powerful network of professionals.\n\nPrior to LinkedIn, was an Executive in Residence at Accel Partners and Greylock Partners. Primarily focused on advising the leadership teams of the firm's existing consumer technology portfolio companies while also working closely with the firm's partners to evaluate new investment opportunities.\n\nPreviously served in key leadership roles at Yahoo! for over seven years, most recently as the Executive Vice President of Yahoo!'s Network Division managing Yahoo's consumer web product portfolio, including Yahoo's Front Page, Mail, Search, and Media products.\n\nSpecialties: general management, corporate development, product development, business operations, strategy, product marketing, non-profit governance",
+    "experience": [
+      {
+        "companyName": "LinkedIn",
+        "companyUrl": "https://www.linkedin.com/company/1337?trk=prof-exp-company-name",
+        "companyLogo": "images/logos/linkedin.png",
+        "title": "CEO",
+        "startPeriod": "December 2008",
+        "endPeriod": "Present",
+        "duration": "7 years 5 months",
+        "location": "",
+        "description": "Connecting the world's professionals to make them more productive and successful. Since joining the company in December 2008, LinkedIn has expanded its global platform to 23 languages and more than 30 offices around the world, grown its membership base from 33M to more than 347M, and increased its revenue from $78M to over $2.2B in 2014."
+      },
+      {
+        "companyName": "Intuit",
+        "companyUrl": "https://www.linkedin.com/company/1666?trk=prof-exp-company-name",
+        "companyLogo": "images/logos/intuit.png",
+        "title": "Member, Board of Directors",
+        "startPeriod": "April 2012",
+        "endPeriod": "Present",
+        "duration": "4 years 1 month",
+        "location": "Moutain View, CA",
+        "description": "With revenue of $4B+ and approximately 8,000 employees, Intuit is a leading provider of innovative business and financial management solutions for small and medium-sized businesses, consumers, accounting professionals and financial institutions."
+      },
+      {
+        "companyName": "DonorsChoose",
+        "companyUrl": "https://www.linkedin.com/company/33101?trk=prof-exp-company-name",
+        "companyLogo": "images/logos/donorschoose.png",
+        "title": "Member, Board of Directors",
+        "startPeriod": "2007",
+        "endPeriod": "Present",
+        "duration": "9 years",
+        "location": "",
+        "description": "One of the web's leading philanthropic marketplaces, designed to enable teachers to upload classroom projects in need of funding, and for anyone to select and fund a project."
+      },
+      {
+        "companyName": "Boys & Girls Clubs of the Peninsula",
+        "companyUrl": "https://www.linkedin.com/company/66930?trk=prof-exp-company-name",
+        "companyLogo": "images/logos/boysngirlsclubsofthepeninsula.png",
+        "title": "Member, Advisory Board",
+        "startPeriod": "2011",
+        "endPeriod": "Present",
+        "duration": "5 years",
+        "location": "San Francisco Bay Area",
+        "description": "BGCP's mission is to help its members develop the academic and life skills they need to complete high school ready for college and career.\n\nBGCP serves youth in grades K'12 at nine locations: three clubhouses and six school sites in East Palo Alto, Menlo Park, and Redwood City, where over half the youth drop out of high school. While most youth development organizations select the young people whom they serve, BGCP serves all youth. The organization has grown rapidly over the past five years and now serves 2,000 active members at its nine sites."
+      },
+      {
+        "companyName": "Venture For America",
+        "companyUrl": "https://www.linkedin.com/company/1904212?trk=prof-exp-company-name",
+        "companyLogo": "images/logos/ventureforamerica.png",
+        "title": "Member, Advisory Board",
+        "startPeriod": "2012",
+        "endPeriod": "Present",
+        "duration": "4 years",
+        "location": "Greater New York City Area",
+        "description": "Innovative fellowship program that places top college graduates in start-ups for two years in low-cost U.S. cities to generate job growth and train the next generation of entrepreneurs."
+      },
+      {
+        "companyName": "Malaria No More",
+        "companyUrl": "https://www.linkedin.com/company/695380?trk=prof-exp-company-name",
+        "companyLogo": "images/logos/malarianomore.png",
+        "title": "Member, Board of Directors",
+        "startPeriod": "2007",
+        "endPeriod": "December 2015",
+        "duration": "8 years",
+        "location": "",
+        "description": "Non-profit organization with the mission to eradicate the millions of preventable and treatable deaths due to malaria. Working in conjunction with the United Nations Millennium Development Goals."
+      },
+      {
+        "companyName": "Accel Partners",
+        "companyUrl": "https://www.linkedin.com/company/17412?trk=prof-exp-company-name",
+        "companyLogo": "images/logos/accel.png",
+        "title": "Executive in Residence",
+        "startPeriod": "September 2008",
+        "endPeriod": "June 2009",
+        "duration": "10 months",
+        "location": "",
+        "description": ""
+      },
+      {
+        "companyName": "Greylock",
+        "companyUrl": "https://www.linkedin.com/company/18077?trk=prof-exp-company-name",
+        "companyLogo": "images/logos/greylock.png",
+        "title": "Executive in Residence",
+        "startPeriod": "September 2008",
+        "endPeriod": "June 2009",
+        "duration": "10 months",
+        "location": "",
+        "description": ""
+      },
+      {
+        "companyName": "Yahoo!",
+        "companyUrl": "https://www.linkedin.com/company/1288?trk=prof-exp-company-name",
+        "companyLogo": "images/logos/yahoo.png",
+        "title": "Executive Vice President Network Division",
+        "startPeriod": "May 2001",
+        "endPeriod": "June 2008",
+        "duration": "7 years 2 months",
+        "location": "",
+        "description": "Led a team of over 3,000 employees, managing products reaching over 500 million consumers, and overseeing a P&L responsible for roughly $3 billion in annual revenue. Helped drive the Network's Open and Social strategy and growth of the company's category-leading consumer web products, including Yahoo's Front Page, Mail, Search, and Media products, e.g. News, Sports, Finance, Entertainment.\n\nPreviously, was part of the Search leadership team that directed the acquisition and integration of Inktomi, AltaVista, FAST as well as the development of Yahoo! Search Technology. Oversaw development of Yahoo! Answers, and led the acquisitions of Flickr and del.icio.us. Helped lead the team formed to revitalize the company's Search Marketing efforts.\n\nFrom 2001 to 2002, oversaw Corporate Development at Yahoo!, responsible for the development and modification of overall corporate and individual business unit strategy and M&A."
+      },
+      {
+        "companyName": "Windsor Media",
+        "companyUrl": "https://www.linkedin.com/vsearch/p?company=Windsor+Media&trk=prof-exp-company-name",
+        "companyLogo": "",
+        "title": "Founding Partner",
+        "startPeriod": "June 2000",
+        "endPeriod": "April 2001",
+        "duration": "11 months",
+        "location": "",
+        "description": ""
+      },
+      {
+        "companyName": "Warner Bros.",
+        "companyUrl": "https://www.linkedin.com/company/2470?trk=prof-exp-company-name",
+        "companyLogo": "images/logos/warnerbros.png",
+        "title": "Vice President Online",
+        "startPeriod": "September 1994",
+        "endPeriod": "March 2000",
+        "duration": "5 years 7 months",
+        "location": "",
+        "description": "Helped oversee Warner Bros.' online efforts, including Warner Bros. Online and Entertaindom (one of the web's first original entertainment destination sites).\n\nIn December, 1994, began developing the initial business plan for Warner Bros. Online while an analyst in Corporate Planning & Development."
+      },
+      {
+        "companyName": "Braxton Associates",
+        "companyUrl": "https://www.linkedin.com/company/17573?trk=prof-exp-company-name",
+        "companyLogo": "",
+        "title": "Senior Analyst",
+        "startPeriod": "September 1992",
+        "endPeriod": "September 1994",
+        "duration": "2 years 1 month",
+        "location": "Boston",
+        "description": "Analyst for strategic management consulting division of Deloitte & Touche. Case work included scenario planning, international expansion, brand consolidation, and new distribution strategies across multiple industries including food, health care, and energy."
+      }
+    ],
+    "caredCauses": [
+      "Economic Empowerment",
+      "Education",
+      "Health"
+    ],
+    "supportedOrganizations": [
+      "Boys & Girls Clubs of the Peninsula",
+      "DonorsChoose.org",
+      "Malaria No More",
+      "Venture For America"
+    ],
+    "skills": [
+      {
+        "name": "Bussiness Strategy",
+        "endorsers": "99+"
+      },
+      {
+        "name": "Leadership",
+        "endorsers": "99+"
+      },
+      {
+        "name": "Strategy",
+        "endorsers": "99+"
+      },
+      {
+        "name": "Entrepreneurship",
+        "endorsers": "99+"
+      },
+      {
+        "name": "Product Marketing",
+        "endorsers": "99+"
+      },
+      {
+        "name": "Strategic Planning",
+        "endorsers": "99+"
+      },
+      {
+        "name": "Executive Managament",
+        "endorsers": "96"
+      },
+      {
+        "name": "Product Development",
+        "endorsers": "86"
+      },
+      {
+        "name": "Product Management",
+        "endorsers": "75"
+      },
+      {
+        "name": "LinkedIn",
+        "endorsers": "73"
+      },
+      {
+        "name": "Social Media",
+        "endorsers": "64"
+      },
+      {
+        "name": "User Experience",
+        "endorsers": "48"
+      },
+      {
+        "name": "Corporate Development",
+        "endorsers": "35"
+      },
+      {
+        "name": "Non-profits",
+        "endorsers": "31"
+      },
+      {
+        "name": "Analytics",
+        "endorsers": "27"
+      },
+      {
+        "name": "Mergers & Acquisitions",
+        "endorsers": "27"
+      },
+      {
+        "name": "Team Leadership",
+        "endorsers": "13"
+      },
+      {
+        "name": "Thought Leadership",
+        "endorsers": "12"
+      },
+      {
+        "name": "Business Operations",
+        "endorsers": "10"
+      },
+      {
+        "name": "Leadership Development",
+        "endorsers": "10"
+      },
+      {
+        "name": "Mobile Applications",
+        "endorsers": "6"
+      },
+      {
+        "name": "Motivation",
+        "endorsers": "5"
+      },
+      {
+        "name": "Awesomeness",
+        "endorsers": "5"
+      }
+    ],
+    "education": [
+      {
+        "name": "University of Pennsylvania - The Wharton School",
+        "url": "https://www.linkedin.com/edu/school?id=19329&trk=prof-edu-school-name",
+        "logo": "images/logos/university-pennsylvania.png",
+        "title": "Bachelor of Science, Economics",
+        "startPeriod": "1988",
+        "endPeriod": "June 1992"
+      },
+      {
+        "name": "VNU-HCM University of Science",
+        "url": "https://www.linkedin.com/company/1827085?trk=prof-0-ovw-curr_pos",
+        "logo": "images/logos/hcmus.png",
+        "title": "Bachelor, Information Technology",
+        "startPeriod": "2013",
+        "endPeriod": "2017"
+      }
+    ],
+    "project": [
+      {
+        "name": "Design LinkedIn UI/UX Project",
+        "logo": "images/logos/linkedin.png",
+        "position": "Manager",
+        "year": "2008",
+        "duration": "6 month",
+        "detail": "I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. "
+      },
+      {
+        "name": "Startup LinkedIn Project",
+        "logo": "images/logos/linkedin.png",
+        "position": "Founded",
+        "year": "2008",
+        "duration": "current",
+        "detail": "I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. I led a team of over 3,000 employees to design a special UI for LinkedIn. "
+      }
+    ]
+  }
 }

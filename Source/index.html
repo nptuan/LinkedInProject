@@ -37,8 +37,8 @@
                             <form class="editNameBox" ng-show="showEditName">
                                 <strong class="edit-name-form"></strong>
                                 <label>Name</label></br>
-                                <input class="editNameText" type="text" ng-model="editFirstName" maxlength="20">
-                                <input class="editNameText" type="text" ng-model="editLastName" maxlength="20"></br>
+                                <input class="editNameText" type="text" ng-model="editFirstName">
+                                <input class="editNameText" type="text" ng-model="editLastName"></br>
                                 <a class="btn-save" ng-click="editNameSave()">Save</a>
                                 <a class="btn-cancel" ng-click="showEditName=false">
                                     Cancel
@@ -54,7 +54,7 @@
                             <form class="editPositionBox" ng-show="showEditPosition">
                                 <strong class="edit-position-form"></strong>
                                 <label>Your professional headline</label></br>
-                                <input class="editPositionText" type="text" ng-model="editPosition" maxlength="30"></br>
+                                <input class="editPositionText" type="text" ng-model="editPosition"></br>
                                 <a class="btn-save" ng-click="editPositionSave()">Save</a>
                                 <a class="btn-cancel" ng-click="showEditPosition=false">
                                     Cancel
@@ -74,9 +74,9 @@
                             <form class="editLocationBox" ng-show="showEditLocation">
                                 <strong class="edit-location-form"></strong>
                                 <label>Location</label></br>
-                                <input class="editLocationText" type="text" ng-model="editLocation" maxlength="30"></br>
+                                <input class="editLocationText" type="text" ng-model="editLocation"></br>
                                 <label>Industry</label></br>
-                                <input class="editIndustryText" type="text" ng-model="editIndustry" maxlength="20"></br>
+                                <input class="editIndustryText" type="text" ng-model="editIndustry"></br>
                                 <a class="btn-save" ng-click="editLocationSave()">Save</a>
                                 <a class="btn-cancel" ng-click="showEditLocation=false">
                                     Cancel
@@ -237,25 +237,25 @@
                                     <label>New Experience</label></br>
                                     <label>Company Name</label></br>
                                     <input class="addExperienceText" type="text"
-                                           ng-model="Experience.companyName" maxlength="100"></br>
+                                           ng-model="Experience.companyName" ></br>
                                     <label>Position</label></br>
                                     <input class="addExperienceText" type="text"
-                                           ng-model="Experience.title" maxlength="100"></br>
+                                           ng-model="Experience.title" ></br>
                                     <label>Start Period</label></br>
                                     <input class="addExperienceText" type="text"
-                                           ng-model="Experience.startPeriod" maxlength="100"></br>
+                                           ng-model="Experience.startPeriod" ></br>
                                     <label>End Period</label></br>
                                     <input class="addExperienceText" type="text"
-                                           ng-model="Experience.endPeriod" maxlength="100"></br>
+                                           ng-model="Experience.endPeriod"></br>
                                     <label>Duration</label></br>
                                     <input class="addExperienceText" type="text"
-                                           ng-model="Experience.duration" maxlength="100"></br>
+                                           ng-model="Experience.duration"></br>
                                     <label>Location</label></br>
                                     <input class="addExperienceText" type="text"
-                                           ng-model="Experience.location" maxlength="100"></br>
+                                           ng-model="Experience.location" ></br>
                                     <label>Description</label></br>
                                     <input class="addExperienceText" type="text"
-                                           ng-model="Experience.description" maxlength="100"></br>
+                                           ng-model="Experience.description" ></br>
                                     <a class="btn-save" ng-click="addExperienceSave()">Save</a>
                                     <a class="btn-cancel" ng-click="showAddExperience=false">Cancel</a>
                                 </form>
@@ -280,22 +280,22 @@
                                     <strong class="edit-experience-form"></strong>
                                     <label>Company Name</label></br>
                                     <input class="editExperienceText" type="text"
-                                           ng-model="editExperienceCompanyName[$index]" maxlength="100"></br>
+                                           ng-model="editExperienceCompanyName[$index]"></br>
                                     <label>Position</label></br>
                                     <input class="editExperienceText" type="text"
-                                           ng-model="editExperienceTitle[$index]" maxlength="100"></br>
+                                           ng-model="editExperienceTitle[$index]"></br>
                                     <label>Start Period</label></br>
                                     <input class="editExperienceText" type="text"
-                                           ng-model="editExperienceStartPeriod[$index]" maxlength="100"></br>
+                                           ng-model="editExperienceStartPeriod[$index]"></br>
                                     <label>End Period</label></br>
                                     <input class="editExperienceText" type="text"
-                                           ng-model="editExperienceEndPeriod[$index]" maxlength="100"></br>
+                                           ng-model="editExperienceEndPeriod[$index]"></br>
                                     <label>Location</label></br>
                                     <input class="editExperienceText" type="text"
-                                           ng-model="editExperienceLocation[$index]" maxlength="100"></br>
+                                           ng-model="editExperienceLocation[$index]"></br>
                                     <label>Description</label></br>
                                     <input class="editExperienceText" type="text"
-                                           ng-model="editExperienceDescription[$index]" maxlength="100"></br>
+                                           ng-model="editExperienceDescription[$index]"></br>
                                     <a class="btn-save" ng-click="editExperienceSave($index)">Save</a>
                                     <a class="btn-cancel" ng-click="showEditExperience[$index]=false">Cancel</a>
                                 </form>
@@ -350,8 +350,7 @@
                                             <form class="editCausesBox" ng-show="showEditCauses[$index]">
                                                 <strong class="edit-causes-form"></strong>
                                                 <label>Causes</label>
-                                                <input class="editCausesText" type="text" ng-model="editCauses[$index]"
-                                                       maxlength="30">
+                                                <input class="editCausesText" type="text" ng-model="editCauses[$index]">
                                                 <span class="btn-save" ng-click="editCausesSave($index)">Save</span>
                                                 <span class="btn-cancel" ng-click="showEditCauses[$index]=false">Cancel</span>
                                             </form>
@@ -381,8 +380,7 @@
                                             <form class="editOrganizationsBox" ng-show="showEditOrganizations[$index]">
                                                 <strong class="edit-organizations-form"></strong>
                                                 <label>Supported Organization</label></br>
-                                                <input class="editOrganizationsText" type="text" ng-model="editOrganizations[$index]"
-                                                       maxlength="30"></br>
+                                                <input class="editOrganizationsText" type="text" ng-model="editOrganizations[$index]"></br>
                                                 <span class="btn-save" ng-click="editOrganizationsSave($index)">Save</span>
                                                 <span class="btn-cancel" ng-click="showEditOrganizations[$index]=false">
                                                     Cancel
@@ -428,10 +426,10 @@
                                             <strong class="edit-skills-form"></strong>
                                             <label>Name</label></br>
                                             <input class="editSkillsText" type="text"
-                                                   ng-model="editSkillsName[$index]" maxlength="100"></br>
+                                                   ng-model="editSkillsName[$index]"></br>
                                             <label>Endorsers</label></br>
                                             <input class="editSkillsText" type="text"
-                                                   ng-model="editSkillsEndorsers[$index]" maxlength="100"></br>
+                                                   ng-model="editSkillsEndorsers[$index]"></br>
                                             <a class="btn-save" ng-click="editSkillsSave($index)">Save</a>
                                             <a class="btn-cancel" ng-click="showEditSkills[$index]=false">Cancel</a>
                                         </form>
@@ -452,10 +450,10 @@
                                         <label>New Skill</label></br>
                                         <label>Name</label></br>
                                         <input class="addSkillsText" type="text"
-                                               ng-model="Skill.name" maxlength="100"></br>
+                                               ng-model="Skill.name"></br>
                                         <label>Endorsers</label></br>
                                         <input class="addSkillsText" type="text"
-                                               ng-model="Skill.endorsers" maxlength="100"></br>
+                                               ng-model="Skill.endorsers"></br>
                                         <a class="btn-save" ng-click="addSkillsSave()">Save</a>
                                         <a class="btn-cancel" ng-click="showAddSkills=false">Cancel</a>
                                     </form>
@@ -478,10 +476,10 @@
                                             <strong class="edit-skills-form"></strong>
                                             <label>Name</label></br>
                                             <input class="editSkillsText" type="text"
-                                                   ng-model="editSkillsName[$index]" maxlength="100"></br>
+                                                   ng-model="editSkillsName[$index]" ></br>
                                             <label>Endorsers</label></br>
                                             <input class="editSkillsText" type="text"
-                                                   ng-model="editSkillsEndorsers[$index]" maxlength="100"></br>
+                                                   ng-model="editSkillsEndorsers[$index]"></br>
                                             <a class="btn-save" ng-click="editSkillsSave($index)">Save</a>
                                             <a class="btn-cancel" ng-click="showEditSkills[$index]=false">Cancel</a>
                                         </form>
@@ -514,16 +512,16 @@
                                     <label>New Education</label></br>
                                     <label>Name</label></br>
                                     <input class="addEducationText" type="text"
-                                           ng-model="Education.name" maxlength="100"></br>
+                                           ng-model="Education.name" ></br>
                                     <label>Position</label></br>
                                     <input class="addEducationText" type="text"
-                                           ng-model="Education.title" maxlength="100"></br>
+                                           ng-model="Education.title"></br>
                                     <label>Start Period</label></br>
                                     <input class="addEducationText" type="text"
-                                           ng-model="Education.startPeriod" maxlength="100"></br>
+                                           ng-model="Education.startPeriod" ></br>
                                     <label>End Period</label></br>
                                     <input class="addEducationText" type="text"
-                                           ng-model="Education.endPeriod" maxlength="100"></br>
+                                           ng-model="Education.endPeriod" ></br>
                                     <a class="btn-save" ng-click="addEducationSave()">Save</a>
                                     <a class="btn-cancel" ng-click="showAddEducation=false">Cancel</a>
                                 </form>
@@ -551,16 +549,16 @@
                                         <strong class="edit-education-form"></strong>
                                         <label>Name</label></br>
                                         <input class="editEducationText" type="text"
-                                               ng-model="editEducationName[$index]" maxlength="100"></br>
+                                               ng-model="editEducationName[$index]"></br>
                                         <label>Position</label></br>
                                         <input class="editEducationText" type="text"
-                                               ng-model="editEducationTitle[$index]" maxlength="100"></br>
+                                               ng-model="editEducationTitle[$index]" ></br>
                                         <label>Start Period</label></br>
                                         <input class="editEducationText" type="text"
-                                               ng-model="editEducationStartPeriod[$index]" maxlength="100"></br>
+                                               ng-model="editEducationStartPeriod[$index]"></br>
                                         <label>End Period</label></br>
                                         <input class="editEducationText" type="text"
-                                               ng-model="editEducationEndPeriod[$index]" maxlength="100"></br>
+                                               ng-model="editEducationEndPeriod[$index]"></br>
                                         <a class="btn-save" ng-click="editEducationSave($index)">Save</a>
                                         <a class="btn-cancel" ng-click="showEditEducation[$index]=false">Cancel</a>
                                     </form>
@@ -600,19 +598,19 @@
                                     <label>New Project</label></br>
                                     <label>Name</label></br>
                                     <input class="addProjectText" type="text"
-                                           ng-model="Project.name" maxlength="100"></br>
+                                           ng-model="Project.name" ></br>
                                     <label>Position</label></br>
                                     <input class="addProjectText" type="text"
-                                           ng-model="Project.position" maxlength="100"></br>
+                                           ng-model="Project.position" ></br>
                                     <label>Year</label></br>
                                     <input class="addProjectText" type="text"
-                                           ng-model="Project.year" maxlength="100"></br>
+                                           ng-model="Project.year"></br>
                                     <label>Duration</label></br>
                                     <input class="addProjectText" type="text"
-                                           ng-model="Project.duration" maxlength="100"></br>
+                                           ng-model="Project.duration" ></br>
                                     <label>Detail</label></br>
                                     <input class="addProjectText" type="text"
-                                           ng-model="Project.detail" maxlength="100"></br>
+                                           ng-model="Project.detail"></br>
                                     <a class="btn-save" ng-click="addProjectSave()">Save</a>
                                     <a class="btn-cancel" ng-click="showAddProject=false">Cancel</a>
                                 </form>
@@ -640,19 +638,19 @@
                                         <strong class="edit-project-form"></strong>
                                         <label>Name</label></br>
                                         <input class="editProjectText" type="text"
-                                               ng-model="editProjectName[$index]" maxlength="100"></br>
+                                               ng-model="editProjectName[$index]" ></br>
                                         <label>Position</label></br>
                                         <input class="editProjectText" type="text"
-                                               ng-model="editProjectPosition[$index]" maxlength="100"></br>
+                                               ng-model="editProjectPosition[$index]" ></br>
                                         <label>Year</label></br>
                                         <input class="editProjectText" type="text"
-                                               ng-model="editProjectYear[$index]" maxlength="100"></br>
+                                               ng-model="editProjectYear[$index]" ></br>
                                         <label>Duration</label></br>
                                         <input class="editProjectText" type="text"
-                                               ng-model="editProjectDuration[$index]" maxlength="100"></br>
+                                               ng-model="editProjectDuration[$index]"></br>
                                         <label>Detail</label></br>
                                         <input class="editProjectText" type="text"
-                                               ng-model="editProjectDetail[$index]" maxlength="100"></br>
+                                               ng-model="editProjectDetail[$index]" ></br>
                                         <a class="btn-save" ng-click="editProjectSave($index)">Save</a>
                                         <a class="btn-cancel" ng-click="showEditProject[$index]=false">Cancel</a>
                                     </form>
@@ -697,6 +695,8 @@
 <button class="top-button" ng-click="goTop()">
 </button>
 
+<!-- Firebase -->
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
 <!-- JQuery -->
 <script src="js/jquery-2.2.3.min.js"></script>
 <!-- Angular Js -->
