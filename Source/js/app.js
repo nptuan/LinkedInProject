@@ -1,12 +1,13 @@
 //Initialize
 var linkedInApp = angular.module('linkedInApp', []);
 linkedInApp.controller('content-controller', function ($scope) {
-        window.sc = $scope;
-        $scope.dummyUrl = "https://google.com";
+    window.sc = $scope;
+    $scope.dummyUrl = "https://google.com";
+
     $scope.cover = '';
     $scope.avatar = '';
     $scope.name = '';
-    $scope.possition = '';
+    $scope.position = '';
     $scope.work = '';
     $scope.isInfluencer = '';
     $scope.followers = '';
@@ -21,16 +22,15 @@ linkedInApp.controller('content-controller', function ($scope) {
     $scope.education = '';
     $scope.project = '';
 
-
-
     //Read model from json data
-    var myDataRef = new Firebase('https://intense-torch-8960.firebaseio.com/');
+    var myDataRef = new Firebase('https://intense-torch-8960.firebaseio.com/')
+
     myDataRef.on("value", function(snapshot) {
         var data = snapshot.val().data;
         $scope.cover = data.cover;
         $scope.avatar = data.avatar;
         $scope.name = data.name;
-        $scope.possition = data.possition;
+        $scope.position = data.position;
         $scope.work = data.work;
         $scope.isInfluencer = data.isInfluencer;
         $scope.followers = data.followers;
@@ -57,16 +57,31 @@ linkedInApp.controller('content-controller', function ($scope) {
     $scope.editNameSave = function () {
         $scope.name[0] = $scope.editFirstName;
         $scope.name[1] = $scope.editLastName;
+
+
+        var nameRef = new Firebase('https://intense-torch-8960.firebaseio.com/data/name');
+        nameRef.update([
+            $scope.editFirstName,
+            $scope.editLastName
+        ]);
+
+
         $scope.showEditName = false;
     };
 
     $scope.showEditPosition = false;
     $scope.editPositionShow = function () {
-        $scope.editPosition = $scope.possition;
+        $scope.editPosition = $scope.position;
         $scope.showEditPosition = true;
     };
     $scope.editPositionSave = function () {
-        $scope.possition = $scope.editPosition;
+        $scope.position = $scope.editPosition;
+
+        var positionRef = new Firebase('https://intense-torch-8960.firebaseio.com/data');
+        positionRef.update(
+            {"position" : $scope.editPosition}
+        );
+
         $scope.showEditPosition = false;
     };
 
@@ -79,6 +94,15 @@ linkedInApp.controller('content-controller', function ($scope) {
     $scope.editLocationSave = function () {
         $scope.work.location = $scope.editLocation;
         $scope.work.industry = $scope.editIndustry;
+
+        var workRef = new Firebase('https://intense-torch-8960.firebaseio.com/data/work');
+        workRef.update(
+            {
+                "location": $scope.editLocation,
+                "industry": $scope.editIndustry
+            }
+        );
+
         $scope.showEditLocation = false;
     };
 
@@ -89,6 +113,12 @@ linkedInApp.controller('content-controller', function ($scope) {
     };
     $scope.editSummarySave = function () {
         $scope.summary = $scope.editSummary;
+
+        var summaryRef = new Firebase('https://intense-torch-8960.firebaseio.com/data');
+        summaryRef.update(
+            {"summary" : $scope.editSummary}
+        );
+
         $scope.showEditSummary = false;
     };
 
@@ -155,6 +185,10 @@ linkedInApp.controller('content-controller', function ($scope) {
 
     $scope.addExperienceSave = function() {
         $scope.experience.push($scope.Experience);
+
+        var experienceRef = new Firebase('https://intense-torch-8960.firebaseio.com/data/experience');
+        experienceRef.push($scope.Experience);
+
         $scope.showAddExperience = false;
     };
 
@@ -185,8 +219,11 @@ linkedInApp.controller('content-controller', function ($scope) {
     };
 
     $scope.addSkillsSave = function() {
-
         $scope.skills.push($scope.Skill);
+
+        var skillsRef = new Firebase('https://intense-torch-8960.firebaseio.com/data/skills');
+        skillsRef.push($scope.Skill);
+
         $scope.showAddSkills = false;
     };
 
@@ -222,6 +259,8 @@ linkedInApp.controller('content-controller', function ($scope) {
     $scope.showAddEducation = false;
     $scope.addEducationShow = function() {
         $scope.Education = {    name: "",
+            url: "",
+            logo: "",
             title: "",
             startPeriod: "",
             endPeriod: ""};
@@ -230,6 +269,10 @@ linkedInApp.controller('content-controller', function ($scope) {
 
     $scope.addEducationSave = function() {
         $scope.education.push($scope.Education);
+
+        var educationRef = new Firebase('https://intense-torch-8960.firebaseio.com/data/education');
+        educationRef.push($scope.Education);
+
         $scope.showAddEducation = false;
     };
 
@@ -294,6 +337,10 @@ linkedInApp.controller('content-controller', function ($scope) {
 
     $scope.addProjectSave = function() {
         $scope.project.push($scope.Project);
+
+        var projectRef = new Firebase('https://intense-torch-8960.firebaseio.com/data/project');
+        projectRef.push($scope.Project);
+
         $scope.showAddProject = false;
     };
 
