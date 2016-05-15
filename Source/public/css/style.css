@@ -1912,4 +1912,35 @@ body {
 }
 /***end go top of page**/
 
+/**account-bar***/
+.account-bar {
+    display: inline-block;
+    background-color: #00a0dc;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+}
+.infor-uid  {
+    display: inline-block;
+    color: #fff;
+}
+.btn-logout {
+    border: 0px;
+    color: #fff;
+    background-color: #00a0dc;
+    padding: 0 0 0 0;
+    text-decoration: underline;
+    margin: 0 4px 0 4px;
+}
+.btn-changePassword {
+    border: 0px;
+    color: #fff;
+    background-color: #00a0dc;
+    padding: 0 0 0 0;
+    text-decoration: underline;
+    margin: 0 4px 0 0;
+}
+/***end account-bar**/
+
 

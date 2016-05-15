@@ -21,10 +21,27 @@ linkedInApp.controller('content-controller', function ($scope) {
     $scope.skills = '';
     $scope.education = '';
     $scope.project = '';
+    $scope.username = '';
+    $scope.password = '';
+    $scope.uid = '';
 
     //Read model from json data
-    var myDataRef = new Firebase('https://intense-torch-8960.firebaseio.com/')
+    var myDataRef = new Firebase('https://1312664-linked-in-project.firebaseio.com/');
 
+    //On load
+    var authData = myDataRef.getAuth();
+    if (!authData) {
+        //window.location = "log_in.html";
+    }
+
+    //listen log out
+    var myDataRef = new Firebase('https://1312664-linked-in-project.firebaseio.com/');
+    myDataRef.onAuth(function(authData){
+        if (!authData) {
+            window.location = "log_in.html";
+        }
+    });
+    $scope.uid = myDataRef.getAuth().password.email.replace(/@.*/, '');
     myDataRef.on("value", function(snapshot) {
         var data = snapshot.val().data;
         $scope.cover = data.cover;
@@ -59,7 +76,7 @@ linkedInApp.controller('content-controller', function ($scope) {
         $scope.name[1] = $scope.editLastName;
 
 
-        var nameRef = new Firebase('https://intense-torch-8960.firebaseio.com/data/name');
+        var nameRef = new Firebase('https://1312664-linked-in-project.firebaseio.com/data/name');
         nameRef.update([
             $scope.editFirstName,
             $scope.editLastName
@@ -77,7 +94,7 @@ linkedInApp.controller('content-controller', function ($scope) {
     $scope.editPositionSave = function () {
         $scope.position = $scope.editPosition;
 
-        var positionRef = new Firebase('https://intense-torch-8960.firebaseio.com/data');
+        var positionRef = new Firebase('https://1312664-linked-in-project.firebaseio.com/data');
         positionRef.update(
             {"position" : $scope.editPosition}
         );
@@ -95,7 +112,7 @@ linkedInApp.controller('content-controller', function ($scope) {
         $scope.work.location = $scope.editLocation;
         $scope.work.industry = $scope.editIndustry;
 
-        var workRef = new Firebase('https://intense-torch-8960.firebaseio.com/data/work');
+        var workRef = new Firebase('https://1312664-linked-in-project.firebaseio.com/data/work');
         workRef.update(
             {
                 "location": $scope.editLocation,
@@ -114,7 +131,7 @@ linkedInApp.controller('content-controller', function ($scope) {
     $scope.editSummarySave = function () {
         $scope.summary = $scope.editSummary;
 
-        var summaryRef = new Firebase('https://intense-torch-8960.firebaseio.com/data');
+        var summaryRef = new Firebase('https://1312664-linked-in-project.firebaseio.com/data');
         summaryRef.update(
             {"summary" : $scope.editSummary}
         );
@@ -186,7 +203,7 @@ linkedInApp.controller('content-controller', function ($scope) {
     $scope.addExperienceSave = function() {
         $scope.experience.push($scope.Experience);
 
-        var experienceRef = new Firebase('https://intense-torch-8960.firebaseio.com/data/experience');
+        var experienceRef = new Firebase('https://1312664-linked-in-project.firebaseio.com/data/experience');
         experienceRef.push($scope.Experience);
 
         $scope.showAddExperience = false;
@@ -221,7 +238,7 @@ linkedInApp.controller('content-controller', function ($scope) {
     $scope.addSkillsSave = function() {
         $scope.skills.push($scope.Skill);
 
-        var skillsRef = new Firebase('https://intense-torch-8960.firebaseio.com/data/skills');
+        var skillsRef = new Firebase('https://1312664-linked-in-project.firebaseio.com/data/skills');
         skillsRef.push($scope.Skill);
 
         $scope.showAddSkills = false;
@@ -270,7 +287,7 @@ linkedInApp.controller('content-controller', function ($scope) {
     $scope.addEducationSave = function() {
         $scope.education.push($scope.Education);
 
-        var educationRef = new Firebase('https://intense-torch-8960.firebaseio.com/data/education');
+        var educationRef = new Firebase('https://1312664-linked-in-project.firebaseio.com/data/education');
         educationRef.push($scope.Education);
 
         $scope.showAddEducation = false;
@@ -338,7 +355,7 @@ linkedInApp.controller('content-controller', function ($scope) {
     $scope.addProjectSave = function() {
         $scope.project.push($scope.Project);
 
-        var projectRef = new Firebase('https://intense-torch-8960.firebaseio.com/data/project');
+        var projectRef = new Firebase('https://1312664-linked-in-project.firebaseio.com/data/project');
         projectRef.push($scope.Project);
 
         $scope.showAddProject = false;
@@ -362,4 +379,12 @@ linkedInApp.controller('content-controller', function ($scope) {
     $scope.deleteSkills = function (index) {
         $scope.skills.splice(index, 1);
     };
+    $scope.logOut = function () {
+        var ref = new Firebase("https://1312664-linked-in-project.firebaseio.com/");
+        ref.unauth();
+    };
+    $scope.changePassword = function () {
+        window.location = "change_password.html";
+    };
+
 });

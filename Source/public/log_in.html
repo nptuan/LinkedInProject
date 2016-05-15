@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="logIn">
+<head>
+    <meta charset="UTF-8">
+    <title>Logging User In</title>
+    <link rel="stylesheet" type="text/css" href="css/log_in.css"/>
+</head>
+<body ng-controller="login-controller">
+    <form>
+        <label>Username </label></br>
+        <input type="text" ng-model="username"></br>
+        <label>Password</label></br>
+        <input type="password" ng-model="password"></br>
+        <label class="lbl-error">{{error}}</label></br>
+        <a class="btn-login" ng-click="logIn()">Log In</a>
+        <a href="/register.html">Register</a>
+    </form>
+
+    <!-- Firebase -->
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <!-- JQuery -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- Angular Js -->
+    <script src="js/angular.min.js"></script>
+    <!-- Materialize Js -->
+    <script src="js/materialize.min.js"></script>
+    <!-- My Js -->
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="register">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css"/>
+</head>
+<body ng-controller="register-controller">
+<form>
+    <label>Email</label></br>
+    <input type="text" ng-model="username"></br>
+    <label>Password</label></br>
+    <input type="password" ng-model="password"></br>
+    <label>Re-enter Password</label></br>
+    <input type="password" ng-model="rePassword"></br>
+    <label class="lbl-error">{{error}}</label></br>
+    <a class="btn-register" ng-click="register()">Register</a>
+</form>
+
+<!-- Firebase -->
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<!-- JQuery -->
+<script src="js/jquery-2.2.3.min.js"></script>
+<!-- Angular Js -->
+<script src="js/angular.min.js"></script>
+<!-- Materialize Js -->
+<script src="js/materialize.min.js"></script>
+<!-- My Js -->
+<script src="js/register.js"></script>
+</body>
+</html>

@@ -14,6 +14,16 @@
 </head>
 <body ng-controller="content-controller">
 <div id="timeline">
+    <div class="account-bar">
+        <div class="infor-uid">Hi, {{uid}}</div>
+        <button class="btn-logout" ng-click="logOut()">
+            Log out
+        </button>
+        <button class="btn-changePassword" ng-click="changePassword()">
+            Change Password
+        </button>
+    </div>
+
     <img id="cover" ng-src="{{cover}}" alt="cover"/>
     <!--page content-->
     <div id="profile-content">
@@ -619,8 +629,6 @@
                                 </button>
                                 </br>
                                 <!--end add Project--->
-
-
                             </div>
                             <!--info Project-->
                             <div>
